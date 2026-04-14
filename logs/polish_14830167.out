@@ -1,0 +1,19 @@
+Checking program versions
+This is medaka 1.7.2
+Program    Version    Required   Pass     
+bcftools   1.16       1.11       True     
+bgzip      1.16       1.11       True     
+minimap2   2.24       2.11       True     
+samtools   1.16.1     1.11       True     
+tabix      1.16       1.11       True     
+Warning: Output /work/fauverlab/zachpella/Bb_WGS_Apr2026/medaka_out already exists, may use old results.
+Aligning basecalls to draft
+Running medaka consensus
+Polished assembly written to /work/fauverlab/zachpella/Bb_WGS_Apr2026/medaka_out/consensus.fasta, have a nice day.
+Done: Tue Apr 14 10:10:05 CDT 2026
+Polished assembly: /work/fauverlab/zachpella/Bb_WGS_Apr2026/medaka_out/consensus.fasta
+-rw-r--r-- 1 zachpella fauverlab 1.1M Apr 14 10:10 /work/fauverlab/zachpella/Bb_WGS_Apr2026/medaka_out/consensus.fasta
+
+Polished assembly stats:
+file                                                                 format  type  num_seqs    sum_len  min_len  avg_len  max_len  Q1  Q2    Q3  sum_gap      N50  Q20(%)  Q30(%)  AvgQual  GC(%)
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/medaka_out/consensus.fasta  FASTA   DNA        456  1,140,821        1  2,501.8  903,367   2  24  58.5        0  903,367       0       0        0  28.27

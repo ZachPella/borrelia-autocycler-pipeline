@@ -1,0 +1,39 @@
+# Large data files
+*.bam
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Compressed archives
+*.tar.gz
+*.zip
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Log files (keep only final ones in logs/)
+*.log
+*.err.tmp
+*.out.tmp
+
+# Large intermediate directories
+subsampled_reads/
+assemblies/
+raw_data/
+pod5/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# SLURM output files (except the ones we specifically keep)
+slurm-*.out
+slurm-*.err

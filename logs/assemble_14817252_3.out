@@ -1,0 +1,18 @@
+Array task 3: running nextdenovo
+  Running nextdenovo on sample_01...
+[35mPlease update to the latest version: 2.5.2, current version: v2.5.0 [0m
+[35mPlease update to the latest version: 2.5.2, current version: v2.5.0 [0m
+  Running nextdenovo on sample_02...
+[35mPlease update to the latest version: 2.5.2, current version: v2.5.0 [0m
+[35mPlease update to the latest version: 2.5.2, current version: v2.5.0 [0m
+  Running nextdenovo on sample_03...
+[35mPlease update to the latest version: 2.5.2, current version: v2.5.0 [0m
+[35mPlease update to the latest version: 2.5.2, current version: v2.5.0 [0m
+  Running nextdenovo on sample_04...
+[35mPlease update to the latest version: 2.5.2, current version: v2.5.0 [0m
+[35mPlease update to the latest version: 2.5.2, current version: v2.5.0 [0m
+Done: nextdenovo assemblies complete
+-rw-r--r-- 1 zachpella fauverlab 958K Apr 13 10:55 /work/fauverlab/zachpella/Bb_WGS_Apr2026/assemblies/nextdenovo_01.fasta
+-rw-r--r-- 1 zachpella fauverlab 925K Apr 13 10:58 /work/fauverlab/zachpella/Bb_WGS_Apr2026/assemblies/nextdenovo_02.fasta
+-rw-r--r-- 1 zachpella fauverlab 970K Apr 13 11:02 /work/fauverlab/zachpella/Bb_WGS_Apr2026/assemblies/nextdenovo_03.fasta
+-rw-r--r-- 1 zachpella fauverlab 929K Apr 13 11:05 /work/fauverlab/zachpella/Bb_WGS_Apr2026/assemblies/nextdenovo_04.fasta
