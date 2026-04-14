@@ -1,0 +1,55 @@
+
+Starting autocycler subsample (2026-04-07 11:12:17)
+    This command subsamples a long-read set into subsets that are maximally
+independent from each other.
+
+Settings:
+  --reads /work/fauverlab/zachpella/Bb_WGS_Apr2026/Bb_sup.fastq.gz
+  --out_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads
+  --genome_size 1500000
+  --count 4
+  --min_read_depth 25
+  --seed 0
+
+Input FASTQ:
+  Read count: 1135545
+  Read bases: 2298846945
+  Read N50 length: 6583 bp
+
+
+Calculating subset size (2026-04-07 11:12:43)
+    Autocycler will now calculate the number of reads to put in each subset.
+
+Total read depth: 1532.6×
+Mean read length: 2024 bp
+
+Calculating subset sizes:
+  subset_depth = 25 * log_2(4 * total_depth / 25) / 2
+               = 99.2x
+  reads per subset: 73519
+
+
+Subsetting reads (2026-04-07 11:12:43)
+    The reads are now shuffled and grouped into subset files.
+
+subset 1:
+  reads 1-73519
+  /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads/sample_01.fastq
+
+subset 2:
+  reads 283887-357405
+  /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads/sample_02.fastq
+
+subset 3:
+  reads 567774-641292
+  /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads/sample_03.fastq
+
+subset 4:
+  reads 851660-925178
+  /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads/sample_04.fastq
+
+
+Finished! (2026-04-07 11:13:14)
+    You can now assemble each of the subsampled read sets to produce a set of
+assemblies for input into Autocycler compress.
+

@@ -1,0 +1,1771 @@
+Using the existing fai index file /lustre/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/consensus_assembly.fasta.fai
+Using the existing mmi index file /lustre/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/consensus_assembly.fasta.map-ont.mmi
+[M::main::0.013*1.06] loaded/built the index for 456 target sequence(s)
+[M::mm_mapopt_update::0.016*1.05] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 456
+[M::mm_idx_stat::0.018*1.04] distinct minimizers: 204582 (96.43% are singletons); average occurrences: 1.043; average spacing: 5.346; total length: 1140877
+[M::worker_pipeline::19.115*8.40] mapped 234009 sequences
+[M::worker_pipeline::40.733*11.34] mapped 259078 sequences
+[M::worker_pipeline::43.498*10.74] mapped 250261 sequences
+[M::worker_pipeline::64.520*10.99] mapped 247220 sequences
+[M::worker_pipeline::66.170*10.74] mapped 144977 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -x map-ont --secondary=no -L --MD -A 2 -B 4 -O 4,24 -E 2,1 -t 16 -a /lustre/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/consensus_assembly.fasta.map-ont.mmi /lustre/work/fauverlab/zachpella/Bb_WGS_Apr2026/Bb_sup.fastq.gz
+[M::main] Real time: 66.181 sec; CPU: 710.480 sec; Peak RSS: 4.728 GB
+[bam_sort_core] merging from 0 files and 16 in-memory blocks...
+[10:09:22 - Predict] Reducing threads to 2, anymore is a waste.
+[10:09:22 - Predict] Setting tensorflow inter/intra-op threads to 2/1.
+[10:09:22 - Predict] Processing region(s): 1:0-903373 2:0-50 3:0-24 4:0-4 5:0-1 6:0-1 7:0-1 8:0-46449 9:0-5312 10:0-1001 11:0-655 12:0-317 13:0-53 14:0-2 15:0-1 16:0-1 17:0-1 18:0-30460 19:0-1751 20:0-1722 21:0-733 22:0-715 23:0-492 24:0-444 25:0-401 26:0-310 27:0-308 28:0-239 29:0-224 30:0-201 31:0-197 32:0-196 33:0-183 34:0-178 35:0-174 36:0-165 37:0-158 38:0-153 39:0-143 40:0-139 41:0-130 42:0-124 43:0-117 44:0-113 45:0-112 46:0-110 47:0-105 48:0-104 49:0-100 50:0-96 51:0-93 52:0-89 53:0-89 54:0-89 55:0-88 56:0-87 57:0-87 58:0-87 59:0-85 60:0-85 61:0-85 62:0-85 63:0-84 64:0-84 65:0-82 66:0-81 67:0-80 68:0-79 69:0-78 70:0-76 71:0-76 72:0-76 73:0-76 74:0-76 75:0-75 76:0-75 77:0-75 78:0-75 79:0-73 80:0-71 81:0-70 82:0-70 83:0-70 84:0-69 85:0-69 86:0-69 87:0-68 88:0-67 89:0-67 90:0-66 91:0-65 92:0-64 93:0-63 94:0-63 95:0-63 96:0-63 97:0-58 98:0-57 99:0-55 100:0-55 101:0-54 102:0-54 103:0-53 104:0-52 105:0-52 106:0-51 107:0-50 108:0-50 109:0-50 110:0-49 111:0-49 112:0-49 113:0-48 114:0-48 115:0-47 116:0-47 117:0-47 118:0-47 119:0-47 120:0-46 121:0-46 122:0-46 123:0-46 124:0-46 125:0-45 126:0-45 127:0-45 128:0-45 129:0-44 130:0-44 131:0-43 132:0-43 133:0-42 134:0-42 135:0-41 136:0-41 137:0-41 138:0-41 139:0-39 140:0-38 141:0-37 142:0-36 143:0-36 144:0-36 145:0-36 146:0-36 147:0-34 148:0-34 149:0-34 150:0-34 151:0-33 152:0-32 153:0-32 154:0-29 155:0-28 156:0-28 157:0-28 158:0-28 159:0-28 160:0-27 161:0-27 162:0-26 163:0-26 164:0-26 165:0-26 166:0-26 167:0-26 168:0-26 169:0-26 170:0-26 171:0-26 172:0-26 173:0-26 174:0-26 175:0-25 176:0-25 177:0-25 178:0-25 179:0-25 180:0-25 181:0-25 182:0-25 183:0-25 184:0-25 185:0-24 186:0-24 187:0-24 188:0-24 189:0-24 190:0-24 191:0-24 192:0-24 193:0-23 194:0-23 195:0-23 196:0-23 197:0-23 198:0-22 199:0-22 200:0-22 201:0-22 202:0-21 203:0-21 204:0-21 205:0-21 206:0-21 207:0-20 208:0-20 209:0-20 210:0-19 211:0-19 212:0-19 213:0-19 214:0-19 215:0-19 216:0-19 217:0-18 218:0-18 219:0-18 220:0-18 221:0-17 222:0-17 223:0-17 224:0-16 225:0-16 226:0-16 227:0-16 228:0-15 229:0-15 230:0-14 231:0-14 232:0-14 233:0-14 234:0-13 235:0-13 236:0-12 237:0-11 238:0-11 239:0-10 240:0-10 241:0-10 242:0-9 243:0-9 244:0-9 245:0-8 246:0-8 247:0-8 248:0-8 249:0-8 250:0-7 251:0-7 252:0-7 253:0-6 254:0-6 255:0-6 256:0-6 257:0-5 258:0-5 259:0-4 260:0-4 261:0-3 262:0-3 263:0-3 264:0-3 265:0-2 266:0-2 267:0-2 268:0-2 269:0-2 270:0-2 271:0-2 272:0-2 273:0-2 274:0-2 275:0-2 276:0-2 277:0-2 278:0-2 279:0-2 280:0-2 281:0-2 282:0-2 283:0-2 284:0-2 285:0-2 286:0-2 287:0-1 288:0-1 289:0-1 290:0-1 291:0-1 292:0-1 293:0-1 294:0-1 295:0-1 296:0-1 297:0-1 298:0-1 299:0-1 300:0-1 301:0-1 302:0-1 303:0-1 304:0-1 305:0-1 306:0-1 307:0-1 308:0-1 309:0-1 310:0-1 311:0-1 312:0-1 313:0-1 314:0-1 315:0-1 316:0-1 317:0-1 318:0-1 319:0-1 320:0-1 321:0-1 322:0-1 323:0-1 324:0-1 325:0-1 326:0-1 327:0-1 328:0-1 329:0-1 330:0-1 331:0-1 332:0-1 333:0-1 334:0-1 335:0-1 336:0-1 337:0-1 338:0-1 339:0-1 340:0-1 341:0-1 342:0-1 343:0-1 344:0-1 345:0-1 346:0-1 347:0-1 348:0-1 349:0-1 350:0-1 351:0-1 352:0-1 353:0-1 354:0-1 355:0-1 356:0-1 357:0-1 358:0-1 359:0-1 360:0-1 361:0-1 362:0-1 363:0-1 364:0-1 365:0-1 366:0-1 367:0-1 368:0-1 369:0-1 370:0-1 371:0-1 372:0-1 373:0-1 374:0-1 375:0-1 376:0-1 377:0-1 378:0-1 379:0-28020 380:0-364 381:0-334 382:0-234 383:0-230 384:0-212 385:0-146 386:0-143 387:0-141 388:0-138 389:0-128 390:0-127 391:0-127 392:0-117 393:0-94 394:0-91 395:0-88 396:0-87 397:0-86 398:0-86 399:0-73 400:0-67 401:0-62 402:0-59 403:0-57 404:0-54 405:0-52 406:0-50 407:0-50 408:0-49 409:0-38 410:0-37 411:0-35 412:0-34 413:0-33 414:0-32 415:0-29 416:0-29 417:0-29 418:0-26 419:0-26 420:0-25 421:0-25 422:0-23 423:0-22 424:0-21 425:0-21 426:0-21 427:0-21 428:0-20 429:0-15 430:0-15 431:0-14 432:0-13 433:0-9 434:0-7 435:0-5 436:0-2 437:0-1 438:0-1 439:0-1 440:0-1 441:0-1 442:0-1 443:0-1 444:0-1 445:0-1 446:0-28116 447:0-16988 448:0-28 449:0-27 450:0-27 451:0-1 452:0-1 453:0-1 454:0-27768 455:0-26513 456:0-2982
+[10:09:22 - Predict] Using model: /util/opt/anaconda/deployed-conda-envs/packages/medaka-gpu/envs/medaka-gpu-1.7.2-py38/lib/python3.8/site-packages/medaka/data/r1041_e82_400bps_sup_g615_model.tar.gz.
+[10:09:22 - Predict] Found a GPU.
+[10:09:22 - Predict] If cuDNN errors are observed, try setting the environment variable `TF_FORCE_GPU_ALLOW_GROWTH=true`. To explicitely disable use of cuDNN use the commandline option `--disable_cudnn. If OOM (out of memory) errors are found please reduce batch size.
+[10:09:22 - Predict] Processing 456 long region(s) with batching.
+[10:09:22 - ModelLoad] GPU available: building model with cudnn optimization
+[10:09:23 - MdlStrTF] Model <keras.engine.sequential.Sequential object at 0x14da0d851f10>
+[10:09:23 - MdlStrTF] loading weights from /tmp/tmp19k7thr6/model/variables/variables
+[10:09:23 - BAMFile] Creating pool of 16 BAM file sets.
+[10:09:23 - Sampler] Initializing sampler for consensus of region 1:0-903373.
+[10:09:23 - Sampler] Initializing sampler for consensus of region 2:0-50.
+[10:09:23 - PWorker] Running inference for 1.1M draft bases.
+[10:09:23 - Sampler] Took 0.04s to make features.
+[10:09:23 - Sampler] Initializing sampler for consensus of region 3:0-24.
+[10:09:23 - Sampler] Took 0.06s to make features.
+[10:09:23 - Sampler] Initializing sampler for consensus of region 4:0-4.
+[10:09:23 - Sampler] Took 0.04s to make features.
+[10:09:23 - Sampler] Initializing sampler for consensus of region 5:0-1.
+[10:09:23 - Sampler] Took 0.03s to make features.
+[10:09:23 - Sampler] Initializing sampler for consensus of region 6:0-1.
+[10:09:23 - Sampler] Took 0.02s to make features.
+[10:09:23 - Sampler] Initializing sampler for consensus of region 7:0-1.
+[10:09:24 - Sampler] Took 0.05s to make features.
+[10:09:24 - Sampler] Initializing sampler for consensus of region 8:0-46449.
+[10:09:26 - Feature] Processed 8:0.0-46448.0 (median depth 1621.0)
+[10:09:26 - Sampler] Took 2.66s to make features.
+[10:09:26 - Sampler] Initializing sampler for consensus of region 9:0-5312.
+[10:09:27 - Feature] Processed 9:0.0-5311.0 (median depth 1077.0)
+[10:09:27 - Sampler] Took 0.55s to make features.
+[10:09:27 - Sampler] Initializing sampler for consensus of region 10:0-1001.
+[10:09:27 - Feature] Processed 10:0.0-1000.0 (median depth 404.0)
+[10:09:27 - Sampler] Took 0.24s to make features.
+[10:09:27 - Sampler] Region 10:0.0-1000.0 (1995 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:27 - Sampler] Initializing sampler for consensus of region 11:0-655.
+[10:09:27 - Feature] Processed 11:0.0-654.0 (median depth 206.0)
+[10:09:27 - Sampler] Took 0.10s to make features.
+[10:09:27 - Sampler] Region 11:0.0-654.0 (1149 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:27 - Sampler] Initializing sampler for consensus of region 12:0-317.
+[10:09:27 - Feature] Processed 12:0.0-316.0 (median depth 85.0)
+[10:09:27 - Sampler] Took 0.11s to make features.
+[10:09:27 - Sampler] Region 12:0.0-316.0 (408 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:27 - Sampler] Initializing sampler for consensus of region 13:0-53.
+[10:09:28 - Feature] Processed 13:0.0-52.0 (median depth 2.0)
+[10:09:28 - Sampler] Took 0.19s to make features.
+[10:09:28 - Sampler] Region 13:0.0-52.0 (53 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:28 - Sampler] Initializing sampler for consensus of region 14:0-2.
+[10:09:28 - Sampler] Took 0.03s to make features.
+[10:09:28 - Sampler] Initializing sampler for consensus of region 15:0-1.
+[10:09:28 - Sampler] Took 0.03s to make features.
+[10:09:28 - Sampler] Initializing sampler for consensus of region 16:0-1.
+[10:09:28 - Sampler] Took 0.21s to make features.
+[10:09:28 - Sampler] Initializing sampler for consensus of region 17:0-1.
+[10:09:28 - Sampler] Took 0.03s to make features.
+[10:09:28 - Sampler] Initializing sampler for consensus of region 18:0-30460.
+[10:09:30 - Feature] Processed 18:0.0-30459.0 (median depth 783.0)
+[10:09:30 - Sampler] Took 1.57s to make features.
+[10:09:30 - Sampler] Initializing sampler for consensus of region 19:0-1751.
+[10:09:30 - Feature] Pileup counts do not span requested region, requested 19:0-1751, received 122-558.
+[10:09:30 - Feature] Processed 19:122.0-558.0 (median depth 2.0)
+[10:09:30 - Feature] Pileup counts do not span requested region, requested 19:0-1751, received 873-1345.
+[10:09:30 - Feature] Processed 19:873.0-1345.0 (median depth 1.0)
+[10:09:30 - Feature] Pileup counts do not span requested region, requested 19:0-1751, received 1427-1750.
+[10:09:30 - Feature] Processed 19:1427.0-1750.0 (median depth 6.0)
+[10:09:30 - Sampler] Took 0.58s to make features.
+[10:09:30 - Sampler] Region 19:122.0-558.0 (455 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:30 - Sampler] Region 19:873.0-1345.0 (484 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:30 - Sampler] Region 19:1427.0-1750.0 (345 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:30 - Sampler] Initializing sampler for consensus of region 20:0-1722.
+[10:09:31 - Feature] Processed 20:0.0-1721.0 (median depth 297.0)
+[10:09:31 - Sampler] Took 0.24s to make features.
+[10:09:31 - Sampler] Region 20:0.0-1721.0 (2756 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:31 - Sampler] Initializing sampler for consensus of region 21:0-733.
+[10:09:31 - Feature] Processed 21:0.0-732.0 (median depth 192.0)
+[10:09:31 - Sampler] Took 0.13s to make features.
+[10:09:31 - Sampler] Region 21:0.0-732.0 (1220 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:32 - Sampler] Initializing sampler for consensus of region 22:0-715.
+[10:09:32 - Feature] Processed 22:0.0-714.0 (median depth 127.0)
+[10:09:32 - Sampler] Took 0.11s to make features.
+[10:09:32 - Sampler] Region 22:0.0-714.0 (987 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:32 - Sampler] Initializing sampler for consensus of region 23:0-492.
+[10:09:34 - Feature] Processed 23:0.0-491.0 (median depth 94.0)
+[10:09:34 - Sampler] Took 1.96s to make features.
+[10:09:34 - Sampler] Region 23:0.0-491.0 (651 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:34 - Sampler] Initializing sampler for consensus of region 24:0-444.
+[10:09:34 - Feature] Processed 24:0.0-443.0 (median depth 150.0)
+[10:09:34 - Sampler] Took 0.10s to make features.
+[10:09:34 - Sampler] Region 24:0.0-443.0 (648 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:34 - Sampler] Initializing sampler for consensus of region 25:0-401.
+[10:09:34 - Feature] Pileup counts do not span requested region, requested 25:0-401, received 112-263.
+[10:09:34 - Feature] Processed 25:112.0-263.0 (median depth 1.0)
+[10:09:34 - Sampler] Took 0.05s to make features.
+[10:09:34 - Sampler] Region 25:112.0-263.0 (154 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:34 - Sampler] Initializing sampler for consensus of region 26:0-310.
+[10:09:36 - Feature] Processed 26:0.0-309.0 (median depth 262.0)
+[10:09:36 - Sampler] Took 1.96s to make features.
+[10:09:36 - Sampler] Region 26:0.0-309.0 (563 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:36 - Sampler] Initializing sampler for consensus of region 27:0-308.
+[10:09:37 - Feature] Processed 27:0.0-307.0 (median depth 82.0)
+[10:09:37 - Sampler] Took 0.89s to make features.
+[10:09:37 - Sampler] Region 27:0.0-307.0 (387 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:37 - Sampler] Initializing sampler for consensus of region 28:0-239.
+[10:09:37 - Feature] Processed 28:0.0-238.0 (median depth 34.0)
+[10:09:37 - Sampler] Took 0.04s to make features.
+[10:09:37 - Sampler] Region 28:0.0-238.0 (268 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:37 - Sampler] Initializing sampler for consensus of region 29:0-224.
+[10:09:37 - Feature] Processed 29:0.0-223.0 (median depth 95.5)
+[10:09:37 - Sampler] Took 0.12s to make features.
+[10:09:37 - Sampler] Region 29:0.0-223.0 (264 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:37 - Sampler] Initializing sampler for consensus of region 30:0-201.
+[10:09:37 - Feature] Pileup counts do not span requested region, requested 30:0-201, received 121-188.
+[10:09:37 - Feature] Processed 30:121.0-188.0 (median depth 1.0)
+[10:09:38 - Sampler] Took 1.36s to make features.
+[10:09:38 - Sampler] Region 30:121.0-188.0 (68 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:38 - Sampler] Initializing sampler for consensus of region 31:0-197.
+[10:09:38 - Sampler] Took 0.05s to make features.
+[10:09:38 - Sampler] Initializing sampler for consensus of region 32:0-196.
+[10:09:38 - Sampler] Took 0.04s to make features.
+[10:09:38 - Sampler] Initializing sampler for consensus of region 33:0-183.
+[10:09:38 - Feature] Pileup counts do not span requested region, requested 33:0-183, received 25-178.
+[10:09:38 - Feature] Processed 33:25.0-178.0 (median depth 2.0)
+[10:09:38 - Sampler] Took 0.07s to make features.
+[10:09:38 - Sampler] Region 33:25.0-178.0 (155 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:38 - Sampler] Initializing sampler for consensus of region 34:0-178.
+[10:09:38 - Sampler] Took 0.03s to make features.
+[10:09:40 - Sampler] Initializing sampler for consensus of region 35:0-174.
+[10:09:40 - Sampler] Took 0.14s to make features.
+[10:09:40 - Sampler] Initializing sampler for consensus of region 36:0-165.
+[10:09:40 - Feature] Processed 36:0.0-164.0 (median depth 28.0)
+[10:09:40 - Sampler] Took 0.06s to make features.
+[10:09:40 - Sampler] Region 36:0.0-164.0 (171 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:40 - Feature] Processed 1:0.0-903372.0 (median depth 1892.0)
+[10:09:40 - Sampler] Initializing sampler for consensus of region 37:0-158.
+[10:09:40 - Sampler] Took 17.10s to make features.
+[10:09:40 - Feature] Pileup counts do not span requested region, requested 37:0-158, received 2-149.
+[10:09:40 - Feature] Processed 37:2.0-149.0 (median depth 5.0)
+[10:09:40 - Sampler] Took 0.05s to make features.
+[10:09:40 - Sampler] Region 37:2.0-149.0 (167 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:40 - Sampler] Initializing sampler for consensus of region 38:0-153.
+[10:09:40 - Feature] Processed 38:0.0-152.0 (median depth 15.0)
+[10:09:40 - Sampler] Took 0.04s to make features.
+[10:09:40 - Sampler] Region 38:0.0-152.0 (155 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:40 - Sampler] Initializing sampler for consensus of region 39:0-143.
+[10:09:40 - Sampler] Took 0.02s to make features.
+[10:09:40 - Sampler] Initializing sampler for consensus of region 40:0-139.
+[10:09:40 - Feature] Processed 40:0.0-138.0 (median depth 33.0)
+[10:09:40 - Sampler] Took 0.02s to make features.
+[10:09:40 - Sampler] Region 40:0.0-138.0 (157 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:40 - Sampler] Initializing sampler for consensus of region 41:0-130.
+[10:09:40 - Sampler] Took 0.02s to make features.
+[10:09:40 - Sampler] Initializing sampler for consensus of region 42:0-124.
+[10:09:41 - Feature] Processed 42:0.0-123.0 (median depth 60.0)
+[10:09:41 - Sampler] Took 0.04s to make features.
+[10:09:41 - Sampler] Region 42:0.0-123.0 (129 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 43:0-117.
+[10:09:41 - Sampler] Took 0.01s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 44:0-113.
+[10:09:41 - Sampler] Took 0.04s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 45:0-112.
+[10:09:41 - Feature] Processed 45:0.0-111.0 (median depth 80.0)
+[10:09:41 - Sampler] Took 0.02s to make features.
+[10:09:41 - Sampler] Region 45:0.0-111.0 (128 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 46:0-110.
+[10:09:41 - Sampler] Took 0.03s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 47:0-105.
+[10:09:41 - Feature] Processed 47:0.0-104.0 (median depth 72.0)
+[10:09:41 - Sampler] Took 0.04s to make features.
+[10:09:41 - Sampler] Region 47:0.0-104.0 (119 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 48:0-104.
+[10:09:41 - Feature] Processed 48:0.0-103.0 (median depth 23.0)
+[10:09:41 - Sampler] Took 0.03s to make features.
+[10:09:41 - Sampler] Region 48:0.0-103.0 (107 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 49:0-100.
+[10:09:41 - Feature] Processed 49:0.0-99.0 (median depth 55.0)
+[10:09:41 - Sampler] Took 0.04s to make features.
+[10:09:41 - Sampler] Region 49:0.0-99.0 (108 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 50:0-96.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 51:0-93.
+[10:09:41 - Feature] Processed 50:0.0-95.0 (median depth 30.0)
+[10:09:41 - Sampler] Took 0.02s to make features.
+[10:09:41 - Sampler] Region 50:0.0-95.0 (108 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 52:0-89.
+[10:09:41 - Sampler] Took 0.03s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 53:0-89.
+[10:09:41 - Feature] Processed 52:0.0-88.0 (median depth 4.0)
+[10:09:41 - Sampler] Took 0.06s to make features.
+[10:09:41 - Sampler] Region 52:0.0-88.0 (89 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 54:0-89.
+[10:09:41 - Feature] Processed 53:0.0-88.0 (median depth 19.0)
+[10:09:41 - Sampler] Took 0.04s to make features.
+[10:09:41 - Sampler] Region 53:0.0-88.0 (93 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 55:0-88.
+[10:09:41 - Feature] Processed 54:0.0-88.0 (median depth 24.0)
+[10:09:41 - Sampler] Took 0.05s to make features.
+[10:09:41 - Sampler] Region 54:0.0-88.0 (89 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 56:0-87.
+[10:09:41 - Feature] Pileup counts do not span requested region, requested 55:0-88, received 0-72.
+[10:09:41 - Sampler] Took 0.01s to make features.
+[10:09:41 - Feature] Processed 55:0.0-72.0 (median depth 1.0)
+[10:09:41 - Sampler] Initializing sampler for consensus of region 57:0-87.
+[10:09:41 - Sampler] Took 0.05s to make features.
+[10:09:41 - Sampler] Region 55:0.0-72.0 (73 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Took 0.01s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 58:0-87.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 59:0-85.
+[10:09:41 - Sampler] Took 0.01s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 60:0-85.
+[10:09:41 - Sampler] Took 0.02s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 61:0-85.
+[10:09:41 - Sampler] Took 0.02s to make features.
+[10:09:41 - Sampler] Took 0.02s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 62:0-85.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 63:0-84.
+[10:09:41 - Sampler] Took 0.00s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 64:0-84.
+[10:09:41 - Feature] Processed 62:0.0-84.0 (median depth 4.0)
+[10:09:41 - Sampler] Took 0.04s to make features.
+[10:09:41 - Sampler] Region 62:0.0-84.0 (86 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 65:0-82.
+[10:09:41 - Feature] Processed 64:0.0-83.0 (median depth 8.0)
+[10:09:41 - Sampler] Took 0.03s to make features.
+[10:09:41 - Sampler] Took 0.01s to make features.
+[10:09:41 - Sampler] Region 64:0.0-83.0 (85 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 66:0-81.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 67:0-80.
+[10:09:41 - Sampler] Took 0.03s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 68:0-79.
+[10:09:41 - Feature] Processed 67:0.0-79.0 (median depth 11.0)
+[10:09:41 - Sampler] Took 0.03s to make features.
+[10:09:41 - Sampler] Took 0.05s to make features.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 69:0-78.
+[10:09:41 - Sampler] Region 67:0.0-79.0 (83 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 70:0-76.
+[10:09:41 - Feature] Processed 69:0.0-77.0 (median depth 7.0)
+[10:09:41 - Sampler] Took 0.04s to make features.
+[10:09:41 - Sampler] Region 69:0.0-77.0 (78 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:41 - Sampler] Initializing sampler for consensus of region 71:0-76.
+[10:09:41 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 72:0-76.
+[10:09:42 - Feature] Pileup counts do not span requested region, requested 72:0-76, received 1-75.
+[10:09:42 - Feature] Processed 71:0.0-75.0 (median depth 28.0)
+[10:09:42 - Sampler] Took 0.05s to make features.
+[10:09:42 - Feature] Processed 72:1.0-75.0 (median depth 1.0)
+[10:09:42 - Sampler] Region 71:0.0-75.0 (86 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Took 0.04s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 73:0-76.
+[10:09:42 - Sampler] Region 72:1.0-75.0 (78 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 74:0-76.
+[10:09:42 - Feature] Processed 73:0.0-75.0 (median depth 4.0)
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Took 0.04s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 75:0-75.
+[10:09:42 - Sampler] Region 73:0.0-75.0 (80 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 76:0-75.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 77:0-75.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 78:0-75.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 79:0-73.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 80:0-71.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 81:0-70.
+[10:09:42 - Feature] Processed 79:0.0-72.0 (median depth 9.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 79:0.0-72.0 (75 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 82:0-70.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 83:0-70.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 84:0-69.
+[10:09:42 - Feature] Processed 82:0.0-69.0 (median depth 6.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 82:0.0-69.0 (70 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 85:0-69.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 86:0-69.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 87:0-68.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 88:0-67.
+[10:09:42 - Feature] Processed 87:0.0-67.0 (median depth 1.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 89:0-67.
+[10:09:42 - Sampler] Region 87:0.0-67.0 (68 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 90:0-66.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 91:0-65.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 92:0-64.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 93:0-63.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Feature] Processed 92:0.0-63.0 (median depth 3.0)
+[10:09:42 - Sampler] Initializing sampler for consensus of region 94:0-63.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 92:0.0-63.0 (64 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 95:0-63.
+[10:09:42 - Feature] Processed 94:0.0-62.0 (median depth 2.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 94:0.0-62.0 (63 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 96:0-63.
+[10:09:42 - Feature] Processed 95:0.0-62.0 (median depth 19.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 95:0.0-62.0 (63 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 97:0-58.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 98:0-57.
+[10:09:42 - Feature] Processed 97:0.0-57.0 (median depth 3.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 97:0.0-57.0 (58 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Feature] Processed 98:0.0-56.0 (median depth 3.0)
+[10:09:42 - Sampler] Initializing sampler for consensus of region 99:0-55.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 98:0.0-56.0 (57 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 100:0-55.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Feature] Processed 99:0.0-54.0 (median depth 1.0)
+[10:09:42 - Sampler] Initializing sampler for consensus of region 101:0-54.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 99:0.0-54.0 (55 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 102:0-54.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 103:0-53.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 104:0-52.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 105:0-52.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 106:0-51.
+[10:09:42 - Feature] Processed 104:0.0-51.0 (median depth 1.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 104:0.0-51.0 (52 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Feature] Pileup counts do not span requested region, requested 106:0-51, received 4-48.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 107:0-50.
+[10:09:42 - Feature] Processed 106:4.0-48.0 (median depth 1.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 106:4.0-48.0 (45 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 108:0-50.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 109:0-50.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 110:0-49.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 111:0-49.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 112:0-49.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 113:0-48.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 114:0-48.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 115:0-47.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 116:0-47.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 117:0-47.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 118:0-47.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 119:0-47.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 120:0-46.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 121:0-46.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 122:0-46.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 123:0-46.
+[10:09:42 - Feature] Processed 122:0.0-45.0 (median depth 5.0)
+[10:09:42 - Feature] Processed 123:0.0-45.0 (median depth 1.0)
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Region 122:0.0-45.0 (46 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Region 123:0.0-45.0 (46 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 124:0-46.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 125:0-45.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 126:0-45.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 127:0-45.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 128:0-45.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 129:0-44.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 130:0-44.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 131:0-43.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 132:0-43.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 133:0-42.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 134:0-42.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 135:0-41.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 136:0-41.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 137:0-41.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 138:0-41.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 139:0-39.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 140:0-38.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 141:0-37.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 142:0-36.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 143:0-36.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 144:0-36.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 145:0-36.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 146:0-36.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 147:0-34.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 148:0-34.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 149:0-34.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 150:0-34.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 151:0-33.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 152:0-32.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 153:0-32.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 154:0-29.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 155:0-28.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 156:0-28.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 157:0-28.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 158:0-28.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 159:0-28.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 160:0-27.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 161:0-27.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 162:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 163:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 164:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 165:0-26.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 166:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 167:0-26.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 168:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 169:0-26.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 170:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 171:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 172:0-26.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 173:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 174:0-26.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 175:0-25.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 176:0-25.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 177:0-25.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 178:0-25.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 179:0-25.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 180:0-25.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 181:0-25.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 182:0-25.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 183:0-25.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 184:0-25.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 185:0-24.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 186:0-24.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 187:0-24.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 188:0-24.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 189:0-24.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 190:0-24.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 191:0-24.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 192:0-24.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 193:0-23.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 194:0-23.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 195:0-23.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 196:0-23.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 197:0-23.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 198:0-22.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 199:0-22.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 200:0-22.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 201:0-22.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 202:0-21.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 203:0-21.
+[10:09:42 - Sampler] Took 0.03s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 204:0-21.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 205:0-21.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 206:0-21.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 207:0-20.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 208:0-20.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 209:0-20.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 210:0-19.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 211:0-19.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 212:0-19.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 213:0-19.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 214:0-19.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 215:0-19.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 216:0-19.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 217:0-18.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 218:0-18.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 219:0-18.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 220:0-18.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 221:0-17.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 222:0-17.
+[10:09:42 - Sampler] Took 0.00s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 223:0-17.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 224:0-16.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 225:0-16.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 226:0-16.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 227:0-16.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 228:0-15.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 229:0-15.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 230:0-14.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 231:0-14.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 232:0-14.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 233:0-14.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Took 0.02s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 234:0-13.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 235:0-13.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Took 0.01s to make features.
+[10:09:42 - Sampler] Initializing sampler for consensus of region 236:0-12.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 237:0-11.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 238:0-11.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 239:0-10.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 240:0-10.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 241:0-10.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 242:0-9.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 243:0-9.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 244:0-9.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 245:0-8.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 246:0-8.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 247:0-8.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 248:0-8.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 249:0-8.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 250:0-7.
+[10:09:43 - Sampler] Took 0.03s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 251:0-7.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 252:0-7.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 253:0-6.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 254:0-6.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 255:0-6.
+[10:09:43 - Sampler] Took 0.03s to make features.
+[10:09:43 - Sampler] Took 0.05s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 256:0-6.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 257:0-5.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 258:0-5.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 259:0-4.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 260:0-4.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 261:0-3.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 262:0-3.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 263:0-3.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 264:0-3.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Took 0.00s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 265:0-2.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 266:0-2.
+[10:09:43 - Sampler] Took 0.04s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 267:0-2.
+[10:09:43 - Sampler] Took 0.03s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 268:0-2.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 269:0-2.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 270:0-2.
+[10:09:43 - Sampler] Took 0.03s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 271:0-2.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 272:0-2.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 273:0-2.
+[10:09:43 - Sampler] Took 0.00s to make features.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 274:0-2.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 275:0-2.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 276:0-2.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 277:0-2.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 278:0-2.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 279:0-2.
+[10:09:43 - Sampler] Took 0.00s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 280:0-2.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 281:0-2.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 282:0-2.
+[10:09:43 - Sampler] Took 0.01s to make features.
+[10:09:43 - Sampler] Took 0.02s to make features.
+[10:09:43 - Sampler] Initializing sampler for consensus of region 283:0-2.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 284:0-2.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 285:0-2.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 286:0-2.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 287:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 288:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 289:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 290:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 291:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 292:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 293:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 294:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Took 0.00s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 295:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 296:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Took 0.00s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 297:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 298:0-1.
+[10:09:44 - Sampler] Took 0.03s to make features.
+[10:09:44 - Sampler] Took 0.03s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 299:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 300:0-1.
+[10:09:44 - Sampler] Took 0.03s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 301:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 302:0-1.
+[10:09:44 - Sampler] Took 0.00s to make features.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 303:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 304:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 305:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 306:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 307:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Took 0.00s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 308:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 309:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 310:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 311:0-1.
+[10:09:44 - Sampler] Took 0.03s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 312:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 313:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 314:0-1.
+[10:09:44 - Sampler] Took 0.03s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 315:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 316:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 317:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 318:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 319:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 320:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 321:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 322:0-1.
+[10:09:44 - Sampler] Took 0.03s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 323:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 324:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 325:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 326:0-1.
+[10:09:44 - Sampler] Took 0.00s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 327:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 328:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 329:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 330:0-1.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 331:0-1.
+[10:09:44 - Sampler] Took 0.01s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 332:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 333:0-1.
+[10:09:44 - Sampler] Took 0.02s to make features.
+[10:09:44 - Sampler] Initializing sampler for consensus of region 334:0-1.
+[10:09:44 - Sampler] Took 0.00s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 335:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 336:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 337:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 338:0-1.
+[10:09:45 - Sampler] Took 0.04s to make features.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 339:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 340:0-1.
+[10:09:45 - Sampler] Took 0.00s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 341:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 342:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 343:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 344:0-1.
+[10:09:45 - Sampler] Took 0.00s to make features.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 345:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 346:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 347:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 348:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 349:0-1.
+[10:09:45 - Sampler] Took 0.00s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 350:0-1.
+[10:09:45 - Sampler] Took 0.00s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 351:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 352:0-1.
+[10:09:45 - Sampler] Took 0.03s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 353:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 354:0-1.
+[10:09:45 - Sampler] Took 0.03s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 355:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 356:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 357:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 358:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 359:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 360:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 361:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 362:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 363:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 364:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Took 0.04s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 365:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 366:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 367:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 368:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 369:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 370:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 371:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 372:0-1.
+[10:09:45 - Sampler] Took 0.00s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 373:0-1.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 374:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 375:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 376:0-1.
+[10:09:45 - Sampler] Took 0.00s to make features.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 377:0-1.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 378:0-1.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 379:0-28020.
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 380:0-364.
+[10:09:45 - Sampler] Took 0.01s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 381:0-334.
+[10:09:45 - Feature] Pileup counts do not span requested region, requested 381:0-334, received 0-328.
+[10:09:45 - Feature] Processed 381:0.0-328.0 (median depth 107.0)
+[10:09:45 - Sampler] Took 0.05s to make features.
+[10:09:45 - Sampler] Region 381:0.0-328.0 (464 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 382:0-234.
+[10:09:45 - Feature] Pileup counts do not span requested region, requested 382:0-234, received 1-128.
+[10:09:45 - Feature] Processed 382:1.0-128.0 (median depth 1.0)
+[10:09:45 - Sampler] Took 0.03s to make features.
+[10:09:45 - Sampler] Region 382:1.0-128.0 (128 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 383:0-230.
+[10:09:45 - Sampler] Took 0.03s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 384:0-212.
+[10:09:45 - Sampler] Took 0.00s to make features.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 385:0-146.
+[10:09:45 - Feature] Pileup counts do not span requested region, requested 385:0-146, received 0-143.
+[10:09:45 - Feature] Processed 385:0.0-143.0 (median depth 2.0)
+[10:09:45 - Sampler] Took 0.02s to make features.
+[10:09:45 - Sampler] Region 385:0.0-143.0 (153 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:45 - Sampler] Initializing sampler for consensus of region 386:0-143.
+[10:09:45 - Feature] Processed 386:0.0-142.0 (median depth 120.0)
+[10:09:46 - Sampler] Took 0.03s to make features.
+[10:09:46 - Sampler] Region 386:0.0-142.0 (179 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 387:0-141.
+[10:09:46 - Feature] Processed 387:0.0-140.0 (median depth 3.0)
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Region 387:0.0-140.0 (141 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 388:0-138.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 389:0-128.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 390:0-127.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 391:0-127.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 392:0-117.
+[10:09:46 - Feature] Processed 392:0.0-116.0 (median depth 10.0)
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Region 392:0.0-116.0 (119 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 393:0-94.
+[10:09:46 - Feature] Processed 393:0.0-93.0 (median depth 15.0)
+[10:09:46 - Sampler] Took 0.03s to make features.
+[10:09:46 - Sampler] Region 393:0.0-93.0 (97 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 394:0-91.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 395:0-88.
+[10:09:46 - Sampler] Took 0.00s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 396:0-87.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 397:0-86.
+[10:09:46 - Feature] Processed 397:0.0-85.0 (median depth 1.0)
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Region 397:0.0-85.0 (87 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 398:0-86.
+[10:09:46 - Sampler] Took 0.00s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 399:0-73.
+[10:09:46 - Feature] Processed 399:0.0-72.0 (median depth 1.0)
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Region 399:0.0-72.0 (73 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 400:0-67.
+[10:09:46 - Feature] Processed 400:0.0-66.0 (median depth 1.0)
+[10:09:46 - Sampler] Took 0.03s to make features.
+[10:09:46 - Sampler] Region 400:0.0-66.0 (67 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 401:0-62.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 402:0-59.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 403:0-57.
+[10:09:46 - Feature] Processed 403:0.0-56.0 (median depth 3.0)
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Region 403:0.0-56.0 (57 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 404:0-54.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 405:0-52.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 406:0-50.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 407:0-50.
+[10:09:46 - Feature] Processed 407:0.0-49.0 (median depth 1.0)
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Region 407:0.0-49.0 (50 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 408:0-49.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 409:0-38.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 410:0-37.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 411:0-35.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 412:0-34.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 413:0-33.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 414:0-32.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 415:0-29.
+[10:09:46 - Sampler] Took 0.03s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 416:0-29.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 417:0-29.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 418:0-26.
+[10:09:46 - Sampler] Took 0.03s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 419:0-26.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 420:0-25.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 421:0-25.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 422:0-23.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 423:0-22.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 424:0-21.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 425:0-21.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 426:0-21.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 427:0-21.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 428:0-20.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 429:0-15.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 430:0-15.
+[10:09:46 - Sampler] Took 0.02s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 431:0-14.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 432:0-13.
+[10:09:46 - Sampler] Took 0.03s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 433:0-9.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 434:0-7.
+[10:09:46 - Sampler] Took 0.01s to make features.
+[10:09:46 - Sampler] Initializing sampler for consensus of region 435:0-5.
+[10:09:47 - Sampler] Took 0.02s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 436:0-2.
+[10:09:47 - Sampler] Took 0.01s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 437:0-1.
+[10:09:47 - Sampler] Took 0.01s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 438:0-1.
+[10:09:47 - Sampler] Took 0.01s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 439:0-1.
+[10:09:47 - Sampler] Took 0.01s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 440:0-1.
+[10:09:47 - Sampler] Took 0.01s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 441:0-1.
+[10:09:47 - Sampler] Took 0.01s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 442:0-1.
+[10:09:47 - Sampler] Took 0.01s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 443:0-1.
+[10:09:47 - Sampler] Took 0.04s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 444:0-1.
+[10:09:47 - Sampler] Took 0.01s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 445:0-1.
+[10:09:47 - Sampler] Took 0.00s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 446:0-28116.
+[10:09:47 - Feature] Processed 379:0.0-28019.0 (median depth 1656.0)
+[10:09:47 - Sampler] Took 1.59s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 447:0-16988.
+[10:09:47 - Feature] Processed 447:0.0-16987.0 (median depth 856.0)
+[10:09:47 - Sampler] Took 0.57s to make features.
+[10:09:47 - Sampler] Initializing sampler for consensus of region 448:0-28.
+[10:09:48 - Feature] Processed 446:0.0-28115.0 (median depth 704.0)
+[10:09:48 - Sampler] Took 0.85s to make features.
+[10:09:48 - Sampler] Initializing sampler for consensus of region 449:0-27.
+[10:09:48 - Sampler] Took 0.03s to make features.
+[10:09:48 - Sampler] Initializing sampler for consensus of region 450:0-27.
+[10:09:48 - Sampler] Took 0.02s to make features.
+[10:09:48 - Sampler] Initializing sampler for consensus of region 451:0-1.
+[10:09:48 - Sampler] Took 0.02s to make features.
+[10:09:48 - Sampler] Initializing sampler for consensus of region 452:0-1.
+[10:09:48 - Sampler] Took 0.02s to make features.
+[10:09:48 - Sampler] Initializing sampler for consensus of region 453:0-1.
+[10:09:48 - Sampler] Took 0.02s to make features.
+[10:09:48 - Sampler] Initializing sampler for consensus of region 454:0-27768.
+[10:09:50 - Sampler] Took 2.78s to make features.
+[10:09:50 - Sampler] Initializing sampler for consensus of region 455:0-26513.
+[10:09:51 - Feature] Processed 455:0.0-26512.0 (median depth 932.0)
+[10:09:51 - Sampler] Took 0.79s to make features.
+[10:09:51 - Sampler] Initializing sampler for consensus of region 456:0-2982.
+[10:09:51 - Feature] Processed 456:0.0-2981.0 (median depth 1109.0)
+[10:09:51 - Sampler] Took 0.24s to make features.
+[10:09:51 - Sampler] Region 456:0.0-2981.0 (9310 positions) is smaller than inference chunk length 10000, quarantining.
+[10:09:53 - Feature] Processed 454:0.0-27767.0 (median depth 3253.0)
+[10:09:53 - Sampler] Took 5.78s to make features.
+Could not load symbol cublasGetSmCountTarget from libcublas.so.11. Error: /util/opt/anaconda/deployed-conda-envs/packages/medaka-gpu/envs/medaka-gpu-1.7.2-py38/lib/python3.8/site-packages/tensorflow/python/../../../../libcublas.so.11: undefined symbol: cublasGetSmCountTarget
+[10:09:55 - PWorker] Batches in cache: 5.
+[10:09:55 - PWorker] 21.3% Done (0.2/1.1 Mbases) in 31.7s
+[10:09:59 - PWorker] Processed 5 batches
+[10:09:59 - PWorker] All done, 66 remainder regions.
+[10:09:59 - Predict] Processing 66 short region(s).
+[10:09:59 - ModelLoad] GPU available: building model with cudnn optimization
+[10:10:00 - MdlStrTF] Model <keras.engine.sequential.Sequential object at 0x14d983383070>
+[10:10:00 - MdlStrTF] loading weights from /tmp/tmp19k7thr6/model/variables/variables
+[10:10:00 - Sampler] Initializing sampler for consensus of region 10:0-1001.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 11:0-655.
+[10:10:00 - PWorker] Running inference for 0.0M draft bases.
+[10:10:00 - Feature] Processed 11:0.0-654.0 (median depth 206.0)
+[10:10:00 - Sampler] Took 0.11s to make features.
+[10:10:00 - Feature] Processed 10:0.0-1000.0 (median depth 404.0)
+[10:10:00 - Sampler] Initializing sampler for consensus of region 12:0-317.
+[10:10:00 - Sampler] Took 0.14s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 13:0-53.
+[10:10:00 - Feature] Processed 12:0.0-316.0 (median depth 85.0)
+[10:10:00 - Sampler] Took 0.06s to make features.
+[10:10:00 - Feature] Processed 13:0.0-52.0 (median depth 2.0)
+[10:10:00 - Sampler] Took 0.06s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 19:122-559.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 19:873-1346.
+[10:10:00 - Feature] Processed 19:122.0-558.0 (median depth 2.0)
+[10:10:00 - Sampler] Took 0.03s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 19:1427-1751.
+[10:10:00 - Feature] Processed 19:873.0-1345.0 (median depth 1.0)
+[10:10:00 - Feature] Processed 19:1427.0-1750.0 (median depth 6.0)
+[10:10:00 - Sampler] Took 0.06s to make features.
+[10:10:00 - Sampler] Took 0.06s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 20:0-1722.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 21:0-733.
+[10:10:00 - Feature] Processed 20:0.0-1721.0 (median depth 297.0)
+[10:10:00 - Feature] Processed 21:0.0-732.0 (median depth 192.0)
+[10:10:00 - Sampler] Took 0.09s to make features.
+[10:10:00 - Sampler] Took 0.09s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 22:0-715.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 23:0-492.
+[10:10:00 - Feature] Processed 22:0.0-714.0 (median depth 127.0)
+[10:10:00 - Feature] Processed 23:0.0-491.0 (median depth 94.0)
+[10:10:00 - Sampler] Took 0.09s to make features.
+[10:10:00 - Sampler] Took 0.08s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 24:0-444.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 25:112-264.
+[10:10:00 - Feature] Processed 25:112.0-263.0 (median depth 1.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 26:0-310.
+[10:10:00 - Feature] Processed 24:0.0-443.0 (median depth 150.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 27:0-308.
+[10:10:00 - Feature] Processed 27:0.0-307.0 (median depth 82.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 28:0-239.
+[10:10:00 - Feature] Processed 28:0.0-238.0 (median depth 34.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 29:0-224.
+[10:10:00 - Feature] Processed 26:0.0-309.0 (median depth 262.0)
+[10:10:00 - Feature] Processed 29:0.0-223.0 (median depth 95.5)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 30:121-189.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 33:25-179.
+[10:10:00 - Feature] Processed 30:121.0-188.0 (median depth 1.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 36:0-165.
+[10:10:00 - Feature] Processed 33:25.0-178.0 (median depth 2.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Feature] Processed 36:0.0-164.0 (median depth 28.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 37:2-150.
+[10:10:00 - Feature] Processed 37:2.0-149.0 (median depth 5.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 38:0-153.
+[10:10:00 - Feature] Processed 38:0.0-152.0 (median depth 15.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 40:0-139.
+[10:10:00 - Feature] Processed 40:0.0-138.0 (median depth 33.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 42:0-124.
+[10:10:00 - Feature] Processed 42:0.0-123.0 (median depth 60.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 45:0-112.
+[10:10:00 - Feature] Processed 45:0.0-111.0 (median depth 80.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 47:0-105.
+[10:10:00 - Feature] Processed 47:0.0-104.0 (median depth 72.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 48:0-104.
+[10:10:00 - Feature] Processed 48:0.0-103.0 (median depth 23.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 49:0-100.
+[10:10:00 - Feature] Processed 49:0.0-99.0 (median depth 55.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 50:0-96.
+[10:10:00 - Feature] Processed 50:0.0-95.0 (median depth 30.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 52:0-89.
+[10:10:00 - Feature] Processed 52:0.0-88.0 (median depth 4.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 53:0-89.
+[10:10:00 - Feature] Processed 53:0.0-88.0 (median depth 19.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:00 - Sampler] Initializing sampler for consensus of region 54:0-89.
+[10:10:00 - Feature] Processed 54:0.0-88.0 (median depth 24.0)
+[10:10:00 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 55:0-73.
+[10:10:01 - Feature] Processed 55:0.0-72.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 62:0-85.
+[10:10:01 - Feature] Processed 62:0.0-84.0 (median depth 4.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 64:0-84.
+[10:10:01 - Feature] Processed 64:0.0-83.0 (median depth 8.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 67:0-80.
+[10:10:01 - Feature] Processed 67:0.0-79.0 (median depth 11.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 69:0-78.
+[10:10:01 - Feature] Processed 69:0.0-77.0 (median depth 7.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 71:0-76.
+[10:10:01 - Feature] Processed 71:0.0-75.0 (median depth 28.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 72:1-76.
+[10:10:01 - Feature] Processed 72:1.0-75.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 73:0-76.
+[10:10:01 - Feature] Processed 73:0.0-75.0 (median depth 4.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 79:0-73.
+[10:10:01 - Feature] Processed 79:0.0-72.0 (median depth 9.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 82:0-70.
+[10:10:01 - Feature] Processed 82:0.0-69.0 (median depth 6.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 87:0-68.
+[10:10:01 - Feature] Processed 87:0.0-67.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 92:0-64.
+[10:10:01 - Feature] Processed 92:0.0-63.0 (median depth 3.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 94:0-63.
+[10:10:01 - Feature] Processed 94:0.0-62.0 (median depth 2.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 95:0-63.
+[10:10:01 - Feature] Processed 95:0.0-62.0 (median depth 19.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 97:0-58.
+[10:10:01 - Feature] Processed 97:0.0-57.0 (median depth 3.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 98:0-57.
+[10:10:01 - Feature] Processed 98:0.0-56.0 (median depth 3.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 99:0-55.
+[10:10:01 - Feature] Processed 99:0.0-54.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 104:0-52.
+[10:10:01 - Feature] Processed 104:0.0-51.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 106:4-49.
+[10:10:01 - Feature] Processed 106:4.0-48.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 122:0-46.
+[10:10:01 - Feature] Processed 122:0.0-45.0 (median depth 5.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 123:0-46.
+[10:10:01 - Feature] Processed 123:0.0-45.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 381:0-329.
+[10:10:01 - Feature] Processed 381:0.0-328.0 (median depth 107.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 382:1-129.
+[10:10:01 - Feature] Processed 382:1.0-128.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 385:0-144.
+[10:10:01 - Feature] Processed 385:0.0-143.0 (median depth 2.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 386:0-143.
+[10:10:01 - Feature] Processed 386:0.0-142.0 (median depth 120.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 387:0-141.
+[10:10:01 - Feature] Processed 387:0.0-140.0 (median depth 3.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 392:0-117.
+[10:10:01 - Feature] Processed 392:0.0-116.0 (median depth 10.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 393:0-94.
+[10:10:01 - Feature] Processed 393:0.0-93.0 (median depth 15.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 397:0-86.
+[10:10:01 - Feature] Processed 397:0.0-85.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 399:0-73.
+[10:10:01 - Feature] Processed 399:0.0-72.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 400:0-67.
+[10:10:01 - Feature] Processed 400:0.0-66.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 403:0-57.
+[10:10:01 - Feature] Processed 403:0.0-56.0 (median depth 3.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 407:0-50.
+[10:10:01 - Feature] Processed 407:0.0-49.0 (median depth 1.0)
+[10:10:01 - Sampler] Took 0.00s to make features.
+[10:10:01 - Sampler] Initializing sampler for consensus of region 456:0-2982.
+[10:10:01 - Feature] Processed 456:0.0-2981.0 (median depth 1109.0)
+[10:10:01 - Sampler] Took 0.09s to make features.
+[10:10:01 - PWorker] Processed 66 batches
+[10:10:01 - PWorker] All done, 0 remainder regions.
+[10:10:01 - Predict] Finished processing all regions.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:03 - DataIndx] Loaded 1/1 (100.00%) sample files.
+/util/opt/anaconda/deployed-conda-envs/packages/medaka-gpu/envs/medaka-gpu-1.7.2-py38/lib/python3.8/site-packages/medaka/labels.py:387: RuntimeWarning: divide by zero encountered in log10
+  q = -10 * np.log10(err)
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+/util/opt/anaconda/deployed-conda-envs/packages/medaka-gpu/envs/medaka-gpu-1.7.2-py38/lib/python3.8/site-packages/medaka/labels.py:387: RuntimeWarning: divide by zero encountered in log10
+  q = -10 * np.log10(err)
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+/util/opt/anaconda/deployed-conda-envs/packages/medaka-gpu/envs/medaka-gpu-1.7.2-py38/lib/python3.8/site-packages/medaka/labels.py:387: RuntimeWarning: divide by zero encountered in log10
+  q = -10 * np.log10(err)
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - TrimOlap] 19:122.0-558.0 and 19:873.0-1345.0 cannot be concatenated as there is no overlap and they do not abut.
+[10:10:04 - TrimOlap] 19:873.0-1345.0 and 19:1427.0-1750.0 cannot be concatenated as there is no overlap and they do not abut.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[10:10:04 - DataIndx] Loaded 1/1 (100.00%) sample files.
+/util/opt/anaconda/deployed-conda-envs/packages/medaka-gpu/envs/medaka-gpu-1.7.2-py38/lib/python3.8/site-packages/medaka/labels.py:387: RuntimeWarning: divide by zero encountered in log10
+  q = -10 * np.log10(err)
+[10:10:05 - Stitcher] Copying contig '338' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '100' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '179' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '293' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '248' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '208' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '373' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '150' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '243' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '3' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '44' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '350' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '380' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '452' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '192' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '46' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '226' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '119' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '175' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '234' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '369' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '240' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '417' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '198' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '411' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '266' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '327' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '163' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '32' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '68' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '105' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '359' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '427' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '154' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '172' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '436' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '111' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '218' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '83' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '207' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '178' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '347' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '301' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '214' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '144' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '211' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '66' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '61' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '239' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '148' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '413' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '162' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '39' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '195' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '57' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '114' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '362' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '75' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '329' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '302' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '200' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '444' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '258' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '267' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '364' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '206' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '183' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '414' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '355' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '360' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '65' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '336' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '143' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '430' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '256' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '168' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '242' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '450' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '220' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '273' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '378' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '215' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '169' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '300' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '189' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '41' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '398' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '439' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '326' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '224' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '314' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '204' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '247' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '448' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '76' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '133' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '275' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '145' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '185' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '288' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '164' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '238' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '221' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '110' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '315' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '408' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '151' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '5' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '352' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '96' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '210' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '401' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '142' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '158' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '156' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '203' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '365' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '176' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '418' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '438' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '434' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '406' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '244' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '259' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '209' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '303' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '416' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '310' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '170' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '15' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '270' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '136' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '442' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '257' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '102' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '182' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '78' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '124' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '121' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '346' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '453' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '141' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '146' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '287' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '372' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '70' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '292' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '186' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '370' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '194' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '328' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '201' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '116' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '344' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '260' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '138' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '153' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '159' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '250' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '249' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '320' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '157' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '422' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '4' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '405' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '231' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '91' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '255' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '428' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '268' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '396' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '325' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '2' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '282' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '160' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '285' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '311' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '7' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '227' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '308' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '290' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '402' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '271' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '441' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '291' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '120' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '269' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '199' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '188' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '374' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '351' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '345' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '264' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '161' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '363' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '134' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '129' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '375' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '394' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '433' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '348' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '254' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '140' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '84' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '272' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '322' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '330' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '423' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '89' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '181' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '313' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '443' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '232' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '265' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '334' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '331' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '85' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '135' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '419' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '286' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '412' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '236' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '174' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '147' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '117' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '180' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '90' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '125' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '139' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '349' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '389' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '279' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '339' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '17' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '241' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '173' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '126' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '304' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '128' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '149' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '86' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '63' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '31' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '81' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '319' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '137' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '101' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '333' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '34' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '429' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '309' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '343' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '193' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '6' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '113' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '58' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '294' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '305' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '366' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '280' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '278' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '93' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '299' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '237' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '318' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '376' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '358' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '316' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '312' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '43' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '388' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '361' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '205' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '368' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '440' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '384' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '132' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '295' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '353' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '222' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '196' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '324' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '233' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '217' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '88' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '155' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '445' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '108' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '197' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '16' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '340' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '216' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '246' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '283' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '335' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '367' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '261' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '253' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '223' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '390' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '317' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '109' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '341' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '409' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '425' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '289' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '298' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '107' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '449' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '14' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '230' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '404' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '357' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '112' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '277' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '229' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '56' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '191' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '74' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '342' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '321' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '276' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '228' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '337' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '184' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '225' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '219' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '383' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '415' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '435' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '127' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '60' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '356' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '35' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '212' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '166' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '296' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '251' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '51' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '426' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '391' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '432' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '410' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '77' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '420' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '307' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '395' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '245' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '103' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '354' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '377' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '59' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '165' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '252' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '431' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '281' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '235' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '152' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '371' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '130' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '187' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '171' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '332' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '263' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '131' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '115' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '177' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '451' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '421' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '80' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '297' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '118' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '167' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '202' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '213' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '262' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '284' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '437' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '424' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '274' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '190' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '323' verbatim from input.
+[10:10:05 - Stitcher] Copying contig '306' verbatim from input.

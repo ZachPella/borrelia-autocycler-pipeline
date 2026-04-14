@@ -1,0 +1,709 @@
+
+Starting autocycler compress (2026-04-13 15:32:14)
+    This command finds all assemblies in the given input directory and
+compresses them into a compacted De Bruijn graph. This graph can then be used
+to recover the assemblies (with autocycler decompress) or generate a consensus
+assembly (with autocycler resolve).
+
+Settings:
+  --assemblies_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/assemblies
+  --autocycler_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out
+  --kmer 51
+  --threads 8
+
+
+Loading input assemblies (2026-04-13 15:32:14)
+    Input assemblies are now loaded and each contig is given a unique ID.
+
+   1: canu_01.fasta tig00000001 (1011121 bp)
+   2: canu_01.fasta tig00000002 (104791 bp)
+   3: canu_01.fasta tig00000003 (26505 bp)
+   4: canu_01.fasta tig00000004 (54725 bp)
+   5: canu_01.fasta tig00000005 (27768 bp)
+   6: canu_01.fasta tig00000006 (59580 bp)
+   7: canu_01.fasta tig00000007 (9430 bp)
+   8: canu_01.fasta tig00000008 (66254 bp)
+   9: canu_01.fasta tig00000010 (33973 bp)
+  10: canu_01.fasta tig00000013 (54267 bp)
+  11: canu_01.fasta tig00000014 (71075 bp)
+  12: canu_02.fasta tig00000001 (957374 bp)
+  13: canu_02.fasta tig00000003 (77707 bp)
+  14: canu_02.fasta tig00000004 (26509 bp)
+  15: canu_02.fasta tig00000005 (27768 bp)
+  16: canu_02.fasta tig00000009 (3591 bp)
+  17: canu_02.fasta tig00000011 (33417 bp)
+  18: canu_02.fasta tig00000012 (55933 bp)
+  19: canu_02.fasta tig00000013 (50377 bp)
+  20: canu_02.fasta tig00000014 (68463 bp)
+  21: canu_03.fasta tig00000001 (986691 bp)
+  22: canu_03.fasta tig00000003 (27768 bp)
+  23: canu_03.fasta tig00000005 (26514 bp)
+  24: canu_03.fasta tig00000007 (80692 bp)
+  25: canu_03.fasta tig00000008 (34069 bp)
+  26: canu_03.fasta tig00000009 (103663 bp)
+  27: canu_03.fasta tig00000011 (48307 bp)
+  28: canu_03.fasta tig00000018 (61695 bp)
+  29: canu_04.fasta tig00000001 (923015 bp)
+  30: canu_04.fasta tig00000002 (29581 bp)
+  31: canu_04.fasta tig00000003 (27767 bp)
+  32: canu_04.fasta tig00000005 (110166 bp)
+  33: canu_04.fasta tig00000006 (26512 bp)
+  34: canu_04.fasta tig00000009 (29305 bp)
+  35: canu_04.fasta tig00000010 (65795 bp)
+  36: canu_04.fasta tig00000011 (76105 bp)
+  37: canu_04.fasta tig00000012 (34808 bp)
+  38: canu_04.fasta tig00000015 (43511 bp)
+  39: canu_04.fasta tig00000016 (34948 bp)
+  40: flye_01.fasta contig_16 (4201 bp)
+  41: flye_01.fasta contig_17 (30208 bp)
+  42: flye_01.fasta contig_19 (29095 bp)
+  43: flye_01.fasta contig_21 (29225 bp)
+  44: flye_01.fasta contig_24 (7400 bp)
+  45: flye_01.fasta contig_28 (21119 bp)
+  46: flye_01.fasta contig_29 (30365 bp)
+  47: flye_01.fasta contig_35 (6843 bp)
+  48: flye_01.fasta contig_4 (8963 bp)
+  49: flye_01.fasta contig_41 (8659 bp)
+  50: flye_01.fasta contig_44 (27146 bp)
+  51: flye_01.fasta contig_45 (57436 bp)
+  52: flye_01.fasta contig_47 (23504 bp)
+  53: flye_01.fasta contig_5 (4108 bp)
+  54: flye_01.fasta contig_52 (45869 bp)
+  55: flye_01.fasta contig_54 (14250 bp)
+  56: flye_01.fasta contig_57 (9331 bp)
+  57: flye_01.fasta contig_58 (63969 bp)
+  58: flye_01.fasta contig_59 (990804 bp)
+  59: flye_01.fasta contig_62 (79503 bp)
+  60: flye_01.fasta contig_65 (1447 bp)
+  61: flye_01.fasta contig_66 (1977 bp)
+  62: flye_01.fasta contig_7 (29945 bp)
+  63: flye_01.fasta contig_71 (58976 bp)
+  64: flye_01.fasta contig_74 (33993 bp)
+  65: flye_01.fasta contig_75 (26545 bp)
+  66: flye_01.fasta contig_79 (27768 bp)
+  67: flye_02.fasta contig_1 (6494 bp)
+  68: flye_02.fasta contig_29 (928 bp)
+  69: flye_02.fasta contig_37 (26187 bp)
+  70: flye_02.fasta contig_4 (30984 bp)
+  71: flye_02.fasta contig_40 (59707 bp)
+  72: flye_02.fasta contig_42 (1933 bp)
+  73: flye_02.fasta contig_43 (11292 bp)
+  74: flye_02.fasta contig_44 (57976 bp)
+  75: flye_02.fasta contig_45 (11325 bp)
+  76: flye_02.fasta contig_47 (2908 bp)
+  77: flye_02.fasta contig_50 (964357 bp)
+  78: flye_02.fasta contig_52 (2981 bp)
+  79: flye_02.fasta contig_53 (11693 bp)
+  80: flye_02.fasta contig_54 (62897 bp)
+  81: flye_02.fasta contig_59 (6638 bp)
+  82: flye_02.fasta contig_62 (26521 bp)
+  83: flye_02.fasta contig_63 (27768 bp)
+  84: flye_02.fasta contig_64 (30646 bp)
+  85: flye_02.fasta contig_68 (34988 bp)
+  86: flye_02.fasta contig_7 (29588 bp)
+  87: flye_02.fasta contig_8 (5763 bp)
+  88: flye_03.fasta contig_1 (11934 bp)
+  89: flye_03.fasta contig_13 (30975 bp)
+  90: flye_03.fasta contig_14 (1107 bp)
+  91: flye_03.fasta contig_15 (29815 bp)
+  92: flye_03.fasta contig_16 (8434 bp)
+  93: flye_03.fasta contig_17 (16124 bp)
+  94: flye_03.fasta contig_2 (71474 bp)
+  95: flye_03.fasta contig_25 (10209 bp)
+  96: flye_03.fasta contig_27 (5874 bp)
+  97: flye_03.fasta contig_29 (8861 bp)
+  98: flye_03.fasta contig_3 (9484 bp)
+  99: flye_03.fasta contig_30 (8585 bp)
+ 100: flye_03.fasta contig_31 (999794 bp)
+ 101: flye_03.fasta contig_33 (5787 bp)
+ 102: flye_03.fasta contig_35 (6448 bp)
+ 103: flye_03.fasta contig_36 (6421 bp)
+ 104: flye_03.fasta contig_37 (26550 bp)
+ 105: flye_03.fasta contig_4 (10999 bp)
+ 106: flye_03.fasta contig_46 (26802 bp)
+ 107: flye_03.fasta contig_48 (33498 bp)
+ 108: flye_03.fasta contig_49 (2981 bp)
+ 109: flye_03.fasta contig_50 (62098 bp)
+ 110: flye_03.fasta contig_51 (27768 bp)
+ 111: flye_03.fasta contig_6 (68197 bp)
+ 112: flye_03.fasta contig_8 (31204 bp)
+ 113: flye_04.fasta contig_1 (11704 bp)
+ 114: flye_04.fasta contig_11 (5495 bp)
+ 115: flye_04.fasta contig_15 (26609 bp)
+ 116: flye_04.fasta contig_16 (79768 bp)
+ 117: flye_04.fasta contig_17 (6675 bp)
+ 118: flye_04.fasta contig_18 (609 bp)
+ 119: flye_04.fasta contig_2 (2981 bp)
+ 120: flye_04.fasta contig_26 (14874 bp)
+ 121: flye_04.fasta contig_30 (3559 bp)
+ 122: flye_04.fasta contig_34 (28140 bp)
+ 123: flye_04.fasta contig_35 (22160 bp)
+ 124: flye_04.fasta contig_38 (15974 bp)
+ 125: flye_04.fasta contig_42 (1204 bp)
+ 126: flye_04.fasta contig_46 (11515 bp)
+ 127: flye_04.fasta contig_5 (1867 bp)
+ 128: flye_04.fasta contig_57 (2870 bp)
+ 129: flye_04.fasta contig_58 (96747 bp)
+ 130: flye_04.fasta contig_59 (9859 bp)
+ 131: flye_04.fasta contig_6 (9336 bp)
+ 132: flye_04.fasta contig_60 (967245 bp)
+ 133: flye_04.fasta contig_63 (9341 bp)
+ 134: flye_04.fasta contig_64 (27768 bp)
+ 135: flye_04.fasta contig_66 (34090 bp)
+ 136: flye_04.fasta contig_67 (42828 bp)
+ 137: flye_04.fasta contig_69 (16772 bp)
+ 138: flye_04.fasta contig_70 (16661 bp)
+ 139: flye_04.fasta contig_73 (26524 bp)
+ 140: flye_04.fasta contig_8 (20222 bp)
+ 141: nextdenovo_01.fasta ctg000000 (40557 bp)
+ 142: nextdenovo_01.fasta ctg000010 (58525 bp)
+ 143: nextdenovo_01.fasta ctg000020 (880942 bp)
+ 144: nextdenovo_02.fasta ctg000000 (946398 bp)
+ 145: nextdenovo_03.fasta ctg000000 (43138 bp)
+ 146: nextdenovo_03.fasta ctg000010 (50684 bp)
+ 147: nextdenovo_03.fasta ctg000020 (898447 bp)
+ 148: nextdenovo_04.fasta ctg000000 (59131 bp)
+ 149: nextdenovo_04.fasta ctg000010 (891221 bp)
+
+149 sequences loaded from 12 assemblies
+
+
+Building k-mer De Bruijn graph (2026-04-13 15:32:15)
+    K-mers in the input sequences are now hashed to make a De Bruijn graph.
+
+Graph contains 3710178 k-mers
+
+
+Building compacted unitig graph (2026-04-13 15:32:18)
+    All non-branching paths are now collapsed to form a compacted De Bruijn
+graph, a.k.a. a unitig graph.
+
+24077 unitigs, 32404 links
+total length: 1855089 bp
+
+
+Simplifying unitig graph (2026-04-13 15:32:24)
+    The graph structure is now simplified by moving sequence into repeat unitigs
+when possible.
+
+24077 unitigs, 32404 links
+total length: 1567221 bp
+
+
+Finished! (2026-04-13 15:32:26)
+    You can now run autocycler cluster to group contigs based on their
+similarity.
+
+Compressed unitig graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/input_assemblies.gfa
+Input assembly stats:    /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/input_assemblies.yaml
+Time to run: 0:00:12.242630
+
+
+Starting autocycler cluster (2026-04-13 15:32:26)
+    This command takes a unitig graph (made by autocycler compress) and clusters
+the sequences based on their similarity. Ideally, each cluster will then contain
+sequences which can be combined into a consensus.
+
+Settings:
+  --autocycler_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out
+  --cutoff 0.2
+  --min_assemblies 3 (automatically set)
+  --max_contigs 25
+
+
+Pairwise distances (2026-04-13 15:32:26)
+    Every pairwise distance between contigs is calculated based on the
+similarity of their paths through the graph.
+
+149 sequences, 22201 total pairwise distances
+
+Saving distance matrix:
+  /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/pairwise_distances.phylip
+
+
+Clustering sequences (2026-04-13 15:32:27)
+    Contigs are organised into a tree using UPGMA. Then clusters are defined
+from the tree using the distance cutoff.
+
+Saving clustering tree:
+  /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/clustering.newick
+
+Cluster 001:
+  canu_01.fasta tig00000001 (1011121 bp)
+  canu_02.fasta tig00000001 (957374 bp)
+  canu_03.fasta tig00000001 (986691 bp)
+  canu_04.fasta tig00000001 (923015 bp)
+  flye_01.fasta contig_59 (990804 bp)
+  flye_02.fasta contig_50 (964357 bp)
+  flye_03.fasta contig_31 (999794 bp)
+  flye_04.fasta contig_60 (967245 bp)
+  nextdenovo_01.fasta ctg000020 (880942 bp)
+  nextdenovo_02.fasta ctg000000 (946398 bp)
+  nextdenovo_03.fasta ctg000020 (898447 bp)
+  nextdenovo_04.fasta ctg000010 (891221 bp)
+  cluster distance: 0.041253
+  passed QC
+
+Cluster 002:
+  canu_01.fasta tig00000002 (104791 bp)
+  canu_04.fasta tig00000005 (110166 bp)
+  flye_01.fasta contig_58 (63969 bp)
+  cluster distance: 0.058485
+  passed QC
+
+Cluster 007:
+  canu_01.fasta tig00000014 (71075 bp)
+  canu_03.fasta tig00000007 (80692 bp)
+  canu_04.fasta tig00000010 (65795 bp)
+  flye_01.fasta contig_62 (79503 bp)
+  flye_03.fasta contig_6 (68197 bp)
+  flye_04.fasta contig_67 (42828 bp)
+  cluster distance: 0.19283
+  passed QC
+
+Cluster 014:
+  canu_01.fasta tig00000006 (59580 bp)
+  canu_02.fasta tig00000012 (55933 bp)
+  flye_01.fasta contig_45 (57436 bp)
+  flye_02.fasta contig_40 (59707 bp)
+  flye_03.fasta contig_13 (30975 bp)
+  flye_04.fasta contig_34 (28140 bp)
+  cluster distance: 0.126798
+  passed QC
+
+Cluster 018:
+  canu_01.fasta tig00000013 (54267 bp)
+  canu_03.fasta tig00000011 (48307 bp)
+  flye_03.fasta contig_8 (31204 bp)
+  cluster distance: 0.011922
+  passed QC
+
+Cluster 023:
+  canu_01.fasta tig00000010 (33973 bp)
+  canu_03.fasta tig00000008 (34069 bp)
+  canu_04.fasta tig00000012 (34808 bp)
+  flye_01.fasta contig_74 (33993 bp)
+  flye_04.fasta contig_66 (34090 bp)
+  cluster distance: 0.114148
+  passed QC
+
+Cluster 037:
+  canu_01.fasta tig00000005 (27768 bp)
+  canu_02.fasta tig00000005 (27768 bp)
+  canu_03.fasta tig00000003 (27768 bp)
+  flye_01.fasta contig_79 (27768 bp)
+  flye_02.fasta contig_63 (27768 bp)
+  flye_03.fasta contig_51 (27768 bp)
+  flye_04.fasta contig_64 (27768 bp)
+  cluster distance: 0.000734
+  passed QC
+
+Cluster 042:
+  canu_01.fasta tig00000003 (26505 bp)
+  canu_02.fasta tig00000004 (26509 bp)
+  canu_03.fasta tig00000005 (26514 bp)
+  canu_04.fasta tig00000006 (26512 bp)
+  flye_01.fasta contig_75 (26545 bp)
+  flye_02.fasta contig_62 (26521 bp)
+  flye_03.fasta contig_37 (26550 bp)
+  flye_04.fasta contig_73 (26524 bp)
+  nextdenovo_01.fasta ctg000000 (40557 bp)
+  nextdenovo_03.fasta ctg000000 (43138 bp)
+  cluster distance: 0.099087
+  passed QC
+
+Cluster 085:
+  flye_02.fasta contig_52 (2981 bp)
+  flye_03.fasta contig_49 (2981 bp)
+  flye_04.fasta contig_2 (2981 bp)
+  cluster distance: 0.000335
+  passed QC
+
+Cluster 003:
+  canu_03.fasta tig00000009 (103663 bp)
+  failed QC: present in too few assemblies
+
+Cluster 004:
+  flye_04.fasta contig_16 (79768 bp)
+  failed QC: present in too few assemblies
+
+Cluster 005:
+  canu_02.fasta tig00000003 (77707 bp)
+  failed QC: present in too few assemblies
+
+Cluster 006:
+  flye_02.fasta contig_44 (57976 bp)
+  flye_03.fasta contig_2 (71474 bp)
+  flye_04.fasta contig_58 (96747 bp)
+  cluster distance: 0.082012
+  failed QC: contained within cluster 2
+
+Cluster 008:
+  canu_04.fasta tig00000011 (76105 bp)
+  flye_03.fasta contig_50 (62098 bp)
+  cluster distance: 0.187174
+  failed QC: present in too few assemblies
+
+Cluster 009:
+  canu_02.fasta tig00000014 (68463 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 2
+
+Cluster 010:
+  flye_02.fasta contig_54 (62897 bp)
+  failed QC: present in too few assemblies
+
+Cluster 011:
+  canu_01.fasta tig00000008 (66254 bp)
+  flye_01.fasta contig_71 (58976 bp)
+  cluster distance: 0.019408
+  failed QC: present in too few assemblies
+
+Cluster 012:
+  nextdenovo_04.fasta ctg000000 (59131 bp)
+  failed QC: present in too few assemblies
+
+Cluster 013:
+  nextdenovo_01.fasta ctg000010 (58525 bp)
+  failed QC: present in too few assemblies
+
+Cluster 015:
+  canu_02.fasta tig00000013 (50377 bp)
+  canu_03.fasta tig00000018 (61695 bp)
+  cluster distance: 0.057592
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 2
+
+Cluster 016:
+  canu_01.fasta tig00000004 (54725 bp)
+  failed QC: present in too few assemblies
+
+Cluster 017:
+  nextdenovo_03.fasta ctg000010 (50684 bp)
+  failed QC: present in too few assemblies
+
+Cluster 019:
+  flye_01.fasta contig_52 (45869 bp)
+  failed QC: present in too few assemblies
+
+Cluster 020:
+  canu_04.fasta tig00000015 (43511 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 14
+
+Cluster 021:
+  flye_02.fasta contig_68 (34988 bp)
+  failed QC: present in too few assemblies
+
+Cluster 022:
+  canu_04.fasta tig00000016 (34948 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 14
+
+Cluster 024:
+  flye_03.fasta contig_48 (33498 bp)
+  failed QC: present in too few assemblies
+
+Cluster 025:
+  canu_02.fasta tig00000011 (33417 bp)
+  failed QC: present in too few assemblies
+
+Cluster 026:
+  flye_02.fasta contig_4 (30984 bp)
+  failed QC: present in too few assemblies
+
+Cluster 027:
+  flye_02.fasta contig_64 (30646 bp)
+  failed QC: present in too few assemblies
+
+Cluster 028:
+  flye_01.fasta contig_29 (30365 bp)
+  failed QC: present in too few assemblies
+
+Cluster 029:
+  flye_01.fasta contig_17 (30208 bp)
+  failed QC: present in too few assemblies
+
+Cluster 030:
+  flye_01.fasta contig_7 (29945 bp)
+  failed QC: present in too few assemblies
+
+Cluster 031:
+  flye_03.fasta contig_15 (29815 bp)
+  failed QC: present in too few assemblies
+
+Cluster 032:
+  flye_02.fasta contig_7 (29588 bp)
+  failed QC: present in too few assemblies
+
+Cluster 033:
+  canu_04.fasta tig00000002 (29581 bp)
+  failed QC: present in too few assemblies
+
+Cluster 034:
+  canu_04.fasta tig00000009 (29305 bp)
+  failed QC: present in too few assemblies
+
+Cluster 035:
+  flye_01.fasta contig_21 (29225 bp)
+  failed QC: present in too few assemblies
+
+Cluster 036:
+  flye_01.fasta contig_19 (29095 bp)
+  failed QC: present in too few assemblies
+
+Cluster 038:
+  canu_04.fasta tig00000003 (27767 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 37
+
+Cluster 039:
+  flye_01.fasta contig_44 (27146 bp)
+  failed QC: present in too few assemblies
+
+Cluster 040:
+  flye_03.fasta contig_46 (26802 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 14
+
+Cluster 041:
+  flye_04.fasta contig_15 (26609 bp)
+  failed QC: present in too few assemblies
+
+Cluster 043:
+  flye_02.fasta contig_37 (26187 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 18
+
+Cluster 044:
+  flye_01.fasta contig_47 (23504 bp)
+  flye_04.fasta contig_35 (22160 bp)
+  cluster distance: 0.003355
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 18
+
+Cluster 045:
+  flye_01.fasta contig_28 (21119 bp)
+  failed QC: present in too few assemblies
+
+Cluster 046:
+  flye_04.fasta contig_8 (20222 bp)
+  failed QC: present in too few assemblies
+
+Cluster 047:
+  flye_04.fasta contig_69 (16772 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 14
+
+Cluster 048:
+  flye_04.fasta contig_70 (16661 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 14
+
+Cluster 049:
+  flye_03.fasta contig_17 (16124 bp)
+  failed QC: present in too few assemblies
+
+Cluster 050:
+  flye_04.fasta contig_38 (15974 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 14
+
+Cluster 051:
+  flye_04.fasta contig_26 (14874 bp)
+  failed QC: present in too few assemblies
+
+Cluster 052:
+  flye_01.fasta contig_54 (14250 bp)
+  failed QC: present in too few assemblies
+
+Cluster 053:
+  flye_03.fasta contig_1 (11934 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 2
+
+Cluster 054:
+  flye_02.fasta contig_53 (11693 bp)
+  flye_04.fasta contig_1 (11704 bp)
+  cluster distance: 0.061164
+  failed QC: present in too few assemblies
+
+Cluster 055:
+  flye_04.fasta contig_46 (11515 bp)
+  failed QC: present in too few assemblies
+
+Cluster 056:
+  flye_02.fasta contig_43 (11292 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 2
+
+Cluster 057:
+  flye_03.fasta contig_4 (10999 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 7
+
+Cluster 058:
+  flye_02.fasta contig_45 (11325 bp)
+  flye_04.fasta contig_59 (9859 bp)
+  cluster distance: 0.178758
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 2
+
+Cluster 059:
+  flye_03.fasta contig_25 (10209 bp)
+  failed QC: present in too few assemblies
+
+Cluster 060:
+  flye_03.fasta contig_3 (9484 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 2
+
+Cluster 061:
+  canu_01.fasta tig00000007 (9430 bp)
+  failed QC: present in too few assemblies
+
+Cluster 062:
+  flye_04.fasta contig_63 (9341 bp)
+  failed QC: present in too few assemblies
+
+Cluster 063:
+  flye_04.fasta contig_6 (9336 bp)
+  failed QC: present in too few assemblies
+
+Cluster 064:
+  flye_01.fasta contig_57 (9331 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 2
+
+Cluster 065:
+  flye_01.fasta contig_4 (8963 bp)
+  failed QC: present in too few assemblies
+
+Cluster 066:
+  flye_03.fasta contig_29 (8861 bp)
+  failed QC: present in too few assemblies
+
+Cluster 067:
+  flye_01.fasta contig_41 (8659 bp)
+  failed QC: present in too few assemblies
+
+Cluster 068:
+  flye_03.fasta contig_30 (8585 bp)
+  failed QC: present in too few assemblies
+
+Cluster 069:
+  flye_03.fasta contig_16 (8434 bp)
+  failed QC: present in too few assemblies
+
+Cluster 070:
+  flye_01.fasta contig_24 (7400 bp)
+  failed QC: present in too few assemblies
+
+Cluster 071:
+  flye_01.fasta contig_35 (6843 bp)
+  failed QC: present in too few assemblies
+
+Cluster 072:
+  flye_04.fasta contig_17 (6675 bp)
+  failed QC: present in too few assemblies
+
+Cluster 073:
+  flye_02.fasta contig_59 (6638 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 7
+
+Cluster 074:
+  flye_02.fasta contig_1 (6494 bp)
+  failed QC: present in too few assemblies
+
+Cluster 075:
+  flye_03.fasta contig_35 (6448 bp)
+  failed QC: present in too few assemblies
+
+Cluster 076:
+  flye_03.fasta contig_36 (6421 bp)
+  failed QC: present in too few assemblies
+
+Cluster 077:
+  flye_03.fasta contig_27 (5874 bp)
+  failed QC: present in too few assemblies
+
+Cluster 078:
+  flye_03.fasta contig_33 (5787 bp)
+  failed QC: present in too few assemblies
+
+Cluster 079:
+  flye_02.fasta contig_8 (5763 bp)
+  failed QC: present in too few assemblies
+
+Cluster 080:
+  flye_04.fasta contig_11 (5495 bp)
+  failed QC: present in too few assemblies
+
+Cluster 081:
+  flye_01.fasta contig_16 (4201 bp)
+  failed QC: present in too few assemblies
+
+Cluster 082:
+  flye_01.fasta contig_5 (4108 bp)
+  failed QC: present in too few assemblies
+
+Cluster 083:
+  canu_02.fasta tig00000009 (3591 bp)
+  failed QC: present in too few assemblies
+
+Cluster 084:
+  flye_04.fasta contig_30 (3559 bp)
+  failed QC: present in too few assemblies
+
+Cluster 086:
+  flye_02.fasta contig_47 (2908 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 2
+
+Cluster 087:
+  flye_04.fasta contig_57 (2870 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 7
+
+Cluster 088:
+  flye_01.fasta contig_66 (1977 bp)
+  failed QC: present in too few assemblies
+
+Cluster 089:
+  flye_02.fasta contig_42 (1933 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 18
+
+Cluster 090:
+  flye_04.fasta contig_5 (1867 bp)
+  failed QC: present in too few assemblies
+
+Cluster 091:
+  flye_01.fasta contig_65 (1447 bp)
+  failed QC: present in too few assemblies
+  failed QC: contained within cluster 18
+
+Cluster 092:
+  flye_04.fasta contig_42 (1204 bp)
+  failed QC: present in too few assemblies
+
+Cluster 093:
+  flye_02.fasta contig_29 (928 bp)
+  flye_03.fasta contig_14 (1107 bp)
+  cluster distance: 0.190605
+  failed QC: present in too few assemblies
+
+Cluster 094:
+  flye_04.fasta contig_18 (609 bp)
+  failed QC: present in too few assemblies
+
+
+Finished! (2026-04-13 15:32:37)
+    You can now run autocycler trim on each cluster. If you want to manually
+inspect the clustering, you can view the following files.
+
+Pairwise distances:         /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/pairwise_distances.phylip
+Clustering tree (Newick):   /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/clustering.newick
+Clustering tree (metadata): /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/clustering.tsv
+

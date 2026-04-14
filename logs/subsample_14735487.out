@@ -1,0 +1,7 @@
+Done. Subsampled reads in: /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads
+total 2.1G
+-rw-r--r-- 1 zachpella fauverlab 308M Apr  7 11:13 sample_01.fastq
+-rw-r--r-- 1 zachpella fauverlab 303M Apr  7 11:13 sample_02.fastq
+-rw-r--r-- 1 zachpella fauverlab 307M Apr  7 11:13 sample_03.fastq
+-rw-r--r-- 1 zachpella fauverlab 308M Apr  7 11:13 sample_04.fastq
+-rw-r--r-- 1 zachpella fauverlab  274 Apr  7 11:13 subsample.yaml

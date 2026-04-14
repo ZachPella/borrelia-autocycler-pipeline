@@ -1,0 +1,27 @@
+[2026-04-03 10:41:37.032] [info] Running: "basecaller" "sup" "/work/fauverlab/shared/Bb_WGS_Apr2026/pod5" "--recursive" "--device" "cuda:all" "--no-trim"
+[2026-04-03 10:41:37.081] [warning] Unknown certs location for current distribution. If you hit download issues, use the envvar `SSL_CERT_FILE` to specify the location manually.
+[2026-04-03 10:41:37.082] [info]  - downloading dna_r10.4.1_e8.2_400bps_sup@v5.0.0 with httplib
+[2026-04-03 10:41:37.240] [error] Failed to download dna_r10.4.1_e8.2_400bps_sup@v5.0.0: SSL server verification failed
+[2026-04-03 10:41:37.240] [info]  - downloading dna_r10.4.1_e8.2_400bps_sup@v5.0.0 with curl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  178M    0  302k    0     0  4668k      0  0:00:39 --:--:--  0:00:39 4649k100  178M  100  178M    0     0   264M      0 --:--:-- --:--:-- --:--:--  264M
+[2026-04-03 10:41:40.273] [info] > Creating basecall pipeline
+[2026-04-03 10:41:48.835] [info] cuda:1 using chunk size 12288, batch size 160
+[2026-04-03 10:41:48.835] [info] cuda:0 using chunk size 12288, batch size 192
+[2026-04-03 10:41:48.835] [info] cuda:2 using chunk size 12288, batch size 192
+[2026-04-03 10:41:48.835] [info] cuda:3 using chunk size 12288, batch size 192
+[2026-04-03 10:41:49.357] [info] cuda:1 using chunk size 6144, batch size 160
+[2026-04-03 10:41:49.485] [info] cuda:0 using chunk size 6144, batch size 192
+[2026-04-03 10:41:49.486] [info] cuda:2 using chunk size 6144, batch size 192
+[2026-04-03 10:41:49.489] [info] cuda:3 using chunk size 6144, batch size 192
+[2026-04-03 11:23:54.855] [info] > Simplex reads basecalled: 1129902
+[2026-04-03 11:23:54.856] [info] > Simplex reads filtered: 10
+[2026-04-03 11:23:54.857] [info] > Basecalled @ Samples/s: 1.208808e+07
+[2026-04-03 11:23:55.226] [info] > Finished
+samtools: /util/opt/anaconda/deployed-conda-envs/packages/samtools/envs/samtools-1.23/bin/../lib/libtinfow.so.6: no version information available (required by samtools)
+samtools: /util/opt/anaconda/deployed-conda-envs/packages/samtools/envs/samtools-1.23/bin/../lib/libncursesw.so.6: no version information available (required by samtools)
+samtools: /util/opt/anaconda/deployed-conda-envs/packages/samtools/envs/samtools-1.23/bin/../lib/libncursesw.so.6: no version information available (required by samtools)
+samtools: /util/opt/anaconda/deployed-conda-envs/packages/samtools/envs/samtools-1.23/bin/../lib/libncursesw.so.6: no version information available (required by samtools)
+[M::bam2fq_mainloop] discarded 0 singletons
+[M::bam2fq_mainloop] processed 1135545 reads

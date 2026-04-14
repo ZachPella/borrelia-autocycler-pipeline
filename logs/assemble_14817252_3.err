@@ -1,0 +1,1048 @@
+
+nextDenovo nextdenovo_run.cfg
+
+[4056918 INFO] 2026-04-13 10:52:11 NextDenovo start...
+[4056918 INFO] 2026-04-13 10:52:11 version:v2.5.0 logfile:pid4056918.log.info
+[4056918 WARNING] 2026-04-13 10:52:11 Re-write workdir
+[4056918 INFO] 2026-04-13 10:52:11 mkdir: /tmp/.tmpjbKXf2/nextdenovo
+[4056918 INFO] 2026-04-13 10:52:11 mkdir: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align
+[4056918 INFO] 2026-04-13 10:52:11 mkdir: /tmp/.tmpjbKXf2/nextdenovo/02.cns_align
+[4056918 INFO] 2026-04-13 10:52:11 mkdir: /tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph
+[4056918 INFO] 2026-04-13 10:52:16 Total jobs: 1
+[4056918 INFO] 2026-04-13 10:52:16 Submitted jobID:[4056919] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/01.db_stat.sh.work/db_stat1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:52:17 db_stat done
+[4056918 INFO] 2026-04-13 10:52:17 updated options:
+rerun:                        3
+task:                         all
+deltmp:                       1
+rewrite:                      1
+read_type:                    ont
+job_type:                     local
+input_type:                   raw
+read_cutoff:                  1k
+parallel_jobs:                1
+pa_correction:                1
+seed_cutfiles:                3
+seed_depth:                   40.21
+seed_cutoff:                  10005
+blocksize:                    208676560
+genome_size:                  1500000
+job_prefix:                   nextDenovo
+ctg_cns_options:              -p 16
+nextgraph_options:            -a 1
+sort_options:                 -m 20g -t 16 -k 40
+minimap2_options_map:         -x map-ont
+workdir:                      /tmp/.tmpjbKXf2/nextdenovo
+minimap2_options_raw:         -t 16 -x ava-ont
+input_fofn:                   /tmp/.tmpjbKXf2/input.fofn
+raw_aligndir:                 /tmp/.tmpjbKXf2/nextdenovo/01.raw_align
+cns_aligndir:                 /tmp/.tmpjbKXf2/nextdenovo/02.cns_align
+ctg_graphdir:                 /tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph
+correction_options:           -p 16 -max_lq_length 10000 -min_len_seed 5002
+minimap2_options_cns:         -t 16 -x ava-ont -k 17 -w 17 --minlen 1000 --maxhan1 5000
+[4056918 INFO] 2026-04-13 10:52:17 summary of input data:
+file:[35m /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/input.reads.stat [0m
+[Read length stat]
+Types            Count (#) Length (bp)
+N10                    226   34701
+N20                    673   24980
+N30                   1283   18461
+N40                   2119   13129
+N50                   3339    8691
+N60                   5125    6133
+N70                   7686    4211
+N80                  11459    2822
+N90                  17239    1800
+
+Types               Count (#)           Bases (bp)  Depth (X)
+Raw                     73519            150030908     100.02
+Filtered                46613             20490388      13.66
+Clean                   26906            129540520      86.36
+
+*Suggested seed_cutoff (genome size: 1.50Mb, expected seed depth: 45, real seed depth: 40.21): 10005 bp
+[4056918 INFO] 2026-04-13 10:52:22 Total jobs: 1
+[4056918 INFO] 2026-04-13 10:52:22 Submitted jobID:[4056926] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/02.db_split.sh.work/db_split1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:52:23 db_split done
+[4056918 INFO] 2026-04-13 10:52:23 Total jobs: 9
+[4056918 INFO] 2026-04-13 10:52:23 Submitted jobID:[4056933] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:52:29 Submitted jobID:[4056976] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align2/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:52:32 Submitted jobID:[4057019] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:52:45 Submitted jobID:[4057063] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:52:49 Submitted jobID:[4057107] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align5/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:52:55 Submitted jobID:[4057150] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align6/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:10 Submitted jobID:[4057194] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:14 Submitted jobID:[4057238] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align8/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:21 Submitted jobID:[4057281] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align9/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:25 raw_align done
+[4056918 INFO] 2026-04-13 10:53:30 Total jobs: 3
+[4056918 INFO] 2026-04-13 10:53:30 Submitted jobID:[4057325] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:31 Submitted jobID:[4057346] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align2/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:33 Submitted jobID:[4057367] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align3/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:35 sort_align done
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align1/input.seed.001.2bit.0.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align2/input.seed.001.2bit.1.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/input.seed.001.2bit.2.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/input.seed.001.2bit.3.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/input.seed.002.2bit.2.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align5/input.seed.002.2bit.4.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align6/input.seed.002.2bit.5.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/input.seed.002.2bit.6.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/input.seed.003.2bit.3.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/input.seed.003.2bit.6.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align8/input.seed.003.2bit.7.ovl
+[4056918 INFO] 2026-04-13 10:53:35 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align9/input.seed.003.2bit.8.ovl
+[4056918 INFO] 2026-04-13 10:53:40 Total jobs: 3
+[4056918 INFO] 2026-04-13 10:53:40 Submitted jobID:[4057389] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:43 Submitted jobID:[4057414] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns2/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:46 Submitted jobID:[4057440] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns3/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:49 seed_cns done
+[4056918 INFO] 2026-04-13 10:53:49 seed_cns finished, and final corrected reads file:
+[4056918 INFO] 2026-04-13 10:53:49 [35m /tmp/.tmpjbKXf2/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns*/cns.fasta [0m
+[4056918 INFO] 2026-04-13 10:53:49 Total jobs: 6
+[4056918 INFO] 2026-04-13 10:53:49 Submitted jobID:[4057466] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:51 Submitted jobID:[4057517] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align2/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:52 Submitted jobID:[4057560] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align3/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:54 Submitted jobID:[4057603] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align4/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:55 Submitted jobID:[4057646] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align5/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:57 Submitted jobID:[4057689] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align6/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:53:58 cns_align done
+[4056918 INFO] 2026-04-13 10:54:03 Total jobs: 1
+[4056918 INFO] 2026-04-13 10:54:03 Submitted jobID:[4057733] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/01.ctg_graph.sh.work/ctg_graph1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:54:04 ctg_graph done
+[4056918 INFO] 2026-04-13 10:54:09 Total jobs: 3
+[4056918 INFO] 2026-04-13 10:54:09 Submitted jobID:[4057767] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:54:10 Submitted jobID:[4057887] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align2/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:54:11 Submitted jobID:[4057981] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align3/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:54:13 ctg_align done
+[4056918 INFO] 2026-04-13 10:54:18 Total jobs: 1
+[4056918 INFO] 2026-04-13 10:54:18 Submitted jobID:[4058076] jobCmd:[/tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/03.ctg_cns.sh.work/ctg_cns1/nextDenovo.sh] in the local_cycle.
+[4056918 INFO] 2026-04-13 10:54:20 ctg_cns done
+[4056918 INFO] 2026-04-13 10:54:20 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align1/input.seed.001.2bit.sort.bam
+[4056918 INFO] 2026-04-13 10:54:20 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align2/input.seed.002.2bit.sort.bam
+[4056918 INFO] 2026-04-13 10:54:20 remove temporary result: /tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align3/input.seed.003.2bit.sort.bam
+[4056918 INFO] 2026-04-13 10:54:20 nextDenovo finished
+[4056918 INFO] 2026-04-13 10:54:20 final assembly file:
+[4056918 INFO] 2026-04-13 10:54:20 [35m /tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/nd.asm.fasta [0m
+[4056918 INFO] 2026-04-13 10:54:20 final stat file:
+[4056918 INFO] 2026-04-13 10:54:20 [35m /tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/nd.asm.fasta.stat [0m
+[4056918 INFO] 2026-04-13 10:54:20 asm stat:
+[4056918 INFO] 2026-04-13 10:54:20 
+Type           Length (bp)            Count (#)
+N10               881025                   1
+N20               881025                   1
+N30               881025                   1
+N40               881025                   1
+N50               881025                   1
+N60               881025                   1
+N70               881025                   1
+N80               881025                   1
+N90                58810                   2
+
+Min.               40583                   -
+Max.              881025                   -
+Ave.              326806                   -
+Total             980418                   3
+
+
+nextPolish nextpolish_run.cfg
+
+[4058102 INFO] 2026-04-13 10:54:20 NextPolish start...
+[4058102 INFO] 2026-04-13 10:54:20 version:1.4.1 logfile:pid4058102.log.info
+[4058102 WARNING] 2026-04-13 10:54:20 Re-write workdir
+[4058102 WARNING] 2026-04-13 10:54:20 Delete task: 1 due to missing sgs_fofn.
+[4058102 WARNING] 2026-04-13 10:54:20 Delete task: 1 due to missing sgs_fofn.
+[4058102 WARNING] 2026-04-13 10:54:20 Delete task: 2 due to missing sgs_fofn.
+[4058102 WARNING] 2026-04-13 10:54:20 Delete task: 2 due to missing sgs_fofn.
+[4058102 WARNING] 2026-04-13 10:54:20 Delete task: 6 due to missing hifi_fofn.
+[4058102 WARNING] 2026-04-13 10:54:20 Delete task: 6 due to missing hifi_fofn.
+[4058102 INFO] 2026-04-13 10:54:20 scheduled tasks:
+[5, 5]
+[4058102 INFO] 2026-04-13 10:54:20 options: 
+[4058102 INFO] 2026-04-13 10:54:20 
+rerun:                        3
+rewrite:                      1
+kill:                         None
+cleantmp:                     0
+task:                         [5, 5]
+use_drmaa:                    0
+deltmp:                       True
+submit:                       None
+job_type:                     local
+sgs_unpaired:                 0
+sgs_rm_nread:                 1
+parallel_jobs:                1
+check_alive:                  None
+align_threads:                16
+job_id_regex:                 None
+sgs_max_depth:                100
+lgs_max_depth:                100
+lgs_read_type:                ont
+genome_size:                  980418
+lgs_max_read_len:             0
+hifi_max_depth:               100
+multithread_jobs:             16
+lgs_min_read_len:             1k
+hifi_max_read_len:            0
+polish_options:               -p 16
+hifi_block_size:              500M
+hifi_min_read_len:            1k
+job_prefix:                   nextPolish
+sgs_use_duplicate_reads:      0
+sgs_block_size:               98041800.0
+sgs_align_options:            bwa mem
+lgs_block_size:               98041800.0
+hifi_minimap2_options:        -x map-pb
+workdir:                      /tmp/.tmpjbKXf2/nextpolish
+lgs_fofn:                     /tmp/.tmpjbKXf2/input.fofn
+lgs_minimap2_options:         -x map-ont -t 16
+snp_phase:                    /tmp/.tmpjbKXf2/nextpolish/%02d.snp_phase
+snp_valid:                    /tmp/.tmpjbKXf2/nextpolish/%02d.snp_valid
+lgs_polish:                   /tmp/.tmpjbKXf2/nextpolish/%02d.lgs_polish
+kmer_count:                   /tmp/.tmpjbKXf2/nextpolish/%02d.kmer_count
+hifi_polish:                  /tmp/.tmpjbKXf2/nextpolish/%02d.hifi_polish
+score_chain:                  /tmp/.tmpjbKXf2/nextpolish/%02d.score_chain
+genome:                       /tmp/.tmpjbKXf2/nextdenovo/03.ctg_graph/nd.asm.fasta
+[4058102 INFO] 2026-04-13 10:54:20 step 0 and task 5 start:
+[4058102 INFO] 2026-04-13 10:54:25 Total jobs: 2
+[4058102 INFO] 2026-04-13 10:54:25 Submitted jobID:[4058103] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/00.lgs_polish/01.db_split.sh.work/db_split1/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:54:44 Submitted jobID:[4058125] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/00.lgs_polish/01.db_split.sh.work/db_split2/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:54:45 db_split done
+[4058102 INFO] 2026-04-13 10:54:50 Total jobs: 1
+[4058102 INFO] 2026-04-13 10:54:50 Submitted jobID:[4058132] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/00.lgs_polish/02.map.ref.sh.work/map_genome1/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:54:54 align_genome done
+[4058102 INFO] 2026-04-13 10:54:59 Total jobs: 1
+[4058102 INFO] 2026-04-13 10:54:59 Submitted jobID:[4058200] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/00.lgs_polish/03.merge.bam.sh.work/merge_bam1/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:55:00 merge_bam done
+[4058102 INFO] 2026-04-13 10:55:00 remove temporary result: /tmp/.tmpjbKXf2/nextpolish/00.lgs_polish/02.map.ref.sh.work/map_genome1/lgs.part000.sort.bam
+[4058102 INFO] 2026-04-13 10:55:05 Total jobs: 1
+[4058102 INFO] 2026-04-13 10:55:05 Submitted jobID:[4058374] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/00.lgs_polish/04.polish.ref.sh.work/polish_genome1/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:55:08 polish_genome done
+[4058102 INFO] 2026-04-13 10:55:08 remove temporary result: /tmp/.tmpjbKXf2/nextpolish/00.lgs_polish/lgs.sort.bam
+[4058102 INFO] 2026-04-13 10:55:08 step 1 and task 5 start:
+[4058102 INFO] 2026-04-13 10:55:13 Total jobs: 1
+[4058102 INFO] 2026-04-13 10:55:13 Submitted jobID:[4058411] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/01.lgs_polish/01.merge.ref.sh.work/merge_ref1/merge_ref.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:55:14 merge_ref done
+[4058102 INFO] 2026-04-13 10:55:14 remove temporary result: /tmp/.tmpjbKXf2/nextpolish/00.lgs_polish/04.polish.ref.sh.work/polish_genome1/genome.nextpolish.part000.fasta
+[4058102 INFO] 2026-04-13 10:55:19 Total jobs: 1
+[4058102 INFO] 2026-04-13 10:55:19 Submitted jobID:[4058420] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/01.lgs_polish/02.index.ref.sh.work/index_genome1/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:55:20 index_genome done
+[4058102 INFO] 2026-04-13 10:55:25 Total jobs: 1
+[4058102 INFO] 2026-04-13 10:55:25 Submitted jobID:[4058427] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/01.lgs_polish/03.map.ref.sh.work/map_genome1/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:55:29 align_genome done
+[4058102 INFO] 2026-04-13 10:55:34 Total jobs: 1
+[4058102 INFO] 2026-04-13 10:55:34 Submitted jobID:[4058494] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/01.lgs_polish/04.merge.bam.sh.work/merge_bam1/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:55:34 merge_bam done
+[4058102 INFO] 2026-04-13 10:55:34 remove temporary result: /tmp/.tmpjbKXf2/nextpolish/01.lgs_polish/03.map.ref.sh.work/map_genome1/lgs.part000.sort.bam
+[4058102 INFO] 2026-04-13 10:55:39 Total jobs: 1
+[4058102 INFO] 2026-04-13 10:55:39 Submitted jobID:[4058528] jobCmd:[/tmp/.tmpjbKXf2/nextpolish/01.lgs_polish/05.polish.ref.sh.work/polish_genome1/nextPolish.sh] in the local_cycle.
+[4058102 INFO] 2026-04-13 10:55:43 polish_genome done
+[4058102 INFO] 2026-04-13 10:55:43 remove temporary result: /tmp/.tmpjbKXf2/nextpolish/01.lgs_polish/lgs.sort.bam
+[4058102 INFO] 2026-04-13 10:55:43 nextPolish has finished
+[4058102 INFO] 2026-04-13 10:55:43 final polished genome files:
+[4058102 INFO] 2026-04-13 10:55:43 [35m /tmp/.tmpjbKXf2/nextpolish/genome.nextpolish.fasta [0m
+[4058102 INFO] 2026-04-13 10:55:43 final stat file:
+[4058102 INFO] 2026-04-13 10:55:43 [35m /tmp/.tmpjbKXf2/nextpolish/genome.nextpolish.fasta.stat [0m
+[4058102 INFO] 2026-04-13 10:55:43 asm stat:
+[4058102 INFO] 2026-04-13 10:55:43 
+Type           Length (bp)            Count (#)
+N10               880942                   1
+N20               880942                   1
+N30               880942                   1
+N40               880942                   1
+N50               880942                   1
+N60               880942                   1
+N70               880942                   1
+N80               880942                   1
+N90                58525                   2
+
+Min.               40557                   -
+Max.              880942                   -
+Ave.              326674                   -
+Total             980024                   3
+
+
+nextDenovo nextdenovo_run.cfg
+
+[4058556 INFO] 2026-04-13 10:55:43 NextDenovo start...
+[4058556 INFO] 2026-04-13 10:55:43 version:v2.5.0 logfile:pid4058556.log.info
+[4058556 WARNING] 2026-04-13 10:55:43 Re-write workdir
+[4058556 INFO] 2026-04-13 10:55:43 mkdir: /tmp/.tmpXwjBfe/nextdenovo
+[4058556 INFO] 2026-04-13 10:55:43 mkdir: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align
+[4058556 INFO] 2026-04-13 10:55:43 mkdir: /tmp/.tmpXwjBfe/nextdenovo/02.cns_align
+[4058556 INFO] 2026-04-13 10:55:43 mkdir: /tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph
+[4058556 INFO] 2026-04-13 10:55:48 Total jobs: 1
+[4058556 INFO] 2026-04-13 10:55:48 Submitted jobID:[4058557] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/01.db_stat.sh.work/db_stat1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:55:50 db_stat done
+[4058556 INFO] 2026-04-13 10:55:50 updated options:
+rerun:                        3
+task:                         all
+deltmp:                       1
+rewrite:                      1
+read_type:                    ont
+job_type:                     local
+input_type:                   raw
+read_cutoff:                  1k
+parallel_jobs:                1
+pa_correction:                1
+seed_cutfiles:                3
+seed_depth:                   39.34
+seed_cutoff:                  10006
+blocksize:                    204591226
+genome_size:                  1500000
+job_prefix:                   nextDenovo
+ctg_cns_options:              -p 16
+nextgraph_options:            -a 1
+sort_options:                 -m 20g -t 16 -k 40
+minimap2_options_map:         -x map-ont
+workdir:                      /tmp/.tmpXwjBfe/nextdenovo
+minimap2_options_raw:         -t 16 -x ava-ont
+input_fofn:                   /tmp/.tmpXwjBfe/input.fofn
+raw_aligndir:                 /tmp/.tmpXwjBfe/nextdenovo/01.raw_align
+cns_aligndir:                 /tmp/.tmpXwjBfe/nextdenovo/02.cns_align
+ctg_graphdir:                 /tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph
+correction_options:           -p 16 -max_lq_length 10000 -min_len_seed 5003
+minimap2_options_cns:         -t 16 -x ava-ont -k 17 -w 17 --minlen 1000 --maxhan1 5000
+[4058556 INFO] 2026-04-13 10:55:50 summary of input data:
+file:[35m /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/input.reads.stat [0m
+[Read length stat]
+Types            Count (#) Length (bp)
+N10                    239   34733
+N20                    680   24220
+N30                   1296   17577
+N40                   2145   12753
+N50                   3352    8695
+N60                   5115    6035
+N70                   7682    4103
+N80                  11465    2759
+N90                  17262    1747
+
+Types               Count (#)           Bases (bp)  Depth (X)
+Raw                     73519            147290212      98.19
+Filtered                46665             20416470      13.61
+Clean                   26854            126873742      84.58
+
+*Suggested seed_cutoff (genome size: 1.50Mb, expected seed depth: 45, real seed depth: 39.34): 10006 bp
+[4058556 INFO] 2026-04-13 10:55:55 Total jobs: 1
+[4058556 INFO] 2026-04-13 10:55:55 Submitted jobID:[4058565] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/02.db_split.sh.work/db_split1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:55:56 db_split done
+[4058556 INFO] 2026-04-13 10:55:56 Total jobs: 9
+[4058556 INFO] 2026-04-13 10:55:56 Submitted jobID:[4058572] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:03 Submitted jobID:[4058615] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align2/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:09 Submitted jobID:[4058658] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:12 Submitted jobID:[4058703] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:16 Submitted jobID:[4058747] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align5/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:23 Submitted jobID:[4058790] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align6/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:26 Submitted jobID:[4058833] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:30 Submitted jobID:[4058877] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align8/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:36 Submitted jobID:[4058921] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align9/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:39 raw_align done
+[4058556 INFO] 2026-04-13 10:56:44 Total jobs: 3
+[4058556 INFO] 2026-04-13 10:56:44 Submitted jobID:[4058965] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:46 Submitted jobID:[4058986] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align2/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:47 Submitted jobID:[4059007] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align3/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:49 sort_align done
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align1/input.seed.001.2bit.0.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align2/input.seed.001.2bit.1.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/input.seed.001.2bit.2.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/input.seed.001.2bit.3.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/input.seed.002.2bit.2.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align5/input.seed.002.2bit.4.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align6/input.seed.002.2bit.5.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/input.seed.002.2bit.6.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/input.seed.003.2bit.3.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/input.seed.003.2bit.6.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align8/input.seed.003.2bit.7.ovl
+[4058556 INFO] 2026-04-13 10:56:49 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align9/input.seed.003.2bit.8.ovl
+[4058556 INFO] 2026-04-13 10:56:54 Total jobs: 3
+[4058556 INFO] 2026-04-13 10:56:54 Submitted jobID:[4059029] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:56:58 Submitted jobID:[4059057] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns2/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:01 Submitted jobID:[4059082] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns3/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:05 seed_cns done
+[4058556 INFO] 2026-04-13 10:57:05 seed_cns finished, and final corrected reads file:
+[4058556 INFO] 2026-04-13 10:57:05 [35m /tmp/.tmpXwjBfe/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns*/cns.fasta [0m
+[4058556 INFO] 2026-04-13 10:57:05 Total jobs: 6
+[4058556 INFO] 2026-04-13 10:57:05 Submitted jobID:[4059108] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:06 Submitted jobID:[4059151] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align2/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:08 Submitted jobID:[4059194] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align3/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:09 Submitted jobID:[4059237] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align4/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:11 Submitted jobID:[4059280] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align5/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:12 Submitted jobID:[4059323] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align6/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:14 cns_align done
+[4058556 INFO] 2026-04-13 10:57:19 Total jobs: 1
+[4058556 INFO] 2026-04-13 10:57:19 Submitted jobID:[4059367] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/01.ctg_graph.sh.work/ctg_graph1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:20 ctg_graph done
+[4058556 INFO] 2026-04-13 10:57:25 Total jobs: 3
+[4058556 INFO] 2026-04-13 10:57:25 Submitted jobID:[4059374] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:26 Submitted jobID:[4059468] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align2/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:27 Submitted jobID:[4059562] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align3/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:28 ctg_align done
+[4058556 INFO] 2026-04-13 10:57:33 Total jobs: 1
+[4058556 INFO] 2026-04-13 10:57:33 Submitted jobID:[4059657] jobCmd:[/tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/03.ctg_cns.sh.work/ctg_cns1/nextDenovo.sh] in the local_cycle.
+[4058556 INFO] 2026-04-13 10:57:36 ctg_cns done
+[4058556 INFO] 2026-04-13 10:57:36 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align1/input.seed.001.2bit.sort.bam
+[4058556 INFO] 2026-04-13 10:57:36 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align2/input.seed.002.2bit.sort.bam
+[4058556 INFO] 2026-04-13 10:57:36 remove temporary result: /tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align3/input.seed.003.2bit.sort.bam
+[4058556 INFO] 2026-04-13 10:57:36 nextDenovo finished
+[4058556 INFO] 2026-04-13 10:57:36 final assembly file:
+[4058556 INFO] 2026-04-13 10:57:36 [35m /tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/nd.asm.fasta [0m
+[4058556 INFO] 2026-04-13 10:57:36 final stat file:
+[4058556 INFO] 2026-04-13 10:57:36 [35m /tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/nd.asm.fasta.stat [0m
+[4058556 INFO] 2026-04-13 10:57:36 asm stat:
+[4058556 INFO] 2026-04-13 10:57:36 
+Type           Length (bp)            Count (#)
+N10               946425                   1
+N20               946425                   1
+N30               946425                   1
+N40               946425                   1
+N50               946425                   1
+N60               946425                   1
+N70               946425                   1
+N80               946425                   1
+N90               946425                   1
+
+Min.              946425                   -
+Max.              946425                   -
+Ave.              946425                   -
+Total             946425                   1
+
+
+nextPolish nextpolish_run.cfg
+
+[4059683 INFO] 2026-04-13 10:57:36 NextPolish start...
+[4059683 INFO] 2026-04-13 10:57:36 version:1.4.1 logfile:pid4059683.log.info
+[4059683 WARNING] 2026-04-13 10:57:36 Re-write workdir
+[4059683 WARNING] 2026-04-13 10:57:36 Delete task: 1 due to missing sgs_fofn.
+[4059683 WARNING] 2026-04-13 10:57:36 Delete task: 1 due to missing sgs_fofn.
+[4059683 WARNING] 2026-04-13 10:57:36 Delete task: 2 due to missing sgs_fofn.
+[4059683 WARNING] 2026-04-13 10:57:36 Delete task: 2 due to missing sgs_fofn.
+[4059683 WARNING] 2026-04-13 10:57:36 Delete task: 6 due to missing hifi_fofn.
+[4059683 WARNING] 2026-04-13 10:57:36 Delete task: 6 due to missing hifi_fofn.
+[4059683 INFO] 2026-04-13 10:57:36 scheduled tasks:
+[5, 5]
+[4059683 INFO] 2026-04-13 10:57:36 options: 
+[4059683 INFO] 2026-04-13 10:57:36 
+rerun:                        3
+rewrite:                      1
+kill:                         None
+cleantmp:                     0
+task:                         [5, 5]
+use_drmaa:                    0
+deltmp:                       True
+submit:                       None
+job_type:                     local
+sgs_unpaired:                 0
+sgs_rm_nread:                 1
+parallel_jobs:                1
+check_alive:                  None
+align_threads:                16
+job_id_regex:                 None
+sgs_max_depth:                100
+lgs_max_depth:                100
+lgs_read_type:                ont
+genome_size:                  946425
+lgs_max_read_len:             0
+hifi_max_depth:               100
+multithread_jobs:             16
+lgs_min_read_len:             1k
+hifi_max_read_len:            0
+polish_options:               -p 16
+hifi_block_size:              500M
+hifi_min_read_len:            1k
+job_prefix:                   nextPolish
+sgs_use_duplicate_reads:      0
+sgs_block_size:               94642500.0
+sgs_align_options:            bwa mem
+lgs_block_size:               94642500.0
+hifi_minimap2_options:        -x map-pb
+workdir:                      /tmp/.tmpXwjBfe/nextpolish
+lgs_fofn:                     /tmp/.tmpXwjBfe/input.fofn
+lgs_minimap2_options:         -x map-ont -t 16
+snp_phase:                    /tmp/.tmpXwjBfe/nextpolish/%02d.snp_phase
+snp_valid:                    /tmp/.tmpXwjBfe/nextpolish/%02d.snp_valid
+lgs_polish:                   /tmp/.tmpXwjBfe/nextpolish/%02d.lgs_polish
+kmer_count:                   /tmp/.tmpXwjBfe/nextpolish/%02d.kmer_count
+hifi_polish:                  /tmp/.tmpXwjBfe/nextpolish/%02d.hifi_polish
+score_chain:                  /tmp/.tmpXwjBfe/nextpolish/%02d.score_chain
+genome:                       /tmp/.tmpXwjBfe/nextdenovo/03.ctg_graph/nd.asm.fasta
+[4059683 INFO] 2026-04-13 10:57:36 step 0 and task 5 start:
+[4059683 INFO] 2026-04-13 10:57:41 Total jobs: 2
+[4059683 INFO] 2026-04-13 10:57:41 Submitted jobID:[4059684] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/00.lgs_polish/01.db_split.sh.work/db_split1/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:57:58 Submitted jobID:[4059707] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/00.lgs_polish/01.db_split.sh.work/db_split2/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:57:59 db_split done
+[4059683 INFO] 2026-04-13 10:58:04 Total jobs: 1
+[4059683 INFO] 2026-04-13 10:58:04 Submitted jobID:[4059714] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/00.lgs_polish/02.map.ref.sh.work/map_genome1/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:58:08 align_genome done
+[4059683 INFO] 2026-04-13 10:58:13 Total jobs: 1
+[4059683 INFO] 2026-04-13 10:58:13 Submitted jobID:[4059781] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/00.lgs_polish/03.merge.bam.sh.work/merge_bam1/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:58:13 merge_bam done
+[4059683 INFO] 2026-04-13 10:58:13 remove temporary result: /tmp/.tmpXwjBfe/nextpolish/00.lgs_polish/02.map.ref.sh.work/map_genome1/lgs.part000.sort.bam
+[4059683 INFO] 2026-04-13 10:58:18 Total jobs: 1
+[4059683 INFO] 2026-04-13 10:58:18 Submitted jobID:[4059815] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/00.lgs_polish/04.polish.ref.sh.work/polish_genome1/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:58:22 polish_genome done
+[4059683 INFO] 2026-04-13 10:58:22 remove temporary result: /tmp/.tmpXwjBfe/nextpolish/00.lgs_polish/lgs.sort.bam
+[4059683 INFO] 2026-04-13 10:58:22 step 1 and task 5 start:
+[4059683 INFO] 2026-04-13 10:58:27 Total jobs: 1
+[4059683 INFO] 2026-04-13 10:58:27 Submitted jobID:[4059841] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/01.lgs_polish/01.merge.ref.sh.work/merge_ref1/merge_ref.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:58:28 merge_ref done
+[4059683 INFO] 2026-04-13 10:58:28 remove temporary result: /tmp/.tmpXwjBfe/nextpolish/00.lgs_polish/04.polish.ref.sh.work/polish_genome1/genome.nextpolish.part000.fasta
+[4059683 INFO] 2026-04-13 10:58:33 Total jobs: 1
+[4059683 INFO] 2026-04-13 10:58:33 Submitted jobID:[4059855] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/01.lgs_polish/02.index.ref.sh.work/index_genome1/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:58:33 index_genome done
+[4059683 INFO] 2026-04-13 10:58:38 Total jobs: 1
+[4059683 INFO] 2026-04-13 10:58:38 Submitted jobID:[4059866] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/01.lgs_polish/03.map.ref.sh.work/map_genome1/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:58:42 align_genome done
+[4059683 INFO] 2026-04-13 10:58:47 Total jobs: 1
+[4059683 INFO] 2026-04-13 10:58:47 Submitted jobID:[4059934] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/01.lgs_polish/04.merge.bam.sh.work/merge_bam1/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:58:48 merge_bam done
+[4059683 INFO] 2026-04-13 10:58:48 remove temporary result: /tmp/.tmpXwjBfe/nextpolish/01.lgs_polish/03.map.ref.sh.work/map_genome1/lgs.part000.sort.bam
+[4059683 INFO] 2026-04-13 10:58:53 Total jobs: 1
+[4059683 INFO] 2026-04-13 10:58:53 Submitted jobID:[4059968] jobCmd:[/tmp/.tmpXwjBfe/nextpolish/01.lgs_polish/05.polish.ref.sh.work/polish_genome1/nextPolish.sh] in the local_cycle.
+[4059683 INFO] 2026-04-13 10:58:56 polish_genome done
+[4059683 INFO] 2026-04-13 10:58:56 remove temporary result: /tmp/.tmpXwjBfe/nextpolish/01.lgs_polish/lgs.sort.bam
+[4059683 INFO] 2026-04-13 10:58:56 nextPolish has finished
+[4059683 INFO] 2026-04-13 10:58:56 final polished genome files:
+[4059683 INFO] 2026-04-13 10:58:56 [35m /tmp/.tmpXwjBfe/nextpolish/genome.nextpolish.fasta [0m
+[4059683 INFO] 2026-04-13 10:58:56 final stat file:
+[4059683 INFO] 2026-04-13 10:58:56 [35m /tmp/.tmpXwjBfe/nextpolish/genome.nextpolish.fasta.stat [0m
+[4059683 INFO] 2026-04-13 10:58:56 asm stat:
+[4059683 INFO] 2026-04-13 10:58:56 
+Type           Length (bp)            Count (#)
+N10               946398                   1
+N20               946398                   1
+N30               946398                   1
+N40               946398                   1
+N50               946398                   1
+N60               946398                   1
+N70               946398                   1
+N80               946398                   1
+N90               946398                   1
+
+Min.              946398                   -
+Max.              946398                   -
+Ave.              946398                   -
+Total             946398                   1
+
+
+nextDenovo nextdenovo_run.cfg
+
+[4059997 INFO] 2026-04-13 10:58:57 NextDenovo start...
+[4059997 INFO] 2026-04-13 10:58:57 version:v2.5.0 logfile:pid4059997.log.info
+[4059997 WARNING] 2026-04-13 10:58:57 Re-write workdir
+[4059997 INFO] 2026-04-13 10:58:57 mkdir: /tmp/.tmp2j8rmg/nextdenovo
+[4059997 INFO] 2026-04-13 10:58:57 mkdir: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align
+[4059997 INFO] 2026-04-13 10:58:57 mkdir: /tmp/.tmp2j8rmg/nextdenovo/02.cns_align
+[4059997 INFO] 2026-04-13 10:58:57 mkdir: /tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph
+[4059997 INFO] 2026-04-13 10:59:02 Total jobs: 1
+[4059997 INFO] 2026-04-13 10:59:02 Submitted jobID:[4059998] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/01.db_stat.sh.work/db_stat1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:06 db_stat done
+[4059997 INFO] 2026-04-13 10:59:06 updated options:
+rerun:                        3
+task:                         all
+deltmp:                       1
+rewrite:                      1
+read_type:                    ont
+job_type:                     local
+input_type:                   raw
+read_cutoff:                  1k
+parallel_jobs:                1
+seed_depth:                   40.2
+pa_correction:                1
+seed_cutfiles:                3
+seed_cutoff:                  10004
+blocksize:                    207618601
+genome_size:                  1500000
+job_prefix:                   nextDenovo
+ctg_cns_options:              -p 16
+nextgraph_options:            -a 1
+sort_options:                 -m 20g -t 16 -k 40
+minimap2_options_map:         -x map-ont
+workdir:                      /tmp/.tmp2j8rmg/nextdenovo
+minimap2_options_raw:         -t 16 -x ava-ont
+input_fofn:                   /tmp/.tmp2j8rmg/input.fofn
+raw_aligndir:                 /tmp/.tmp2j8rmg/nextdenovo/01.raw_align
+cns_aligndir:                 /tmp/.tmp2j8rmg/nextdenovo/02.cns_align
+ctg_graphdir:                 /tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph
+correction_options:           -p 16 -max_lq_length 10000 -min_len_seed 5002
+minimap2_options_cns:         -t 16 -x ava-ont -k 17 -w 17 --minlen 1000 --maxhan1 5000
+[4059997 INFO] 2026-04-13 10:59:06 summary of input data:
+file:[35m /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/input.reads.stat [0m
+[Read length stat]
+Types            Count (#) Length (bp)
+N10                    245   34013
+N20                    693   24789
+N30                   1299   18320
+N40                   2135   12889
+N50                   3354    8772
+N60                   5123    6203
+N70                   7654    4223
+N80                  11404    2811
+N90                  17175    1778
+
+Types               Count (#)           Bases (bp)  Depth (X)
+Raw                     73519            149612106      99.74
+Filtered                46649             20439239      13.63
+Clean                   26870            129172867      86.12
+
+*Suggested seed_cutoff (genome size: 1.50Mb, expected seed depth: 45, real seed depth: 40.20): 10004 bp
+[4059997 INFO] 2026-04-13 10:59:11 Total jobs: 1
+[4059997 INFO] 2026-04-13 10:59:11 Submitted jobID:[4060058] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/02.db_split.sh.work/db_split1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:12 db_split done
+[4059997 INFO] 2026-04-13 10:59:12 Total jobs: 9
+[4059997 INFO] 2026-04-13 10:59:12 Submitted jobID:[4060065] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:19 Submitted jobID:[4060108] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align2/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:22 Submitted jobID:[4060151] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:32 Submitted jobID:[4060195] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:36 Submitted jobID:[4060239] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align5/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:42 Submitted jobID:[4060283] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align6/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:53 Submitted jobID:[4060326] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 10:59:56 Submitted jobID:[4060370] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align8/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:03 Submitted jobID:[4060569] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align9/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:09 raw_align done
+[4059997 INFO] 2026-04-13 11:00:14 Total jobs: 3
+[4059997 INFO] 2026-04-13 11:00:14 Submitted jobID:[4060614] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:16 Submitted jobID:[4060635] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align2/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:18 Submitted jobID:[4060656] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align3/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:19 sort_align done
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align1/input.seed.001.2bit.0.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align2/input.seed.001.2bit.1.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/input.seed.001.2bit.2.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/input.seed.001.2bit.3.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/input.seed.002.2bit.2.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align5/input.seed.002.2bit.4.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align6/input.seed.002.2bit.5.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/input.seed.002.2bit.6.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/input.seed.003.2bit.3.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/input.seed.003.2bit.6.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align8/input.seed.003.2bit.7.ovl
+[4059997 INFO] 2026-04-13 11:00:19 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align9/input.seed.003.2bit.8.ovl
+[4059997 INFO] 2026-04-13 11:00:24 Total jobs: 3
+[4059997 INFO] 2026-04-13 11:00:24 Submitted jobID:[4060679] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:29 Submitted jobID:[4060704] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns2/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:32 Submitted jobID:[4060729] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns3/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:36 seed_cns done
+[4059997 INFO] 2026-04-13 11:00:36 seed_cns finished, and final corrected reads file:
+[4059997 INFO] 2026-04-13 11:00:36 [35m /tmp/.tmp2j8rmg/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns*/cns.fasta [0m
+[4059997 INFO] 2026-04-13 11:00:36 Total jobs: 6
+[4059997 INFO] 2026-04-13 11:00:36 Submitted jobID:[4060755] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:37 Submitted jobID:[4060798] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align2/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:39 Submitted jobID:[4060841] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align3/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:40 Submitted jobID:[4060884] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align4/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:42 Submitted jobID:[4060927] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align5/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:43 Submitted jobID:[4060970] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align6/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:45 cns_align done
+[4059997 INFO] 2026-04-13 11:00:50 Total jobs: 1
+[4059997 INFO] 2026-04-13 11:00:50 Submitted jobID:[4061015] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/01.ctg_graph.sh.work/ctg_graph1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:51 ctg_graph done
+[4059997 INFO] 2026-04-13 11:00:56 Total jobs: 3
+[4059997 INFO] 2026-04-13 11:00:56 Submitted jobID:[4061029] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:57 Submitted jobID:[4061127] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align2/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:58 Submitted jobID:[4061221] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align3/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:00:59 ctg_align done
+[4059997 INFO] 2026-04-13 11:01:04 Total jobs: 1
+[4059997 INFO] 2026-04-13 11:01:04 Submitted jobID:[4061327] jobCmd:[/tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/03.ctg_cns.sh.work/ctg_cns1/nextDenovo.sh] in the local_cycle.
+[4059997 INFO] 2026-04-13 11:01:07 ctg_cns done
+[4059997 INFO] 2026-04-13 11:01:07 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align1/input.seed.001.2bit.sort.bam
+[4059997 INFO] 2026-04-13 11:01:07 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align2/input.seed.002.2bit.sort.bam
+[4059997 INFO] 2026-04-13 11:01:07 remove temporary result: /tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align3/input.seed.003.2bit.sort.bam
+[4059997 INFO] 2026-04-13 11:01:07 nextDenovo finished
+[4059997 INFO] 2026-04-13 11:01:07 final assembly file:
+[4059997 INFO] 2026-04-13 11:01:07 [35m /tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/nd.asm.fasta [0m
+[4059997 INFO] 2026-04-13 11:01:07 final stat file:
+[4059997 INFO] 2026-04-13 11:01:07 [35m /tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/nd.asm.fasta.stat [0m
+[4059997 INFO] 2026-04-13 11:01:07 asm stat:
+[4059997 INFO] 2026-04-13 11:01:07 
+Type           Length (bp)            Count (#)
+N10               898468                   1
+N20               898468                   1
+N30               898468                   1
+N40               898468                   1
+N50               898468                   1
+N60               898468                   1
+N70               898468                   1
+N80               898468                   1
+N90               898468                   1
+
+Min.               43165                   -
+Max.              898468                   -
+Ave.              330871                   -
+Total             992615                   3
+
+
+nextPolish nextpolish_run.cfg
+
+[4061353 INFO] 2026-04-13 11:01:07 NextPolish start...
+[4061353 INFO] 2026-04-13 11:01:07 version:1.4.1 logfile:pid4061353.log.info
+[4061353 WARNING] 2026-04-13 11:01:07 Re-write workdir
+[4061353 WARNING] 2026-04-13 11:01:07 Delete task: 1 due to missing sgs_fofn.
+[4061353 WARNING] 2026-04-13 11:01:07 Delete task: 1 due to missing sgs_fofn.
+[4061353 WARNING] 2026-04-13 11:01:07 Delete task: 2 due to missing sgs_fofn.
+[4061353 WARNING] 2026-04-13 11:01:07 Delete task: 2 due to missing sgs_fofn.
+[4061353 WARNING] 2026-04-13 11:01:07 Delete task: 6 due to missing hifi_fofn.
+[4061353 WARNING] 2026-04-13 11:01:07 Delete task: 6 due to missing hifi_fofn.
+[4061353 INFO] 2026-04-13 11:01:07 scheduled tasks:
+[5, 5]
+[4061353 INFO] 2026-04-13 11:01:07 options: 
+[4061353 INFO] 2026-04-13 11:01:07 
+rerun:                        3
+rewrite:                      1
+kill:                         None
+cleantmp:                     0
+task:                         [5, 5]
+use_drmaa:                    0
+deltmp:                       True
+submit:                       None
+job_type:                     local
+sgs_unpaired:                 0
+sgs_rm_nread:                 1
+parallel_jobs:                1
+check_alive:                  None
+align_threads:                16
+job_id_regex:                 None
+sgs_max_depth:                100
+lgs_max_depth:                100
+lgs_read_type:                ont
+genome_size:                  992615
+lgs_max_read_len:             0
+hifi_max_depth:               100
+multithread_jobs:             16
+lgs_min_read_len:             1k
+hifi_max_read_len:            0
+polish_options:               -p 16
+hifi_block_size:              500M
+hifi_min_read_len:            1k
+job_prefix:                   nextPolish
+sgs_use_duplicate_reads:      0
+sgs_block_size:               99261500.0
+sgs_align_options:            bwa mem
+lgs_block_size:               99261500.0
+hifi_minimap2_options:        -x map-pb
+workdir:                      /tmp/.tmp2j8rmg/nextpolish
+lgs_fofn:                     /tmp/.tmp2j8rmg/input.fofn
+lgs_minimap2_options:         -x map-ont -t 16
+snp_phase:                    /tmp/.tmp2j8rmg/nextpolish/%02d.snp_phase
+snp_valid:                    /tmp/.tmp2j8rmg/nextpolish/%02d.snp_valid
+lgs_polish:                   /tmp/.tmp2j8rmg/nextpolish/%02d.lgs_polish
+kmer_count:                   /tmp/.tmp2j8rmg/nextpolish/%02d.kmer_count
+hifi_polish:                  /tmp/.tmp2j8rmg/nextpolish/%02d.hifi_polish
+score_chain:                  /tmp/.tmp2j8rmg/nextpolish/%02d.score_chain
+genome:                       /tmp/.tmp2j8rmg/nextdenovo/03.ctg_graph/nd.asm.fasta
+[4061353 INFO] 2026-04-13 11:01:07 step 0 and task 5 start:
+[4061353 INFO] 2026-04-13 11:01:12 Total jobs: 2
+[4061353 INFO] 2026-04-13 11:01:12 Submitted jobID:[4061355] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/00.lgs_polish/01.db_split.sh.work/db_split1/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:01:31 Submitted jobID:[4061378] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/00.lgs_polish/01.db_split.sh.work/db_split2/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:01:31 db_split done
+[4061353 INFO] 2026-04-13 11:01:36 Total jobs: 1
+[4061353 INFO] 2026-04-13 11:01:36 Submitted jobID:[4061385] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/00.lgs_polish/02.map.ref.sh.work/map_genome1/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:01:40 align_genome done
+[4061353 INFO] 2026-04-13 11:01:45 Total jobs: 1
+[4061353 INFO] 2026-04-13 11:01:45 Submitted jobID:[4061453] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/00.lgs_polish/03.merge.bam.sh.work/merge_bam1/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:01:46 merge_bam done
+[4061353 INFO] 2026-04-13 11:01:46 remove temporary result: /tmp/.tmp2j8rmg/nextpolish/00.lgs_polish/02.map.ref.sh.work/map_genome1/lgs.part000.sort.bam
+[4061353 INFO] 2026-04-13 11:01:51 Total jobs: 1
+[4061353 INFO] 2026-04-13 11:01:51 Submitted jobID:[4061487] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/00.lgs_polish/04.polish.ref.sh.work/polish_genome1/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:01:55 polish_genome done
+[4061353 INFO] 2026-04-13 11:01:55 remove temporary result: /tmp/.tmp2j8rmg/nextpolish/00.lgs_polish/lgs.sort.bam
+[4061353 INFO] 2026-04-13 11:01:55 step 1 and task 5 start:
+[4061353 INFO] 2026-04-13 11:02:00 Total jobs: 1
+[4061353 INFO] 2026-04-13 11:02:00 Submitted jobID:[4061513] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/01.lgs_polish/01.merge.ref.sh.work/merge_ref1/merge_ref.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:02:01 merge_ref done
+[4061353 INFO] 2026-04-13 11:02:01 remove temporary result: /tmp/.tmp2j8rmg/nextpolish/00.lgs_polish/04.polish.ref.sh.work/polish_genome1/genome.nextpolish.part000.fasta
+[4061353 INFO] 2026-04-13 11:02:06 Total jobs: 1
+[4061353 INFO] 2026-04-13 11:02:06 Submitted jobID:[4061520] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/01.lgs_polish/02.index.ref.sh.work/index_genome1/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:02:06 index_genome done
+[4061353 INFO] 2026-04-13 11:02:11 Total jobs: 1
+[4061353 INFO] 2026-04-13 11:02:11 Submitted jobID:[4061527] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/01.lgs_polish/03.map.ref.sh.work/map_genome1/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:02:15 align_genome done
+[4061353 INFO] 2026-04-13 11:02:20 Total jobs: 1
+[4061353 INFO] 2026-04-13 11:02:20 Submitted jobID:[4061594] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/01.lgs_polish/04.merge.bam.sh.work/merge_bam1/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:02:21 merge_bam done
+[4061353 INFO] 2026-04-13 11:02:21 remove temporary result: /tmp/.tmp2j8rmg/nextpolish/01.lgs_polish/03.map.ref.sh.work/map_genome1/lgs.part000.sort.bam
+[4061353 INFO] 2026-04-13 11:02:26 Total jobs: 1
+[4061353 INFO] 2026-04-13 11:02:26 Submitted jobID:[4061628] jobCmd:[/tmp/.tmp2j8rmg/nextpolish/01.lgs_polish/05.polish.ref.sh.work/polish_genome1/nextPolish.sh] in the local_cycle.
+[4061353 INFO] 2026-04-13 11:02:30 polish_genome done
+[4061353 INFO] 2026-04-13 11:02:30 remove temporary result: /tmp/.tmp2j8rmg/nextpolish/01.lgs_polish/lgs.sort.bam
+[4061353 INFO] 2026-04-13 11:02:30 nextPolish has finished
+[4061353 INFO] 2026-04-13 11:02:30 final polished genome files:
+[4061353 INFO] 2026-04-13 11:02:30 [35m /tmp/.tmp2j8rmg/nextpolish/genome.nextpolish.fasta [0m
+[4061353 INFO] 2026-04-13 11:02:30 final stat file:
+[4061353 INFO] 2026-04-13 11:02:30 [35m /tmp/.tmp2j8rmg/nextpolish/genome.nextpolish.fasta.stat [0m
+[4061353 INFO] 2026-04-13 11:02:30 asm stat:
+[4061353 INFO] 2026-04-13 11:02:30 
+Type           Length (bp)            Count (#)
+N10               898447                   1
+N20               898447                   1
+N30               898447                   1
+N40               898447                   1
+N50               898447                   1
+N60               898447                   1
+N70               898447                   1
+N80               898447                   1
+N90               898447                   1
+
+Min.               43138                   -
+Max.              898447                   -
+Ave.              330756                   -
+Total             992269                   3
+
+
+nextDenovo nextdenovo_run.cfg
+
+[4061656 INFO] 2026-04-13 11:02:30 NextDenovo start...
+[4061656 INFO] 2026-04-13 11:02:30 version:v2.5.0 logfile:pid4061656.log.info
+[4061656 WARNING] 2026-04-13 11:02:30 Re-write workdir
+[4061656 INFO] 2026-04-13 11:02:30 mkdir: /tmp/.tmp0sEiwC/nextdenovo
+[4061656 INFO] 2026-04-13 11:02:30 mkdir: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align
+[4061656 INFO] 2026-04-13 11:02:30 mkdir: /tmp/.tmp0sEiwC/nextdenovo/02.cns_align
+[4061656 INFO] 2026-04-13 11:02:30 mkdir: /tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph
+[4061656 INFO] 2026-04-13 11:02:35 Total jobs: 1
+[4061656 INFO] 2026-04-13 11:02:35 Submitted jobID:[4061657] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/01.db_stat.sh.work/db_stat1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:02:38 db_stat done
+[4061656 INFO] 2026-04-13 11:02:38 updated options:
+rerun:                        3
+task:                         all
+deltmp:                       1
+rewrite:                      1
+read_type:                    ont
+job_type:                     local
+input_type:                   raw
+read_cutoff:                  1k
+parallel_jobs:                1
+seed_depth:                   40.3
+pa_correction:                1
+seed_cutfiles:                3
+seed_cutoff:                  10002
+blocksize:                    208123567
+genome_size:                  1500000
+job_prefix:                   nextDenovo
+ctg_cns_options:              -p 16
+nextgraph_options:            -a 1
+sort_options:                 -m 20g -t 16 -k 40
+minimap2_options_map:         -x map-ont
+workdir:                      /tmp/.tmp0sEiwC/nextdenovo
+minimap2_options_raw:         -t 16 -x ava-ont
+input_fofn:                   /tmp/.tmp0sEiwC/input.fofn
+raw_aligndir:                 /tmp/.tmp0sEiwC/nextdenovo/01.raw_align
+cns_aligndir:                 /tmp/.tmp0sEiwC/nextdenovo/02.cns_align
+ctg_graphdir:                 /tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph
+correction_options:           -p 16 -max_lq_length 10000 -min_len_seed 5001
+minimap2_options_cns:         -t 16 -x ava-ont -k 17 -w 17 --minlen 1000 --maxhan1 5000
+[4061656 INFO] 2026-04-13 11:02:38 summary of input data:
+file:[35m /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/input.reads.stat [0m
+[Read length stat]
+Types            Count (#) Length (bp)
+N10                    235   35423
+N20                    677   24849
+N30                   1288   18060
+N40                   2130   13039
+N50                   3347    8812
+N60                   5110    6214
+N70                   7664    4219
+N80                  11434    2817
+N90                  17257    1770
+
+Types               Count (#)           Bases (bp)  Depth (X)
+Raw                     73519            149931714      99.95
+Filtered                46533             20440525      13.63
+Clean                   26986            129491189      86.33
+
+*Suggested seed_cutoff (genome size: 1.50Mb, expected seed depth: 45, real seed depth: 40.30): 10002 bp
+[4061656 INFO] 2026-04-13 11:02:43 Total jobs: 1
+[4061656 INFO] 2026-04-13 11:02:43 Submitted jobID:[4061665] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/02.db_split.sh.work/db_split1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:02:44 db_split done
+[4061656 INFO] 2026-04-13 11:02:44 Total jobs: 9
+[4061656 INFO] 2026-04-13 11:02:44 Submitted jobID:[4061672] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:02:50 Submitted jobID:[4061715] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align2/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:02:55 Submitted jobID:[4061760] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:02 Submitted jobID:[4061804] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:08 Submitted jobID:[4061848] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align5/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:15 Submitted jobID:[4061891] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align6/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:20 Submitted jobID:[4061934] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:27 Submitted jobID:[4061978] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align8/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:33 Submitted jobID:[4062028] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align9/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:40 raw_align done
+[4061656 INFO] 2026-04-13 11:03:45 Total jobs: 3
+[4061656 INFO] 2026-04-13 11:03:45 Submitted jobID:[4062078] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:47 Submitted jobID:[4062099] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align2/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:49 Submitted jobID:[4062120] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/01.raw_align/04.sort_align.sh.work/sort_align3/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:50 sort_align done
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align1/input.seed.001.2bit.0.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align2/input.seed.001.2bit.1.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/input.seed.001.2bit.2.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/input.seed.001.2bit.3.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align3/input.seed.002.2bit.2.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align5/input.seed.002.2bit.4.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align6/input.seed.002.2bit.5.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/input.seed.002.2bit.6.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align4/input.seed.003.2bit.3.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align7/input.seed.003.2bit.6.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align8/input.seed.003.2bit.7.ovl
+[4061656 INFO] 2026-04-13 11:03:50 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/01.raw_align/03.raw_align.sh.work/raw_align9/input.seed.003.2bit.8.ovl
+[4061656 INFO] 2026-04-13 11:03:55 Total jobs: 3
+[4061656 INFO] 2026-04-13 11:03:55 Submitted jobID:[4062142] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:03:59 Submitted jobID:[4062167] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns2/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:03 Submitted jobID:[4062193] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns3/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:06 seed_cns done
+[4061656 INFO] 2026-04-13 11:04:06 seed_cns finished, and final corrected reads file:
+[4061656 INFO] 2026-04-13 11:04:06 [35m /tmp/.tmp0sEiwC/nextdenovo/02.cns_align/01.seed_cns.sh.work/seed_cns*/cns.fasta [0m
+[4061656 INFO] 2026-04-13 11:04:06 Total jobs: 6
+[4061656 INFO] 2026-04-13 11:04:06 Submitted jobID:[4062246] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:08 Submitted jobID:[4062289] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align2/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:09 Submitted jobID:[4062358] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align3/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:11 Submitted jobID:[4062401] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align4/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:12 Submitted jobID:[4062444] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align5/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:14 Submitted jobID:[4062487] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/02.cns_align/02.cns_align.sh.work/cns_align6/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:15 cns_align done
+[4061656 INFO] 2026-04-13 11:04:20 Total jobs: 1
+[4061656 INFO] 2026-04-13 11:04:20 Submitted jobID:[4062531] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/01.ctg_graph.sh.work/ctg_graph1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:21 ctg_graph done
+[4061656 INFO] 2026-04-13 11:04:26 Total jobs: 3
+[4061656 INFO] 2026-04-13 11:04:26 Submitted jobID:[4062538] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:27 Submitted jobID:[4062632] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align2/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:28 Submitted jobID:[4062726] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align3/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:29 ctg_align done
+[4061656 INFO] 2026-04-13 11:04:34 Total jobs: 1
+[4061656 INFO] 2026-04-13 11:04:34 Submitted jobID:[4062821] jobCmd:[/tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/03.ctg_cns.sh.work/ctg_cns1/nextDenovo.sh] in the local_cycle.
+[4061656 INFO] 2026-04-13 11:04:37 ctg_cns done
+[4061656 INFO] 2026-04-13 11:04:37 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align1/input.seed.001.2bit.sort.bam
+[4061656 INFO] 2026-04-13 11:04:37 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align2/input.seed.002.2bit.sort.bam
+[4061656 INFO] 2026-04-13 11:04:37 remove temporary result: /tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/02.ctg_align.sh.work/ctg_align3/input.seed.003.2bit.sort.bam
+[4061656 INFO] 2026-04-13 11:04:37 nextDenovo finished
+[4061656 INFO] 2026-04-13 11:04:37 final assembly file:
+[4061656 INFO] 2026-04-13 11:04:37 [35m /tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/nd.asm.fasta [0m
+[4061656 INFO] 2026-04-13 11:04:37 final stat file:
+[4061656 INFO] 2026-04-13 11:04:37 [35m /tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/nd.asm.fasta.stat [0m
+[4061656 INFO] 2026-04-13 11:04:37 asm stat:
+[4061656 INFO] 2026-04-13 11:04:37 
+Type           Length (bp)            Count (#)
+N10               891208                   1
+N20               891208                   1
+N30               891208                   1
+N40               891208                   1
+N50               891208                   1
+N60               891208                   1
+N70               891208                   1
+N80               891208                   1
+N90               891208                   1
+
+Min.               59415                   -
+Max.              891208                   -
+Ave.              475311                   -
+Total             950623                   2
+
+
+nextPolish nextpolish_run.cfg
+
+[4062848 INFO] 2026-04-13 11:04:37 NextPolish start...
+[4062848 INFO] 2026-04-13 11:04:37 version:1.4.1 logfile:pid4062848.log.info
+[4062848 WARNING] 2026-04-13 11:04:37 Re-write workdir
+[4062848 WARNING] 2026-04-13 11:04:37 Delete task: 1 due to missing sgs_fofn.
+[4062848 WARNING] 2026-04-13 11:04:37 Delete task: 1 due to missing sgs_fofn.
+[4062848 WARNING] 2026-04-13 11:04:37 Delete task: 2 due to missing sgs_fofn.
+[4062848 WARNING] 2026-04-13 11:04:37 Delete task: 2 due to missing sgs_fofn.
+[4062848 WARNING] 2026-04-13 11:04:37 Delete task: 6 due to missing hifi_fofn.
+[4062848 WARNING] 2026-04-13 11:04:37 Delete task: 6 due to missing hifi_fofn.
+[4062848 INFO] 2026-04-13 11:04:37 scheduled tasks:
+[5, 5]
+[4062848 INFO] 2026-04-13 11:04:37 options: 
+[4062848 INFO] 2026-04-13 11:04:37 
+rerun:                        3
+rewrite:                      1
+kill:                         None
+cleantmp:                     0
+task:                         [5, 5]
+use_drmaa:                    0
+deltmp:                       True
+submit:                       None
+job_type:                     local
+sgs_unpaired:                 0
+sgs_rm_nread:                 1
+parallel_jobs:                1
+check_alive:                  None
+align_threads:                16
+job_id_regex:                 None
+sgs_max_depth:                100
+lgs_max_depth:                100
+lgs_read_type:                ont
+genome_size:                  950623
+lgs_max_read_len:             0
+hifi_max_depth:               100
+multithread_jobs:             16
+lgs_min_read_len:             1k
+hifi_max_read_len:            0
+polish_options:               -p 16
+hifi_block_size:              500M
+hifi_min_read_len:            1k
+job_prefix:                   nextPolish
+sgs_use_duplicate_reads:      0
+sgs_block_size:               95062300.0
+sgs_align_options:            bwa mem
+lgs_block_size:               95062300.0
+hifi_minimap2_options:        -x map-pb
+workdir:                      /tmp/.tmp0sEiwC/nextpolish
+lgs_fofn:                     /tmp/.tmp0sEiwC/input.fofn
+lgs_minimap2_options:         -x map-ont -t 16
+snp_phase:                    /tmp/.tmp0sEiwC/nextpolish/%02d.snp_phase
+snp_valid:                    /tmp/.tmp0sEiwC/nextpolish/%02d.snp_valid
+lgs_polish:                   /tmp/.tmp0sEiwC/nextpolish/%02d.lgs_polish
+kmer_count:                   /tmp/.tmp0sEiwC/nextpolish/%02d.kmer_count
+hifi_polish:                  /tmp/.tmp0sEiwC/nextpolish/%02d.hifi_polish
+score_chain:                  /tmp/.tmp0sEiwC/nextpolish/%02d.score_chain
+genome:                       /tmp/.tmp0sEiwC/nextdenovo/03.ctg_graph/nd.asm.fasta
+[4062848 INFO] 2026-04-13 11:04:37 step 0 and task 5 start:
+[4062848 INFO] 2026-04-13 11:04:42 Total jobs: 2
+[4062848 INFO] 2026-04-13 11:04:42 Submitted jobID:[4062849] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/00.lgs_polish/01.db_split.sh.work/db_split1/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:00 Submitted jobID:[4062871] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/00.lgs_polish/01.db_split.sh.work/db_split2/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:00 db_split done
+[4062848 INFO] 2026-04-13 11:05:05 Total jobs: 1
+[4062848 INFO] 2026-04-13 11:05:05 Submitted jobID:[4063018] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/00.lgs_polish/02.map.ref.sh.work/map_genome1/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:09 align_genome done
+[4062848 INFO] 2026-04-13 11:05:14 Total jobs: 1
+[4062848 INFO] 2026-04-13 11:05:14 Submitted jobID:[4063085] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/00.lgs_polish/03.merge.bam.sh.work/merge_bam1/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:15 merge_bam done
+[4062848 INFO] 2026-04-13 11:05:15 remove temporary result: /tmp/.tmp0sEiwC/nextpolish/00.lgs_polish/02.map.ref.sh.work/map_genome1/lgs.part000.sort.bam
+[4062848 INFO] 2026-04-13 11:05:20 Total jobs: 1
+[4062848 INFO] 2026-04-13 11:05:20 Submitted jobID:[4063120] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/00.lgs_polish/04.polish.ref.sh.work/polish_genome1/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:23 polish_genome done
+[4062848 INFO] 2026-04-13 11:05:23 remove temporary result: /tmp/.tmp0sEiwC/nextpolish/00.lgs_polish/lgs.sort.bam
+[4062848 INFO] 2026-04-13 11:05:23 step 1 and task 5 start:
+[4062848 INFO] 2026-04-13 11:05:28 Total jobs: 1
+[4062848 INFO] 2026-04-13 11:05:28 Submitted jobID:[4063146] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/01.lgs_polish/01.merge.ref.sh.work/merge_ref1/merge_ref.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:29 merge_ref done
+[4062848 INFO] 2026-04-13 11:05:29 remove temporary result: /tmp/.tmp0sEiwC/nextpolish/00.lgs_polish/04.polish.ref.sh.work/polish_genome1/genome.nextpolish.part000.fasta
+[4062848 INFO] 2026-04-13 11:05:34 Total jobs: 1
+[4062848 INFO] 2026-04-13 11:05:34 Submitted jobID:[4063153] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/01.lgs_polish/02.index.ref.sh.work/index_genome1/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:35 index_genome done
+[4062848 INFO] 2026-04-13 11:05:40 Total jobs: 1
+[4062848 INFO] 2026-04-13 11:05:40 Submitted jobID:[4063161] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/01.lgs_polish/03.map.ref.sh.work/map_genome1/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:44 align_genome done
+[4062848 INFO] 2026-04-13 11:05:49 Total jobs: 1
+[4062848 INFO] 2026-04-13 11:05:49 Submitted jobID:[4063228] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/01.lgs_polish/04.merge.bam.sh.work/merge_bam1/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:49 merge_bam done
+[4062848 INFO] 2026-04-13 11:05:49 remove temporary result: /tmp/.tmp0sEiwC/nextpolish/01.lgs_polish/03.map.ref.sh.work/map_genome1/lgs.part000.sort.bam
+[4062848 INFO] 2026-04-13 11:05:54 Total jobs: 1
+[4062848 INFO] 2026-04-13 11:05:54 Submitted jobID:[4063262] jobCmd:[/tmp/.tmp0sEiwC/nextpolish/01.lgs_polish/05.polish.ref.sh.work/polish_genome1/nextPolish.sh] in the local_cycle.
+[4062848 INFO] 2026-04-13 11:05:58 polish_genome done
+[4062848 INFO] 2026-04-13 11:05:58 remove temporary result: /tmp/.tmp0sEiwC/nextpolish/01.lgs_polish/lgs.sort.bam
+[4062848 INFO] 2026-04-13 11:05:58 nextPolish has finished
+[4062848 INFO] 2026-04-13 11:05:58 final polished genome files:
+[4062848 INFO] 2026-04-13 11:05:58 [35m /tmp/.tmp0sEiwC/nextpolish/genome.nextpolish.fasta [0m
+[4062848 INFO] 2026-04-13 11:05:58 final stat file:
+[4062848 INFO] 2026-04-13 11:05:58 [35m /tmp/.tmp0sEiwC/nextpolish/genome.nextpolish.fasta.stat [0m
+[4062848 INFO] 2026-04-13 11:05:58 asm stat:
+[4062848 INFO] 2026-04-13 11:05:58 
+Type           Length (bp)            Count (#)
+N10               891221                   1
+N20               891221                   1
+N30               891221                   1
+N40               891221                   1
+N50               891221                   1
+N60               891221                   1
+N70               891221                   1
+N80               891221                   1
+N90               891221                   1
+
+Min.               59131                   -
+Max.              891221                   -
+Ave.              475176                   -
+Total             950352                   2
+

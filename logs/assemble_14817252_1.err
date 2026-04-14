@@ -1,0 +1,384 @@
+
+Lmod is automatically replacing "nextpolish/1.4" with "flye/2.9".
+
+
+flye --nano-hq /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads/sample_01.fastq --threads 16 --out-dir /tmp/.tmp8GfLwZ
+
+[2026-04-13 10:51:57] INFO: Starting Flye 2.9.6-b1802
+[2026-04-13 10:51:57] INFO: >>>STAGE: configure
+[2026-04-13 10:51:57] INFO: Configuring run
+[2026-04-13 10:51:58] INFO: Total read length: 150030908
+[2026-04-13 10:51:58] INFO: Reads N50/N90: 6625 / 727
+[2026-04-13 10:51:58] INFO: Minimum overlap set to 1000
+[2026-04-13 10:51:58] INFO: >>>STAGE: assembly
+[2026-04-13 10:51:58] INFO: Assembling disjointigs
+[2026-04-13 10:51:58] INFO: Reading sequences
+[2026-04-13 10:51:59] INFO: Building minimizer index
+[2026-04-13 10:51:59] INFO: Pre-calculating index storage
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 10:52:00] INFO: Filling index
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 10:52:04] INFO: Extending reads
+[2026-04-13 10:52:34] INFO: Overlap-based coverage: 83
+[2026-04-13 10:52:34] INFO: Median overlap divergence: 0.025676
+0% 60% 70% 80% 90% 100% 
+[2026-04-13 11:13:47] INFO: Assembled 23 disjointigs
+[2026-04-13 11:13:47] INFO: Generating sequence
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:13:48] INFO: Filtering contained disjointigs
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:13:48] INFO: Contained seqs: 0
+[2026-04-13 11:13:48] INFO: >>>STAGE: consensus
+[2026-04-13 11:13:48] INFO: Running Minimap2
+[2026-04-13 11:13:56] INFO: Computing consensus
+[2026-04-13 11:14:37] INFO: Alignment error rate: 0.034643
+[2026-04-13 11:14:37] INFO: >>>STAGE: repeat
+[2026-04-13 11:14:37] INFO: Building and resolving repeat graph
+[2026-04-13 11:14:37] INFO: Parsing disjointigs
+[2026-04-13 11:14:37] INFO: Building repeat graph
+0% 10% % 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:14:38] INFO: Median overlap divergence: 0.104052
+[2026-04-13 11:14:38] INFO: Parsing reads
+[2026-04-13 11:14:39] INFO: Aligning reads to the graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:14:43] INFO: Aligned read sequence: 109143072 / 129518520 (0.842683)
+[2026-04-13 11:14:43] INFO: Median overlap divergence: 0.013774
+[2026-04-13 11:14:43] INFO: Mean edge coverage: 64
+[2026-04-13 11:14:43] INFO: Simplifying the graph
+[2026-04-13 11:14:43] INFO: >>>STAGE: contigger
+[2026-04-13 11:14:43] INFO: Generating contigs
+[2026-04-13 11:14:43] INFO: Reading sequences
+[2026-04-13 11:14:44] INFO: Generated 43 contigs
+[2026-04-13 11:14:44] INFO: Added 2 scaffold connections
+[2026-04-13 11:14:44] INFO: >>>STAGE: polishing
+[2026-04-13 11:14:44] INFO: Polishing genome (1/1)
+[2026-04-13 11:14:44] INFO: Running minimap2
+[2026-04-13 11:14:51] INFO: Separating alignment into bubbles
+[2026-04-13 11:15:39] INFO: Alignment error rate: 0.031549
+[2026-04-13 11:15:39] INFO: Correcting bubbles
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:16:23] INFO: >>>STAGE: finalize
+[2026-04-13 11:16:23] INFO: Assembly statistics:
+
+	Total length:	1672649
+	Fragments:	27
+	Fragments N50:	990804
+	Largest frg:	990804
+	Scaffolds:	0
+	Mean coverage:	91
+
+[2026-04-13 11:16:23] INFO: Final assembly: /tmp/.tmp8GfLwZ/assembly.fasta
+
+Autocycler helper depth filter
+threshold = 12.800
+contig_16: depth=20.000, PASS
+contig_17: depth=27.000, PASS
+contig_19: depth=32.000, PASS
+contig_21: depth=30.000, PASS
+contig_24: depth=31.000, PASS
+contig_28: depth=23.000, PASS
+contig_29: depth=34.000, PASS
+contig_35: depth=26.000, PASS
+contig_4: depth=84.000, PASS
+contig_41: depth=21.000, PASS
+contig_44: depth=25.000, PASS
+contig_45: depth=32.000, PASS
+contig_47: depth=35.000, PASS
+contig_5: depth=56.000, PASS
+contig_52: depth=20.000, PASS
+contig_54: depth=22.000, PASS
+contig_57: depth=21.000, PASS
+contig_58: depth=77.000, PASS
+contig_59: depth=128.000, PASS
+contig_62: depth=22.000, PASS
+contig_65: depth=20.000, PASS
+contig_66: depth=17.000, PASS
+contig_7: depth=34.000, PASS
+contig_71: depth=18.000, PASS
+contig_74: depth=23.000, PASS
+contig_75: depth=77.000, PASS
+contig_79: depth=126.000, PASS
+
+flye --nano-hq /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads/sample_02.fastq --threads 16 --out-dir /tmp/.tmpx6dBP1
+
+[2026-04-13 11:16:23] INFO: Starting Flye 2.9.6-b1802
+[2026-04-13 11:16:23] INFO: >>>STAGE: configure
+[2026-04-13 11:16:23] INFO: Configuring run
+[2026-04-13 11:16:24] INFO: Total read length: 147290212
+[2026-04-13 11:16:24] INFO: Reads N50/N90: 6467 / 714
+[2026-04-13 11:16:24] INFO: Minimum overlap set to 1000
+[2026-04-13 11:16:24] INFO: >>>STAGE: assembly
+[2026-04-13 11:16:24] INFO: Assembling disjointigs
+[2026-04-13 11:16:24] INFO: Reading sequences
+[2026-04-13 11:16:24] INFO: Building minimizer index
+[2026-04-13 11:16:24] INFO: Pre-calculating index storage
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:16:25] INFO: Filling index
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:18:40] INFO: Extending reads
+[2026-04-13 11:19:08] INFO: Overlap-based coverage: 81
+[2026-04-13 11:19:08] INFO: Median overlap divergence: 0.0248227
+0% 60% 70% 80% 90% 100% 
+[2026-04-13 11:22:04] INFO: Assembled 28 disjointigs
+[2026-04-13 11:22:04] INFO: Generating sequence
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:22:04] INFO: Filtering contained disjointigs
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:22:05] INFO: Contained seqs: 3
+[2026-04-13 11:22:05] INFO: >>>STAGE: consensus
+[2026-04-13 11:22:05] INFO: Running Minimap2
+[2026-04-13 11:22:12] INFO: Computing consensus
+[2026-04-13 11:22:52] INFO: Alignment error rate: 0.037108
+[2026-04-13 11:22:52] INFO: >>>STAGE: repeat
+[2026-04-13 11:22:52] INFO: Building and resolving repeat graph
+[2026-04-13 11:22:52] INFO: Parsing disjointigs
+[2026-04-13 11:22:52] INFO: Building repeat graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:22:53] INFO: Median overlap divergence: 0.104028
+[2026-04-13 11:22:53] INFO: Parsing reads
+[2026-04-13 11:22:54] INFO: Aligning reads to the graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:22:58] INFO: Aligned read sequence: 107683196 / 126852742 (0.848884)
+[2026-04-13 11:22:58] INFO: Median overlap divergence: 0.0136709
+[2026-04-13 11:22:58] INFO: Mean edge coverage: 65
+[2026-04-13 11:22:58] INFO: Simplifying the graph
+[2026-04-13 11:22:58] INFO: >>>STAGE: contigger
+[2026-04-13 11:22:58] INFO: Generating contigs
+[2026-04-13 11:22:58] INFO: Reading sequences
+[2026-04-13 11:22:58] INFO: Generated 39 contigs
+[2026-04-13 11:22:58] INFO: Added 0 scaffold connections
+[2026-04-13 11:22:59] INFO: >>>STAGE: polishing
+[2026-04-13 11:22:59] INFO: Polishing genome (1/1)
+[2026-04-13 11:22:59] INFO: Running minimap2
+[2026-04-13 11:23:05] INFO: Separating alignment into bubbles
+[2026-04-13 11:23:54] INFO: Alignment error rate: 0.032190
+[2026-04-13 11:23:54] INFO: Correcting bubbles
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:24:08] INFO: >>>STAGE: finalize
+[2026-04-13 11:24:08] INFO: Assembly statistics:
+
+	Total length:	1413574
+	Fragments:	21
+	Fragments N50:	964357
+	Largest frg:	964357
+	Scaffolds:	0
+	Mean coverage:	103
+
+[2026-04-13 11:24:08] INFO: Final assembly: /tmp/.tmpx6dBP1/assembly.fasta
+
+Autocycler helper depth filter
+threshold = 12.800
+contig_1: depth=37.000, PASS
+contig_29: depth=22.000, PASS
+contig_37: depth=43.000, PASS
+contig_4: depth=45.000, PASS
+contig_40: depth=46.000, PASS
+contig_42: depth=19.000, PASS
+contig_43: depth=20.000, PASS
+contig_44: depth=79.000, PASS
+contig_45: depth=60.000, PASS
+contig_47: depth=58.000, PASS
+contig_50: depth=128.000, PASS
+contig_52: depth=25.000, PASS
+contig_53: depth=39.000, PASS
+contig_54: depth=20.000, PASS
+contig_59: depth=34.000, PASS
+contig_62: depth=67.000, PASS
+contig_63: depth=126.000, PASS
+contig_64: depth=41.000, PASS
+contig_68: depth=20.000, PASS
+contig_7: depth=60.000, PASS
+contig_8: depth=19.000, PASS
+
+flye --nano-hq /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads/sample_03.fastq --threads 16 --out-dir /tmp/.tmpKjHHB1
+
+[2026-04-13 11:24:09] INFO: Starting Flye 2.9.6-b1802
+[2026-04-13 11:24:09] INFO: >>>STAGE: configure
+[2026-04-13 11:24:09] INFO: Configuring run
+[2026-04-13 11:24:09] INFO: Total read length: 149612106
+[2026-04-13 11:24:09] INFO: Reads N50/N90: 6675 / 724
+[2026-04-13 11:24:09] INFO: Minimum overlap set to 1000
+[2026-04-13 11:24:09] INFO: >>>STAGE: assembly
+[2026-04-13 11:24:09] INFO: Assembling disjointigs
+[2026-04-13 11:24:09] INFO: Reading sequences
+[2026-04-13 11:24:10] INFO: Building minimizer index
+[2026-04-13 11:24:10] INFO: Pre-calculating index storage
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:24:11] INFO: Filling index
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:24:15] INFO: Extending reads
+[2026-04-13 11:24:47] INFO: Overlap-based coverage: 81
+[2026-04-13 11:24:47] INFO: Median overlap divergence: 0.0266148
+0% 60% 70% 80% 100% 
+[2026-04-13 11:32:59] INFO: Assembled 19 disjointigs
+[2026-04-13 11:32:59] INFO: Generating sequence
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:32:59] INFO: Filtering contained disjointigs
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:32:59] INFO: Contained seqs: 0
+[2026-04-13 11:33:00] INFO: >>>STAGE: consensus
+[2026-04-13 11:33:00] INFO: Running Minimap2
+[2026-04-13 11:33:07] INFO: Computing consensus
+[2026-04-13 11:33:46] INFO: Alignment error rate: 0.035313
+[2026-04-13 11:33:46] INFO: >>>STAGE: repeat
+[2026-04-13 11:33:46] INFO: Building and resolving repeat graph
+[2026-04-13 11:33:46] INFO: Parsing disjointigs
+[2026-04-13 11:33:46] INFO: Building repeat graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:33:47] INFO: Median overlap divergence: 0.0856821
+[2026-04-13 11:33:47] INFO: Parsing reads
+[2026-04-13 11:33:48] INFO: Aligning reads to the graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:33:51] INFO: Aligned read sequence: 109164886 / 129154867 (0.845225)
+[2026-04-13 11:33:51] INFO: Median overlap divergence: 0.0136276
+[2026-04-13 11:33:51] INFO: Mean edge coverage: 67
+[2026-04-13 11:33:51] INFO: Simplifying the graph
+[2026-04-13 11:33:52] INFO: >>>STAGE: contigger
+[2026-04-13 11:33:52] INFO: Generating contigs
+[2026-04-13 11:33:52] INFO: Reading sequences
+[2026-04-13 11:33:52] INFO: Generated 39 contigs
+[2026-04-13 11:33:52] INFO: Added 0 scaffold connections
+[2026-04-13 11:33:52] INFO: >>>STAGE: polishing
+[2026-04-13 11:33:52] INFO: Polishing genome (1/1)
+[2026-04-13 11:33:52] INFO: Running minimap2
+[2026-04-13 11:33:59] INFO: Separating alignment into bubbles
+[2026-04-13 11:34:48] INFO: Alignment error rate: 0.032102
+[2026-04-13 11:34:48] INFO: Correcting bubbles
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:35:33] INFO: >>>STAGE: finalize
+[2026-04-13 11:35:33] INFO: Assembly statistics:
+
+	Total length:	1521423
+	Fragments:	25
+	Fragments N50:	999794
+	Largest frg:	999794
+	Scaffolds:	0
+	Mean coverage:	100
+
+[2026-04-13 11:35:33] INFO: Final assembly: /tmp/.tmpKjHHB1/assembly.fasta
+
+Autocycler helper depth filter
+threshold = 12.800
+contig_1: depth=40.000, PASS
+contig_13: depth=65.000, PASS
+contig_14: depth=32.000, PASS
+contig_15: depth=168.000, PASS
+contig_16: depth=31.000, PASS
+contig_17: depth=53.000, PASS
+contig_2: depth=39.000, PASS
+contig_25: depth=37.000, PASS
+contig_27: depth=21.000, PASS
+contig_29: depth=27.000, PASS
+contig_3: depth=20.000, PASS
+contig_30: depth=20.000, PASS
+contig_31: depth=128.000, PASS
+contig_33: depth=46.000, PASS
+contig_35: depth=41.000, PASS
+contig_36: depth=28.000, PASS
+contig_37: depth=77.000, PASS
+contig_4: depth=20.000, PASS
+contig_46: depth=20.000, PASS
+contig_48: depth=20.000, PASS
+contig_49: depth=33.000, PASS
+contig_50: depth=20.000, PASS
+contig_51: depth=137.000, PASS
+contig_6: depth=25.000, PASS
+contig_8: depth=51.000, PASS
+
+flye --nano-hq /work/fauverlab/zachpella/Bb_WGS_Apr2026/subsampled_reads/sample_04.fastq --threads 16 --out-dir /tmp/.tmpjzdQx8
+
+[2026-04-13 11:35:33] INFO: Starting Flye 2.9.6-b1802
+[2026-04-13 11:35:33] INFO: >>>STAGE: configure
+[2026-04-13 11:35:33] INFO: Configuring run
+[2026-04-13 11:35:34] INFO: Total read length: 149931714
+[2026-04-13 11:35:34] INFO: Reads N50/N90: 6695 / 730
+[2026-04-13 11:35:34] INFO: Minimum overlap set to 1000
+[2026-04-13 11:35:34] INFO: >>>STAGE: assembly
+[2026-04-13 11:35:34] INFO: Assembling disjointigs
+[2026-04-13 11:35:34] INFO: Reading sequences
+[2026-04-13 11:35:35] INFO: Building minimizer index
+[2026-04-13 11:35:35] INFO: Pre-calculating index storage
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:35:35] INFO: Filling index
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:38:10] INFO: Extending reads
+[2026-04-13 11:38:45] INFO: Overlap-based coverage: 84
+[2026-04-13 11:38:45] INFO: Median overlap divergence: 0.0255013
+0% 30% 70% 80% 90% 100% 
+[2026-04-13 11:44:17] INFO: Assembled 26 disjointigs
+[2026-04-13 11:44:17] INFO: Generating sequence
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:44:17] INFO: Filtering contained disjointigs
+0% 1020% % % 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:44:17] INFO: Contained seqs: 1
+[2026-04-13 11:44:17] INFO: >>>STAGE: consensus
+[2026-04-13 11:44:17] INFO: Running Minimap2
+[2026-04-13 11:44:25] INFO: Computing consensus
+[2026-04-13 11:44:47] INFO: Alignment error rate: 0.035082
+[2026-04-13 11:44:47] INFO: >>>STAGE: repeat
+[2026-04-13 11:44:47] INFO: Building and resolving repeat graph
+[2026-04-13 11:44:47] INFO: Parsing disjointigs
+[2026-04-13 11:44:47] INFO: Building repeat graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:44:48] INFO: Median overlap divergence: 0.0785737
+[2026-04-13 11:44:48] INFO: Parsing reads
+[2026-04-13 11:44:49] INFO: Aligning reads to the graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:44:53] INFO: Aligned read sequence: 110042408 / 129476189 (0.849905)
+[2026-04-13 11:44:53] INFO: Median overlap divergence: 0.0136157
+[2026-04-13 11:44:53] INFO: Mean edge coverage: 68
+[2026-04-13 11:44:53] INFO: Simplifying the graph
+[2026-04-13 11:44:53] INFO: >>>STAGE: contigger
+[2026-04-13 11:44:53] INFO: Generating contigs
+[2026-04-13 11:44:53] INFO: Reading sequences
+[2026-04-13 11:44:54] INFO: Generated 58 contigs
+[2026-04-13 11:44:54] INFO: Added 0 scaffold connections
+[2026-04-13 11:44:54] INFO: >>>STAGE: polishing
+[2026-04-13 11:44:54] INFO: Polishing genome (1/1)
+[2026-04-13 11:44:54] INFO: Running minimap2
+[2026-04-13 11:45:00] INFO: Separating alignment into bubbles
+[2026-04-13 11:45:49] INFO: Alignment error rate: 0.032677
+[2026-04-13 11:45:49] INFO: Correcting bubbles
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-13 11:46:43] INFO: >>>STAGE: finalize
+[2026-04-13 11:46:43] INFO: Assembly statistics:
+
+	Total length:	1513397
+	Fragments:	28
+	Fragments N50:	967245
+	Largest frg:	967245
+	Scaffolds:	0
+	Mean coverage:	97
+
+[2026-04-13 11:46:43] INFO: Final assembly: /tmp/.tmpjzdQx8/assembly.fasta
+
+Autocycler helper depth filter
+threshold = 12.900
+contig_1: depth=62.000, PASS
+contig_11: depth=29.000, PASS
+contig_15: depth=40.000, PASS
+contig_16: depth=44.000, PASS
+contig_17: depth=49.000, PASS
+contig_18: depth=20.000, PASS
+contig_2: depth=34.000, PASS
+contig_26: depth=30.000, PASS
+contig_30: depth=19.000, PASS
+contig_34: depth=36.000, PASS
+contig_35: depth=45.000, PASS
+contig_38: depth=19.000, PASS
+contig_42: depth=49.000, PASS
+contig_46: depth=47.000, PASS
+contig_5: depth=22.000, PASS
+contig_57: depth=40.000, PASS
+contig_58: depth=39.000, PASS
+contig_59: depth=21.000, PASS
+contig_6: depth=19.000, PASS
+contig_60: depth=129.000, PASS
+contig_63: depth=26.000, PASS
+contig_64: depth=122.000, PASS
+contig_66: depth=21.000, PASS
+contig_67: depth=46.000, PASS
+contig_69: depth=45.000, PASS
+contig_70: depth=18.000, PASS
+contig_73: depth=74.000, PASS
+contig_8: depth=20.000, PASS

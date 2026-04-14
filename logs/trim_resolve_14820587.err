@@ -1,0 +1,1130 @@
+
+Starting autocycler trim (2026-04-13 15:39:49)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_001
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:39:49)
+    The unitig graph is now loaded into memory.
+
+8921 unitigs, 11934 links
+total length: 966337 bp
+
+
+Trim start-end overlaps (2026-04-13 15:39:49)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+canu_01.fasta tig00000001 (1011121 bp): not trimmed
+canu_02.fasta tig00000001 (957374 bp): not trimmed
+canu_03.fasta tig00000001 (986691 bp): not trimmed
+canu_04.fasta tig00000001 (923015 bp): not trimmed
+flye_01.fasta contig_59 (990804 bp): not trimmed
+flye_02.fasta contig_50 (964357 bp): not trimmed
+flye_03.fasta contig_31 (999794 bp): not trimmed
+flye_04.fasta contig_60 (967245 bp): not trimmed
+nextdenovo_01.fasta ctg000020 (880942 bp): not trimmed
+nextdenovo_02.fasta ctg000000 (946398 bp): not trimmed
+nextdenovo_03.fasta ctg000020 (898447 bp): not trimmed
+nextdenovo_04.fasta ctg000010 (891221 bp): not trimmed
+
+
+Trim hairpin overlaps (2026-04-13 15:39:52)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+canu_01.fasta tig00000001 (1011121 bp): trimmed from start and end to 903399 bp
+canu_02.fasta tig00000001 (957374 bp): trimmed from start and end to 903425 bp
+canu_03.fasta tig00000001 (986691 bp): trimmed from start and end to 903470 bp
+canu_04.fasta tig00000001 (923015 bp): trimmed from start to 889229 bp
+flye_01.fasta contig_59 (990804 bp): trimmed from start and end to 903557 bp
+flye_02.fasta contig_50 (964357 bp): trimmed from start and end to 903419 bp
+flye_03.fasta contig_31 (999794 bp): trimmed from start and end to 938263 bp
+flye_04.fasta contig_60 (967245 bp): trimmed from start and end to 903477 bp
+nextdenovo_01.fasta ctg000020 (880942 bp): not trimmed
+nextdenovo_02.fasta ctg000000 (946398 bp): trimmed from start and end to 903592 bp
+nextdenovo_03.fasta ctg000020 (898447 bp): trimmed from end to 893683 bp
+nextdenovo_04.fasta ctg000010 (891221 bp): not trimmed
+
+
+Exclude outliers (2026-04-13 15:39:55)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    903422 bp
+Median absolute deviation: 152 bp
+Allowed length range:      902662-904182 bp
+
+canu_01.fasta tig00000001 (903399 bp): kept
+canu_02.fasta tig00000001 (903425 bp): kept
+canu_03.fasta tig00000001 (903470 bp): kept
+canu_04.fasta tig00000001 (889229 bp): excluded
+flye_01.fasta contig_59 (903557 bp): kept
+flye_02.fasta contig_50 (903419 bp): kept
+flye_03.fasta contig_31 (938263 bp): excluded
+flye_04.fasta contig_60 (903477 bp): kept
+nextdenovo_01.fasta ctg000020 (880942 bp): excluded
+nextdenovo_02.fasta ctg000000 (903592 bp): kept
+nextdenovo_03.fasta ctg000020 (893683 bp): excluded
+nextdenovo_04.fasta ctg000010 (891221 bp): excluded
+
+
+Clean graph (2026-04-13 15:39:55)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+5969 unitigs, 7987 links
+total length: 920752 bp
+
+
+Finished! (2026-04-13 15:39:56)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_001/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:39:56)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_001
+
+
+Loading graph (2026-04-13 15:39:56)
+    The unitig graph is now loaded into memory.
+
+5969 unitigs, 7987 links
+total length: 920752 bp
+
+
+Finding anchor unitigs (2026-04-13 15:39:56)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+1513 anchor unitigs found
+
+
+Building bridges (2026-04-13 15:39:56)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 1512
+Conflicting bridges: 0
+
+
+Applying unique bridges (2026-04-13 15:39:56)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+7 unitigs, 10 links
+total length: 903454 bp
+
+All bridges were unique, no culling necessary.
+
+
+Finished! (2026-04-13 15:39:56)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_001/5_final.gfa
+
+
+Starting autocycler trim (2026-04-13 15:39:56)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_002
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:39:56)
+    The unitig graph is now loaded into memory.
+
+521 unitigs, 698 links
+total length: 58440 bp
+
+
+Trim start-end overlaps (2026-04-13 15:39:56)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+canu_01.fasta tig00000002 (104791 bp): not trimmed
+canu_04.fasta tig00000005 (110166 bp): trimmed to 107394 bp
+flye_01.fasta contig_58 (63969 bp): not trimmed
+
+
+Trim hairpin overlaps (2026-04-13 15:39:56)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+canu_01.fasta tig00000002 (104791 bp): trimmed from start and end to 54432 bp
+canu_04.fasta tig00000005 (110166 bp): trimmed from start and end to 53672 bp
+flye_01.fasta contig_58 (63969 bp): trimmed from end to 53750 bp
+
+Hairpin trimming was more successful than start-end trimming. Discarding start-end trimming.
+
+
+Exclude outliers (2026-04-13 15:39:56)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    53750 bp
+Median absolute deviation: 78 bp
+Allowed length range:      53360-54140 bp
+
+canu_01.fasta tig00000002 (54432 bp): excluded
+canu_04.fasta tig00000005 (53672 bp): kept
+flye_01.fasta contig_58 (53750 bp): kept
+
+
+Clean graph (2026-04-13 15:39:56)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+181 unitigs, 243 links
+total length: 55147 bp
+
+
+Finished! (2026-04-13 15:39:56)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_002/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:39:56)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_002
+
+
+Loading graph (2026-04-13 15:39:56)
+    The unitig graph is now loaded into memory.
+
+181 unitigs, 243 links
+total length: 55147 bp
+
+
+Finding anchor unitigs (2026-04-13 15:39:56)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+61 anchor unitigs found
+
+
+Building bridges (2026-04-13 15:39:56)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 57
+Conflicting bridges: 6
+
+
+Applying unique bridges (2026-04-13 15:39:56)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+14 unitigs, 19 links
+total length: 53634 bp
+
+
+Culling conflicting bridges (2026-04-13 15:39:56)
+    The least-supported conflicting bridges are now culled until no bridges
+conflict.
+
+4 conflicting bridges culled
+
+
+Applying final bridges (2026-04-13 15:39:56)
+    Now that conflicting bridges have been removed, bridges are applied one more
+time to create the final graph.
+
+10 unitigs, 12 links
+total length: 53792 bp
+
+
+Finished! (2026-04-13 15:39:56)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_002/5_final.gfa
+
+
+Starting autocycler trim (2026-04-13 15:39:56)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_007
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:39:56)
+    The unitig graph is now loaded into memory.
+
+1467 unitigs, 1968 links
+total length: 49106 bp
+
+
+Trim start-end overlaps (2026-04-13 15:39:56)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+canu_01.fasta tig00000014 (71075 bp): not trimmed
+canu_03.fasta tig00000007 (80692 bp): trimmed to 77969 bp
+canu_04.fasta tig00000010 (65795 bp): not trimmed
+flye_01.fasta contig_62 (79503 bp): trimmed to 78175 bp
+flye_03.fasta contig_6 (68197 bp): not trimmed
+flye_04.fasta contig_67 (42828 bp): not trimmed
+
+
+Trim hairpin overlaps (2026-04-13 15:39:57)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+canu_01.fasta tig00000014 (71075 bp): trimmed from end to 46109 bp
+canu_03.fasta tig00000007 (80692 bp): trimmed from start and end to 39009 bp
+canu_04.fasta tig00000010 (65795 bp): trimmed from end to 36175 bp
+flye_01.fasta contig_62 (79503 bp): trimmed from end to 44190 bp
+flye_03.fasta contig_6 (68197 bp): trimmed from start to 33973 bp
+flye_04.fasta contig_67 (42828 bp): not trimmed
+
+Hairpin trimming was more successful than start-end trimming. Discarding start-end trimming.
+
+
+Exclude outliers (2026-04-13 15:39:57)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    40918 bp
+Median absolute deviation: 4007 bp
+Allowed length range:      20883-60953 bp
+
+canu_01.fasta tig00000014 (46109 bp): kept
+canu_03.fasta tig00000007 (39009 bp): kept
+canu_04.fasta tig00000010 (36175 bp): kept
+flye_01.fasta contig_62 (44190 bp): kept
+flye_03.fasta contig_6 (33973 bp): kept
+flye_04.fasta contig_67 (42828 bp): kept
+
+
+Clean graph (2026-04-13 15:39:57)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+929 unitigs, 1251 links
+total length: 45414 bp
+
+
+Finished! (2026-04-13 15:39:57)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_007/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:39:58)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_007
+
+
+Loading graph (2026-04-13 15:39:58)
+    The unitig graph is now loaded into memory.
+
+929 unitigs, 1251 links
+total length: 45414 bp
+
+
+Finding anchor unitigs (2026-04-13 15:39:58)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+108 anchor unitigs found
+
+
+Building bridges (2026-04-13 15:39:58)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 105
+Conflicting bridges: 4
+
+
+Applying unique bridges (2026-04-13 15:39:58)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+403 unitigs, 545 links
+total length: 47447 bp
+
+
+Culling conflicting bridges (2026-04-13 15:39:58)
+    The least-supported conflicting bridges are now culled until no bridges
+conflict.
+
+2 conflicting bridges culled
+
+
+Applying final bridges (2026-04-13 15:39:58)
+    Now that conflicting bridges have been removed, bridges are applied one more
+time to create the final graph.
+
+361 unitigs, 487 links
+total length: 48977 bp
+
+
+Finished! (2026-04-13 15:39:58)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_007/5_final.gfa
+
+
+Starting autocycler trim (2026-04-13 15:39:58)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_014
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:39:58)
+    The unitig graph is now loaded into memory.
+
+682 unitigs, 909 links
+total length: 38393 bp
+
+
+Trim start-end overlaps (2026-04-13 15:39:58)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+canu_01.fasta tig00000006 (59580 bp): not trimmed
+canu_02.fasta tig00000012 (55933 bp): not trimmed
+flye_01.fasta contig_45 (57436 bp): not trimmed
+flye_02.fasta contig_40 (59707 bp): not trimmed
+flye_03.fasta contig_13 (30975 bp): not trimmed
+flye_04.fasta contig_34 (28140 bp): not trimmed
+
+
+Trim hairpin overlaps (2026-04-13 15:39:58)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+canu_01.fasta tig00000006 (59580 bp): trimmed from start and end to 29782 bp
+canu_02.fasta tig00000012 (55933 bp): trimmed from start and end to 30355 bp
+flye_01.fasta contig_45 (57436 bp): trimmed from start and end to 29890 bp
+flye_02.fasta contig_40 (59707 bp): trimmed from start and end to 29889 bp
+flye_03.fasta contig_13 (30975 bp): trimmed from end to 28868 bp
+flye_04.fasta contig_34 (28140 bp): not trimmed
+
+
+Exclude outliers (2026-04-13 15:39:58)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    29835 bp
+Median absolute deviation: 287 bp
+Allowed length range:      28400-31270 bp
+
+canu_01.fasta tig00000006 (29782 bp): kept
+canu_02.fasta tig00000012 (30355 bp): kept
+flye_01.fasta contig_45 (29890 bp): kept
+flye_02.fasta contig_40 (29889 bp): kept
+flye_03.fasta contig_13 (28868 bp): kept
+flye_04.fasta contig_34 (28140 bp): excluded
+
+
+Clean graph (2026-04-13 15:39:58)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+429 unitigs, 575 links
+total length: 36258 bp
+
+
+Finished! (2026-04-13 15:39:58)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_014/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:39:58)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_014
+
+
+Loading graph (2026-04-13 15:39:58)
+    The unitig graph is now loaded into memory.
+
+429 unitigs, 575 links
+total length: 36258 bp
+
+
+Finding anchor unitigs (2026-04-13 15:39:58)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+102 anchor unitigs found
+
+
+Building bridges (2026-04-13 15:39:58)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 101
+Conflicting bridges: 0
+
+
+Applying unique bridges (2026-04-13 15:39:58)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+67 unitigs, 90 links
+total length: 32202 bp
+
+All bridges were unique, no culling necessary.
+
+
+Finished! (2026-04-13 15:39:58)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_014/5_final.gfa
+
+
+Starting autocycler trim (2026-04-13 15:39:58)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_018
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:39:58)
+    The unitig graph is now loaded into memory.
+
+137 unitigs, 182 links
+total length: 24985 bp
+
+
+Trim start-end overlaps (2026-04-13 15:39:58)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+canu_01.fasta tig00000013 (54267 bp): not trimmed
+canu_03.fasta tig00000011 (48307 bp): not trimmed
+flye_03.fasta contig_8 (31204 bp): not trimmed
+
+
+Trim hairpin overlaps (2026-04-13 15:39:58)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+canu_01.fasta tig00000013 (54267 bp): trimmed from start and end to 28118 bp
+canu_03.fasta tig00000011 (48307 bp): trimmed from start and end to 28116 bp
+flye_03.fasta contig_8 (31204 bp): trimmed from start and end to 28090 bp
+
+
+Exclude outliers (2026-04-13 15:39:58)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    28116 bp
+Median absolute deviation: 2 bp
+Allowed length range:      28106-28126 bp
+
+canu_01.fasta tig00000013 (28118 bp): kept
+canu_03.fasta tig00000011 (28116 bp): kept
+flye_03.fasta contig_8 (28090 bp): excluded
+
+
+Clean graph (2026-04-13 15:39:58)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+67 unitigs, 91 links
+total length: 24766 bp
+
+
+Finished! (2026-04-13 15:39:58)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_018/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:39:59)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_018
+
+
+Loading graph (2026-04-13 15:39:59)
+    The unitig graph is now loaded into memory.
+
+67 unitigs, 91 links
+total length: 24766 bp
+
+
+Finding anchor unitigs (2026-04-13 15:39:59)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+28 anchor unitigs found
+
+
+Building bridges (2026-04-13 15:39:59)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 25
+Conflicting bridges: 4
+
+
+Applying unique bridges (2026-04-13 15:39:59)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+3 unitigs, 4 links
+total length: 28116 bp
+
+
+Culling conflicting bridges (2026-04-13 15:39:59)
+    The least-supported conflicting bridges are now culled until no bridges
+conflict.
+
+2 conflicting bridges culled
+
+
+Applying final bridges (2026-04-13 15:39:59)
+    Now that conflicting bridges have been removed, bridges are applied one more
+time to create the final graph.
+
+1 unitig, 0 links
+total length: 28116 bp
+
+
+Finished! (2026-04-13 15:39:59)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_018/5_final.gfa
+
+
+Starting autocycler trim (2026-04-13 15:39:59)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_023
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:39:59)
+    The unitig graph is now loaded into memory.
+
+546 unitigs, 733 links
+total length: 21862 bp
+
+
+Trim start-end overlaps (2026-04-13 15:39:59)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+canu_01.fasta tig00000010 (33973 bp): not trimmed
+canu_03.fasta tig00000008 (34069 bp): not trimmed
+canu_04.fasta tig00000012 (34808 bp): trimmed to 33978 bp
+flye_01.fasta contig_74 (33993 bp): not trimmed
+flye_04.fasta contig_66 (34090 bp): not trimmed
+
+
+Trim hairpin overlaps (2026-04-13 15:39:59)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+canu_01.fasta tig00000010 (33973 bp): trimmed from start and end to 17008 bp
+canu_03.fasta tig00000008 (34069 bp): trimmed from start and end to 17040 bp
+canu_04.fasta tig00000012 (34808 bp): trimmed from start and end to 17015 bp
+flye_01.fasta contig_74 (33993 bp): trimmed from start and end to 17059 bp
+flye_04.fasta contig_66 (34090 bp): trimmed from start and end to 17120 bp
+
+Hairpin trimming was more successful than start-end trimming. Discarding start-end trimming.
+
+
+Exclude outliers (2026-04-13 15:39:59)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    17040 bp
+Median absolute deviation: 25 bp
+Allowed length range:      16915-17165 bp
+
+canu_01.fasta tig00000010 (17008 bp): kept
+canu_03.fasta tig00000008 (17040 bp): kept
+canu_04.fasta tig00000012 (17015 bp): kept
+flye_01.fasta contig_74 (17059 bp): kept
+flye_04.fasta contig_66 (17120 bp): kept
+
+
+Clean graph (2026-04-13 15:39:59)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+333 unitigs, 448 links
+total length: 19484 bp
+
+
+Finished! (2026-04-13 15:39:59)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_023/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:39:59)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_023
+
+
+Loading graph (2026-04-13 15:39:59)
+    The unitig graph is now loaded into memory.
+
+333 unitigs, 448 links
+total length: 19484 bp
+
+
+Finding anchor unitigs (2026-04-13 15:39:59)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+83 anchor unitigs found
+
+
+Building bridges (2026-04-13 15:39:59)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 80
+Conflicting bridges: 4
+
+
+Applying unique bridges (2026-04-13 15:39:59)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+9 unitigs, 12 links
+total length: 17073 bp
+
+
+Culling conflicting bridges (2026-04-13 15:39:59)
+    The least-supported conflicting bridges are now culled until no bridges
+conflict.
+
+2 conflicting bridges culled
+
+
+Applying final bridges (2026-04-13 15:39:59)
+    Now that conflicting bridges have been removed, bridges are applied one more
+time to create the final graph.
+
+7 unitigs, 8 links
+total length: 17073 bp
+
+
+Finished! (2026-04-13 15:39:59)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_023/5_final.gfa
+
+
+Starting autocycler trim (2026-04-13 15:39:59)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_037
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:39:59)
+    The unitig graph is now loaded into memory.
+
+29 unitigs, 35 links
+total length: 27716 bp
+
+
+Trim start-end overlaps (2026-04-13 15:39:59)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+canu_01.fasta tig00000005 (27768 bp): not trimmed
+canu_02.fasta tig00000005 (27768 bp): not trimmed
+canu_03.fasta tig00000003 (27768 bp): not trimmed
+flye_01.fasta contig_79 (27768 bp): not trimmed
+flye_02.fasta contig_63 (27768 bp): not trimmed
+flye_03.fasta contig_51 (27768 bp): not trimmed
+flye_04.fasta contig_64 (27768 bp): not trimmed
+
+
+Trim hairpin overlaps (2026-04-13 15:39:59)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+canu_01.fasta tig00000005 (27768 bp): not trimmed
+canu_02.fasta tig00000005 (27768 bp): not trimmed
+canu_03.fasta tig00000003 (27768 bp): not trimmed
+flye_01.fasta contig_79 (27768 bp): not trimmed
+flye_02.fasta contig_63 (27768 bp): not trimmed
+flye_03.fasta contig_51 (27768 bp): not trimmed
+flye_04.fasta contig_64 (27768 bp): not trimmed
+
+
+Exclude outliers (2026-04-13 15:39:59)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    27768 bp
+Median absolute deviation: 0 bp
+Allowed length range:      27768-27768 bp
+
+canu_01.fasta tig00000005 (27768 bp): kept
+canu_02.fasta tig00000005 (27768 bp): kept
+canu_03.fasta tig00000003 (27768 bp): kept
+flye_01.fasta contig_79 (27768 bp): kept
+flye_02.fasta contig_63 (27768 bp): kept
+flye_03.fasta contig_51 (27768 bp): kept
+flye_04.fasta contig_64 (27768 bp): kept
+
+
+Clean graph (2026-04-13 15:39:59)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+29 unitigs, 35 links
+total length: 27716 bp
+
+
+Finished! (2026-04-13 15:39:59)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_037/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:40:00)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_037
+
+
+Loading graph (2026-04-13 15:40:00)
+    The unitig graph is now loaded into memory.
+
+29 unitigs, 35 links
+total length: 27716 bp
+
+
+Finding anchor unitigs (2026-04-13 15:40:00)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+15 anchor unitigs found
+
+
+Building bridges (2026-04-13 15:40:00)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 15
+Conflicting bridges: 0
+
+
+Applying unique bridges (2026-04-13 15:40:00)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+1 unitig, 1 link
+total length: 27768 bp
+
+All bridges were unique, no culling necessary.
+
+
+Finished! (2026-04-13 15:40:00)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_037/5_final.gfa
+
+
+Starting autocycler trim (2026-04-13 15:40:00)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_042
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:40:00)
+    The unitig graph is now loaded into memory.
+
+792 unitigs, 1056 links
+total length: 31635 bp
+
+
+Trim start-end overlaps (2026-04-13 15:40:00)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+canu_01.fasta tig00000003 (26505 bp): not trimmed
+canu_02.fasta tig00000004 (26509 bp): not trimmed
+canu_03.fasta tig00000005 (26514 bp): not trimmed
+canu_04.fasta tig00000006 (26512 bp): not trimmed
+flye_01.fasta contig_75 (26545 bp): not trimmed
+flye_02.fasta contig_62 (26521 bp): not trimmed
+flye_03.fasta contig_37 (26550 bp): not trimmed
+flye_04.fasta contig_73 (26524 bp): not trimmed
+nextdenovo_01.fasta ctg000000 (40557 bp): trimmed to 26567 bp
+nextdenovo_03.fasta ctg000000 (43138 bp): trimmed to 26564 bp
+
+
+Trim hairpin overlaps (2026-04-13 15:40:00)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+canu_01.fasta tig00000003 (26505 bp): not trimmed
+canu_02.fasta tig00000004 (26509 bp): not trimmed
+canu_03.fasta tig00000005 (26514 bp): not trimmed
+canu_04.fasta tig00000006 (26512 bp): not trimmed
+flye_01.fasta contig_75 (26545 bp): not trimmed
+flye_02.fasta contig_62 (26521 bp): not trimmed
+flye_03.fasta contig_37 (26550 bp): not trimmed
+flye_04.fasta contig_73 (26524 bp): not trimmed
+nextdenovo_01.fasta ctg000000 (40557 bp): not trimmed
+nextdenovo_03.fasta ctg000000 (43138 bp): not trimmed
+
+
+Exclude outliers (2026-04-13 15:40:00)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    26522 bp
+Median absolute deviation: 15 bp
+Allowed length range:      26447-26597 bp
+
+canu_01.fasta tig00000003 (26505 bp): kept
+canu_02.fasta tig00000004 (26509 bp): kept
+canu_03.fasta tig00000005 (26514 bp): kept
+canu_04.fasta tig00000006 (26512 bp): kept
+flye_01.fasta contig_75 (26545 bp): kept
+flye_02.fasta contig_62 (26521 bp): kept
+flye_03.fasta contig_37 (26550 bp): kept
+flye_04.fasta contig_73 (26524 bp): kept
+nextdenovo_01.fasta ctg000000 (26567 bp): kept
+nextdenovo_03.fasta ctg000000 (26564 bp): kept
+
+
+Clean graph (2026-04-13 15:40:00)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+471 unitigs, 627 links
+total length: 29440 bp
+
+
+Finished! (2026-04-13 15:40:00)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_042/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:40:00)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_042
+
+
+Loading graph (2026-04-13 15:40:00)
+    The unitig graph is now loaded into memory.
+
+471 unitigs, 627 links
+total length: 29440 bp
+
+
+Finding anchor unitigs (2026-04-13 15:40:00)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+76 anchor unitigs found
+
+
+Building bridges (2026-04-13 15:40:00)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 76
+Conflicting bridges: 0
+
+
+Applying unique bridges (2026-04-13 15:40:00)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+1 unitig, 1 link
+total length: 26513 bp
+
+All bridges were unique, no culling necessary.
+
+
+Finished! (2026-04-13 15:40:00)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_042/5_final.gfa
+
+
+Starting autocycler trim (2026-04-13 15:40:00)
+    This command takes a single-cluster unitig graph (made by autocycler
+cluster) and trims any overlaps. It looks for both start-end overlaps (can occur
+with circular sequences) and hairpin overlaps (can occur with linear sequences).
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_085
+  --min_identity 0.75
+  --max_unitigs 5000
+  --mad 5
+  --threads 8
+
+
+Loading graph (2026-04-13 15:40:00)
+    The unitig graph is now loaded into memory.
+
+3 unitigs, 2 links
+total length: 2982 bp
+
+
+Trim start-end overlaps (2026-04-13 15:40:00)
+    Paths for circular replicons may contain start-end overlaps. These overlaps
+are searched for and trimmed if found.
+
+flye_02.fasta contig_52 (2981 bp): not trimmed
+flye_03.fasta contig_49 (2981 bp): not trimmed
+flye_04.fasta contig_2 (2981 bp): not trimmed
+
+
+Trim hairpin overlaps (2026-04-13 15:40:00)
+    Paths for linear replicons may contain hairpin overlaps at the start and/or
+end of the contig. These overlaps are searched for and trimmed if found.
+
+flye_02.fasta contig_52 (2981 bp): not trimmed
+flye_03.fasta contig_49 (2981 bp): not trimmed
+flye_04.fasta contig_2 (2981 bp): not trimmed
+
+
+Exclude outliers (2026-04-13 15:40:00)
+    Sequences which vary too much in their length are now excluded from the
+cluster.
+
+Median sequence length:    2981 bp
+Median absolute deviation: 0 bp
+Allowed length range:      2981-2981 bp
+
+flye_02.fasta contig_52 (2981 bp): kept
+flye_03.fasta contig_49 (2981 bp): kept
+flye_04.fasta contig_2 (2981 bp): kept
+
+
+Clean graph (2026-04-13 15:40:00)
+    The unitig graph is now cleaned up based on any trimming and/or exclusion
+that has occurred above.
+
+3 unitigs, 2 links
+total length: 2982 bp
+
+
+Finished! (2026-04-13 15:40:00)
+    You can now run autocycler resolve on this cluster. If you want to manually
+inspect the trimming, you can run autocycler dotplot on the sequences both
+before and after trimming.
+
+Unitig graph of trimmed sequences: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_085/2_trimmed.gfa
+
+
+Starting autocycler resolve (2026-04-13 15:40:01)
+    This command resolves repeats in the unitig graph.
+
+Settings:
+  --cluster_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_085
+
+
+Loading graph (2026-04-13 15:40:01)
+    The unitig graph is now loaded into memory.
+
+3 unitigs, 2 links
+total length: 2982 bp
+
+
+Finding anchor unitigs (2026-04-13 15:40:01)
+    Anchor unitigs are those that occur once and only once in each sequence.
+They will definitely be present in the final sequence and will serve as the
+connection points for bridges.
+
+1 anchor unitig found
+
+
+Building bridges (2026-04-13 15:40:01)
+    Bridges connect one anchor unitig to the next.
+
+     Unique bridges: 0
+Conflicting bridges: 0
+
+
+Applying unique bridges (2026-04-13 15:40:01)
+    All unique bridges (those that do not conflict with other bridges) are now
+applied to the graph, with linear paths merged to create consentigs.
+
+1 unitig, 0 links
+total length: 2982 bp
+
+
+Finished! (2026-04-13 15:40:01)
+Final consensus graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_085/5_final.gfa
+

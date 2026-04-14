@@ -1,0 +1,63 @@
+
+Starting autocycler combine (2026-04-13 15:43:50)
+    This command combines different clusters into a single assembly file.
+
+Settings:
+  --autocycler_dir /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out
+  --in_gfas /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_001/5_final.gfa
+            /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_002/5_final.gfa
+            /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_007/5_final.gfa
+            /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_014/5_final.gfa
+            /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_018/5_final.gfa
+            /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_023/5_final.gfa
+            /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_037/5_final.gfa
+            /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_042/5_final.gfa
+            /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_085/5_final.gfa
+
+
+Combining clusters (2026-04-13 15:43:50)
+    This command combines different clusters into a single assembly file.
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_001/5_final.gfa
+7 unitigs, 10 links (fragmented)
+total length: 903454 bp
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_002/5_final.gfa
+10 unitigs, 12 links (fragmented)
+total length: 53792 bp
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_007/5_final.gfa
+361 unitigs, 487 links (fragmented)
+total length: 48977 bp
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_014/5_final.gfa
+67 unitigs, 90 links (fragmented)
+total length: 32202 bp
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_018/5_final.gfa
+1 unitig, 0 links (linear-open-open)
+total length: 28116 bp
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_023/5_final.gfa
+7 unitigs, 8 links (fragmented)
+total length: 17073 bp
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_037/5_final.gfa
+1 unitig, 1 link (circular)
+total length: 27768 bp
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_042/5_final.gfa
+1 unitig, 1 link (circular)
+total length: 26513 bp
+
+/work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/clustering/qc_pass/cluster_085/5_final.gfa
+1 unitig, 0 links (linear-open-open)
+total length: 2982 bp
+
+
+Finished! (2026-04-13 15:43:50)
+Combined graph: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/consensus_assembly.gfa
+Combined fasta: /work/fauverlab/zachpella/Bb_WGS_Apr2026/autocycler_out/consensus_assembly.fasta
+
+One or more clusters failed to fully resolve 😟
+
